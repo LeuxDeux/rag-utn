@@ -1,0 +1,2 @@
+# Acá se generan store.json (índice) y cache.json.
+# Ambos están en .gitignore: se regeneran con `npm run ingest`.
