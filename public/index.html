@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Asistente — prueba</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        max-width: 720px; margin: 0 auto; padding: 24px;
+        line-height: 1.5;
+      }
+      h1 { font-size: 1.25rem; margin-bottom: 4px; }
+      .sub { opacity: .6; font-size: .875rem; margin-bottom: 20px; }
+      textarea {
+        width: 100%; min-height: 80px; padding: 12px; box-sizing: border-box;
+        font: inherit; border: 1px solid #8884; border-radius: 8px; resize: vertical;
+      }
+      button {
+        margin-top: 8px; padding: 10px 18px; font: inherit; font-weight: 600;
+        border: 0; border-radius: 8px; background: #2563eb; color: #fff; cursor: pointer;
+      }
+      button:disabled { opacity: .5; cursor: default; }
+      #out { margin-top: 24px; }
+      .answer { white-space: pre-wrap; }
+      .meta { font-size: .8rem; opacity: .6; margin-top: 12px; }
+      .sources { margin-top: 12px; font-size: .85rem; }
+      .sources li { margin: 4px 0; }
+      .error { color: #b91c1c; white-space: pre-wrap; font-size: .9rem; }
+      .badge {
+        display: inline-block; padding: 1px 8px; border-radius: 999px;
+        font-size: .75rem; background: #8882; margin-left: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Asistente virtual</h1>
+    <div class="sub">Esqueleto — Fase 0 pendiente de implementar</div>
+
+    <form id="f">
+      <textarea id="q" placeholder="¿Hasta cuándo me puedo inscribir?" autofocus></textarea>
+      <button id="b" type="submit">Preguntar</button>
+    </form>
+
+    <div id="out"></div>
+
+    <script>
+      const f = document.getElementById("f");
+      const q = document.getElementById("q");
+      const b = document.getElementById("b");
+      const out = document.getElementById("out");
+
+      f.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const question = q.value.trim();
+        if (!question) return;
+
+        b.disabled = true;
+        out.innerHTML = '<p class="meta">Pensando…</p>';
+
+        try {
+          const res = await fetch("/api/ask", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ question }),
+          });
+          const data = await res.json();
+
+          if (!res.ok) {
+            out.innerHTML = `<pre class="error">${res.status} ${JSON.stringify(data, null, 2)}</pre>`;
+            return;
+          }
+
+          const badge = data.cached ? ' <span class="badge">caché</span>' : "";
+          const sources = (data.sources || [])
+            .map(s => `<li>[${s.id}] ${s.title}${s.page ? ", pág. " + s.page : ""} — score ${s.score.toFixed(2)}</li>`)
+            .join("");
+
+          out.innerHTML = `
+            <div class="answer">${escapeHtml(data.answer)}${badge}</div>
+            <div class="meta">
+              confianza: ${data.confidence} ·
+              ${data.escalate ? "derivado a humano" : "resuelto"} ·
+              ${data.latency_ms} ms
+            </div>
+            ${sources ? `<ul class="sources">${sources}</ul>` : ""}
+          `;
+        } catch (err) {
+          out.innerHTML = `<pre class="error">${escapeHtml(String(err))}</pre>`;
+        } finally {
+          b.disabled = false;
+        }
+      });
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, c => ({
+          "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+        }[c]));
+      }
+    </script>
+  </body>
+</html>
