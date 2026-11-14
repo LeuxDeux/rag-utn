@@ -1,0 +1,35 @@
+# Golden set de evaluación. Guía §9.
+#
+# De dónde sacar estas preguntas: del log real de recepción y del WhatsApp
+# de la universidad. 100 preguntas reales valen más que 1000 inventadas.
+# Este pedido es el más barato de hacerle a la universidad y el que más sirve.
+#
+# Campos:
+#   expected_source   -> id de la fuente en sources.yaml (null si no debería saber)
+#   expected_keywords -> fragmentos que deben aparecer en la respuesta
+#   should_escalate   -> true si el bot DEBE derivar a un humano
+
+- question: "¿hasta cuándo me puedo inscribir?"
+  expected_source: ejemplo-calendario
+  expected_keywords: ["inscripción"]
+  should_escalate: false
+
+- question: "che hasta cuando me puedo anotar a las materias"
+  expected_source: ejemplo-calendario
+  expected_keywords: ["inscripción"]
+  should_escalate: false
+
+- question: "¿me pueden hacer una excepción con la cuota?"
+  expected_source: null
+  expected_keywords: []
+  should_escalate: true
+
+- question: "¿cuánto sale la carrera de medicina?"
+  expected_source: null
+  expected_keywords: []
+  should_escalate: true
+
+- question: "¿quién ganó el mundial de 2022?"
+  expected_source: null
+  expected_keywords: []
+  should_escalate: true
