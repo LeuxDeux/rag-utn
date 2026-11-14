@@ -18,6 +18,12 @@
 //   5. Escribir [{ id, text, meta, embedding }] en data/store.json
 //   6. Imprimir "Indexados N chunks" y el modelo usado
 //
+// DECISIONES DE CURADURÍA: leer corpus/decisions.yaml (lo genera
+// `npm run decisions -- --apply`) y:
+//   - status: excluir -> no indexar (el archivo ni siquiera está en corpus/)
+//   - status: vigente -> indexar con meta.vigencia_ambigua = true, para que
+//     el prompt no afirme años ni fechas de ese documento (ver ask/prompt.js)
+//
 // INVARIANTE: guardar el modelo de embeddings en el store y verificarlo al
 // arrancar. Si cambió, abortar con un mensaje claro ("reindexá con X").
 // Mezclar modelos no falla: solo devuelve resultados malos en silencio.
