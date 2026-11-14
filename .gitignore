@@ -5,6 +5,9 @@ data/cache.json
 data/*.json
 *.log
 
+# Documentos excluidos por curaduría. Siguen en el historial de git.
+corpus-excluded/
+
 # El corpus puede contener documentos privados. Descomentar si aplica.
 # corpus/*
 # !corpus/README.md

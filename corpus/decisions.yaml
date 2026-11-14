@@ -1,0 +1,10 @@
+# Registro de decisiones de curación del corpus.
+# Lo escribe `npm run decisions -- --apply` leyendo docs/REPORTE-CURACION.md.
+#
+# status: keep    → se indexa normal
+#         vigente → se indexa, pero el prompt no debe afirmar fechas de ese documento
+#         excluir → no se indexa (el archivo vive en corpus-excluded/)
+
+decided_at: null
+source_report: docs/REPORTE-CURACION.md
+decisions: []
