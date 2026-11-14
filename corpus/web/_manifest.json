@@ -3,7 +3,7 @@
     "www.frrq.utn.edu.ar",
     "sac.frrq.utn.edu.ar"
   ],
-  "crawled_at": "2026-11-14T09:52:56.941Z",
+  "crawled_at": "2026-11-14T11:18:45.293Z",
   "pages": [
     {
       "slug": "www.frrq.utn.edu.ar-institucional-9uywwv",
@@ -1264,66 +1264,6 @@
       "url": "https://sac.frrq.utn.edu.ar/utn-frrq-solicitar-servicio.html",
       "title": "Solicitar un servicio",
       "chars": 332
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-utn-frrq-noticias.html-2vuzge",
-      "url": "https://sac.frrq.utn.edu.ar/utn-frrq-noticias.html?tipo=agenda",
-      "title": "Noticias y agenda",
-      "chars": 296
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-utn-frrq-noticias.html-bwljyq",
-      "url": "https://sac.frrq.utn.edu.ar/utn-frrq-noticias.html?cat=academica",
-      "title": "Noticias y agenda",
-      "chars": 296
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-noticias-noticia-de-prueba-j1zwjh",
-      "url": "https://sac.frrq.utn.edu.ar/noticias/noticia-de-prueba",
-      "title": "Noticia de prueba del nuevo módulo",
-      "chars": 215
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-noticias-jornada-tecnologia-reconquista-axn0yq",
-      "url": "https://sac.frrq.utn.edu.ar/noticias/jornada-tecnologia-reconquista",
-      "title": "Jornada de tecnología y programación en la Facultad",
-      "chars": 298
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-noticias-becas-investigacion-2027-mjaynw",
-      "url": "https://sac.frrq.utn.edu.ar/noticias/becas-investigacion-2027",
-      "title": "Becas de investigación y servicios 2027",
-      "chars": 272
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-noticias-movilidad-internacional-2027-tiwmjc",
-      "url": "https://sac.frrq.utn.edu.ar/noticias/movilidad-internacional-2027",
-      "title": "Oportunidades de movilidad internacional para 2027",
-      "chars": 259
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-noticias-mesas-examen-diciembre-2026-mjayng",
-      "url": "https://sac.frrq.utn.edu.ar/noticias/mesas-examen-diciembre-2026",
-      "title": "Mesas de examen: llamado de diciembre",
-      "chars": 202
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-noticias-cursos-idiomas-2027-tiwmjc",
-      "url": "https://sac.frrq.utn.edu.ar/noticias/cursos-idiomas-2027",
-      "title": "Nuevos cursos de idiomas en la Escuela de Idiomas",
-      "chars": 226
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-noticias-avances-obras-campus-ftchvz",
-      "url": "https://sac.frrq.utn.edu.ar/noticias/avances-obras-campus",
-      "title": "Avanzan las obras de mejoramiento del campus",
-      "chars": 266
-    },
-    {
-      "slug": "sac.frrq.utn.edu.ar-utn-frrq-noticias.html-bwljyq",
-      "url": "https://sac.frrq.utn.edu.ar/utn-frrq-noticias.html?tipo=agenda&cat=academica",
-      "title": "Noticias y agenda",
-      "chars": 296
     }
   ]
 }
