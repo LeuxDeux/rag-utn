@@ -30,7 +30,7 @@ const entries = [];
 let cur = null;
 
 for (const line of text.split(/\r?\n/)) {
-  const doc = line.match(/^- \[`(.+?)`\]\(\.\.\/corpus\/web\/(.+?)\)\s*$/);
+  const doc = line.match(/^- \[`(.+?)`\]\(\.\.\/corpus\/(?:web|excluded)\/(.+?)\)\s*$/);
   if (doc) {
     cur = { file: decodeURIComponent(doc[2]), title: "", reason: "", options: {} };
     entries.push(cur);
@@ -157,7 +157,17 @@ if (toExclude.length) {
     const to = path.join(EXCLUDED_DIR, d.file);
     fs.renameSync(from, to);
   }
+
+  // Los links del reporte tienen que seguir funcionando: apuntan a la ubicación real.
+  let report = fs.readFileSync(REPORT, "utf8");
+  for (const d of toExclude) {
+    const enc = encodeURI(d.file);
+    report = report.split(`../corpus/web/${enc}`).join(`../corpus-excluded/${enc}`);
+  }
+  fs.writeFileSync(REPORT, report);
+
   console.log(`✓ ${toExclude.length} archivo(s) movidos a corpus-excluded/`);
+  console.log(`✓ links del reporte actualizados a corpus-excluded/`);
 }
 
 // ---------------------------------------------------------------- manifest

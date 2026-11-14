@@ -1,10 +1,495 @@
 # Registro de decisiones de curación del corpus.
-# Lo escribe `npm run decisions -- --apply` leyendo docs/REPORTE-CURACION.md.
+# Generado por `npm run decisions -- --apply` desde docs/REPORTE-CURACION.md.
+# No editar a mano: volvé a marcar el reporte y re-corré el script.
 #
 # status: keep    → se indexa normal
 #         vigente → se indexa, pero el prompt no debe afirmar fechas de ese documento
 #         excluir → no se indexa (el archivo vive en corpus-excluded/)
 
-decided_at: null
+decided_at: 2026-11-14
 source_report: docs/REPORTE-CURACION.md
-decisions: []
+decisions:
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec_academica-concurso-docente-2023-mdizlw.md
+    title: concurso-docente-2023
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec_academica-concurso-docente-2023-mesnoviembre-wjyzs8.md
+    title: concurso-docente-2023-mesnoviembre
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-concurso-docente-2025-jayns8.md
+    title: concurso-docente-2025
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-elecciones-utn-2022-iwmjiv.md
+    title: Elecciones UTN 2022
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-elecciones-utn-2024-iwmjqv.md
+    title: Elecciones UTN 2024
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-innovatec-2025-mdi1lw.md
+    title: Innovatec 2025
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-inscripcion-a-carreras-clhst-2025-jayns8.md
+    title: Inscripción a Carreras CLHST 2025
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-inscripcion-tuci-distancia-2023-iwmjmv.md
+    title: inscripción-tuci-distancia-2023
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-inscripciones-a-carreras-ciclo-lectivo-2023-iwmjmv.md
+    title: Inscripciones a Carreras – Ciclo Lectivo 2023
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-jit-2022-mdiylw.md
+    title: JIT 2022
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-jit-2022-jit-2022-formato-poster-dgvylw.md
+    title: JIT 2022 – FORMATO POSTER
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-jit-2022-jit-2022-formato-trabajos-fqb3mv.md
+    title: JIT 2022 – FORMATO TRABAJOS
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-jit-2022-jit-2022-instructivo-easy-chair-hhaxiv.md
+    title: JIT 2022 – INSTRUCTIVO EASY CHAIR
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-llamado-elecciones-nacionales-cs-2021-iwmjev.md
+    title: Llamado a elecciones nacionales para la renovación de representantes en
+      el Consejo Superior
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-simposio-siar-2023-jaymy8.md
+    title: Simposio SIAR 2023
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-vivi-tu-eleccion-2021-feria-de-las-carreras-vyyxmv.md
+    title: Vivi tu elección 2021 – Feria de las Carreras
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-ie-l2lllw.md
+    title: "2025"
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-ii-l2lplw.md
+    title: "2025"
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-pagina-de-inicio-autoridades-fkzxmv.md
+    title: Autoridades
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-secretaria-cyt-cyt-adscripciones-bmvzlw.md
+    title: Ciencia y Tecnología – Adscripciones a proyectos I+D+i
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-secretaria-cyt-cyt-carrera-investigador-wrvci8.md
+    title: Ciencia y Tecnología – Carrera del Investigador
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-secretaria-cyt-cyt-centros-grupos-xbvcy8.md
+    title: Ciencia y Tecnología – Centros y Grupos
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-secretaria-cyt-cyt-proyectos-idi-awrplw.md
+    title: Ciencia y Tecnología – Proyectos I+D+i
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-comunidad.html-5odg1s.md
+    title: Comunidad
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-pagina-de-inicio-consejo-directivo-rpdm8v.md
+    title: Consejo Directivo
+    status: keep
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-contacto.html-mh0bww.md
+    title: Contacto
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-contactos-utn-reconquista-lzdgev.md
+    title: Contactos UTN Reconquista
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-2026-curso-analisis-de-movimiento-y-cinematica-mecanica-en-s-3jrcy8.md
+    title: CURSO
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-departamentos-dpto-lar-1syxiv.md
+    title: Departamento LAR
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-diplomaturas-y-cursos-online-gluzs8.md
+    title: DIPLOMATURAS Y CURSOS ONLINE
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-ea-avellaneda-tup-dhvwlw.md
+    title: EA Avellaneda TUP
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-ea-calchaqui-tumi-dw1plw.md
+    title: EA Calchaquí TUMI
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-ea-san-javier-tuhst-voc3qv.md
+    title: EA San Javier TUHST
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-ea-san-javier-tumi-hvtas8.md
+    title: EA San Javier TUMI
+    status: keep
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq.html-mh0bww.md
+    title: Educación que impulsa el desarrollo
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-ingresantes-dgvzlw.md
+    title: Ingresantes
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-inscripcion-a-carreras-2027-jayny8.md
+    title: Inscripción a Carreras 2027
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-2026-introduccion-al-diseno-3d-con-solidworks-3jrcy8.md
+    title: INTRODUCCIÓN AL DISEÑO 3D CON SOLIDWORKS
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-jit2022-premiacion-2lvbi8.md
+    title: jit2022-premiacion
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-carreras-a-distancia-ll-online-gluzs8.md
+    title: Licenciatura en Logística – Cursado 100% a distancia
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-ms-project-2016-mde2lw.md
+    title: MS PROJECT 2016
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-oratoria-9yawev.md
+    title: Oratoria
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-orientacion-vocacional-25hbc8.md
+    title: Orientacion-Vocacional
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-pdgea-z2vhlw.md
+    title: Posgrado Dirección y Gestión de Empresas Agroindustriales
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-posgrado-maestria-en-redes-de-datos-dg9zlw.md
+    title: Posgrado Maestría en Redes de Datos
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec_academica-1py2ev.md
+    title: Secretaría Académica
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-secretaria-cyt-y3l0lw.md
+    title: Secretaría Ciencia y Tecnología
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-secretaria-cyt2-3l0mi8.md
+    title: Secretaría Ciencia y Tecnología (demo)
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-npb24v.md
+    title: Secretaría Extensión Universitaria
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-tup-3r1cc8.md
+    title: Tecnicatura Universitaria en Programación
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-carreras-a-distancia-tuti-online-aw5llw.md
+    title: Tecnicatura Universitaria en Tecnologías de la Información – Cursado 100%
+      a distancia
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-unidad-atencion-casos-xnvcy8.md
+    title: Unidad de Atención de Casos
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-diseno-disenador-grafico-expres-jlc3mv.md
+    title: AO – Diseño – Diseñador Gráfico Express
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-diseno-disenador-multimedial-glhbc8.md
+    title: AO – Diseño – Diseñador Multimedial
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-diseno-disenador-web-13zwiv.md
+    title: AO – Diseño – Diseñador Web
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-inmobilturist-asistente-de-inmo-cmlhlw.md
+    title: AO – InmobilTurist – Asistente de Inmobiliaria
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-rrhh-asistente-de-rrhh-express-zxnzlw.md
+    title: AO – RRHH – Asistente de RRHH Express
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-rrhh-liderazgo-y-coaching-mod-o-2ljby8.md
+    title: AO – RRHH – Liderazgo y Coaching Mod Ontológico
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-seguridad-dip-accidentologia-vi-awfslw.md
+    title: AO – Seguridad – Dip Accidentología Vial
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-seguridad-riesgo-electrico-jpy28v.md
+    title: AO – Seguridad – Riesgo Eléctrico
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-temario-auxiliar-de-logistica-rpy2ev.md
+    title: AO – Temario – Auxiliar de Logística
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-temario-diplomatura-en-asistenc-rpy28v.md
+    title: AO – Temario – Diplomatura en Asistencia de Estudio Jurídico
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-secretariado-informatico-awnvlw.md
+    title: ao-secretariado-informático
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-beca-ayuda-social-economica-2026-mdi2lw.md
+    title: Beca Ayuda Social Económica 2026
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-bibl-colecciones-9uzxmv.md
+    title: Biblioteca Colecciones
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-biblioteca-info-w5mby8.md
+    title: Biblioteca info
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-bibl-mision-vision-2lvbi8.md
+    title: Biblioteca Misión y Visión
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-bibl-servicios-aw9zlw.md
+    title: Biblioteca Servicios
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-calendario-de-mesas-de-examenes-vuzxmv.md
+    title: Calendario de Mesas de Exámenes
+    status: excluir
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-carreras.html-mh0bww.md
+    title: Carreras
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-conoce-nuestra-facultad-dgfklw.md
+    title: Conocé nuestra Facultad
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-departamentos-dpto-basicas-y2fzlw.md
+    title: Departamento Básicas
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-departamentos-dpto-electromecanica-5py2ev.md
+    title: Departamento Electromecánica
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-departamentos-50b3mv.md
+    title: Departamentos
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-docdocentes-frrq-zycnev.md
+    title: DocDocentes FRRq
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-educacion-virtual-r1ywwv.md
+    title: Educación Virtual
+    status: keep
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-extension.html-5odg1s.md
+    title: Extensión Universitaria
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-carreras-clhst-formulario-clhst-xoc3qv.md
+    title: Formulario CLHST
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-nodocentes-formularios-de-licencias-y-franquicias-npyxmv.md
+    title: Formularios de Licencias y Franquicias
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-info_jit2022-jaymi8.md
+    title: info_jit2022
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-pagina-de-inicio-info-acad-y2fklw.md
+    title: Información Académica
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-id-l2lklw.md
+    title: Investigación y Desarrollo
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-jit2022-exposicion-2lvbi8.md
+    title: jit2022-exposición
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-jit2022-programa-jhbwev.md
+    title: jit2022-Programa
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-jit2022-ubicacion-aw9ulw.md
+    title: jit2022-Ubicación
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-jornada-de-programacion-aw9ulw.md
+    title: Jornada de programación
+    status: excluir
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-laboratorios.html-5odg1s.md
+    title: Laboratorios
+    status: keep
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-extracurricular.html-5odg1s.md
+    title: Más allá del aula
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-obra-ynjhlw.md
+    title: Secretaría Obra, Mantenimiento y Servicios Generales
+    status: keep
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-sistemas.html-mh0bww.md
+    title: Sistemas de Gestión
+    status: keep
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-solicitar-servicio.html-5odg1s.md
+    title: Solicitar un servicio
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-solicitud-cuenta-zoom-m9vbs8.md
+    title: Solicitud cuenta Zoom
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-solicitud-de-compra-de-material-bibliografico-mljby8.md
+    title: SOLICITUD DE COMPRA DE MATERIAL BIBLIOGRÁFICO
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec_academica-office365-solicitud-de-licencia-of-50zxmv.md
+    title: Solicitud de licencia Office 365 para estudiantes
+    status: keep
+  - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-vinculacion.html-mh0bww.md
+    title: Vinculación tecnológica
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-category-cursos-nnvcy8.md
+    title: Cursos
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-category-extension-2lvbi8.md
+    title: Extensión
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-category-noticias-awfzlw.md
+    title: Noticias
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-novedades-wrlcy8.md
+    title: Novedades
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-escuela-tecnologica-dpy2ev.md
+    title: "2025"
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-agro-diplomatura-en-administrac-xjhbc8.md
+    title: AO – Agro – Diplomatura en Administración Rural
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-diseno-diplomatura-en-diseno-y--3jlcy8.md
+    title: AO – Diseño – Diplomatura en Diseño y Decoración de Interiores
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-temario-diplomatura-en-administ-zxnzlw.md
+    title: AO – Temario – Diplomatura en Administración de Empresas Express
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-temario-diplomatura-en-asistenc-cmfslw.md
+    title: AO – Temario – Diplomatura en Asistencia Contable, Impositiva y Laboral
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-temario-diplomatura-en-auxiliar-xjhcy8.md
+    title: AO – Temario – Diplomatura en Auxiliar de Bancos y Financieras
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-diplomatura-en-grafologia-2dpys8.md
+    title: ao-diplomatura-en-grafología
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-diplomatura-en-operador-adminis-ltzxmv.md
+    title: ao-diplomatura-en-operador-administrativo-avanzado-de-PyMEs
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-secretarias-sec-extension-ao-diplomatura-en-preceptoria-esco-2xhci8.md
+    title: ao-diplomatura-en-preceptoría-escolar
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-2026-curso-diplomatura-en-habilidades-gerenciales-management-glvbi8.md
+    title: CURSO | DIPLOMATURA EN HABILIDADES GERENCIALES
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-curso-virtual-leer-para-aprender-5kzxiv.md
+    title: Curso virtual – Leer para aprender
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-npb24v.md
+    title: Cursos de Extensión
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-escuela-de-idiomas-9tyxmv.md
+    title: Cursos Escuela de Idiomas
+    status: keep
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-diplomatura-en-literatura-brasilena-xlbmev.md
+    title: Diplomatura en Literatura Brasileña
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-diplomatura-en-literatura-lusofona-m9uys8.md
+    title: Diplomatura en Literatura Lusófona
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-ei-curso-online-de-aleman-nivel-a-1-1-0xltev.md
+    title: EI – CURSO ONLINE DE ALEMÁN NIVEL A 1.1
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-ei-curso-online-de-portugues-nivel-basico-awnvlw.md
+    title: EI – CURSO ONLINE DE PORTUGUÉS – NIVEL BÁSICO
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-ei-curso-virtual-de-italiano-nivel-a1-wtytev.md
+    title: EI – Curso Virtual de Italiano – Nivel A1
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-escuela-de-idiomas-21hcy8.md
+    title: Escuela de Idiomas
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-fotografia-wzpys8.md
+    title: Fotografia
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-oferta-laboral-cmfslw.md
+    title: Oferta Laboral
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-seminario-claves-para-la-rentabilidad-wrhzc8.md
+    title: Seminario Claves para la Rentabilidad
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-seminario-de-literatura-infantil-50awwv.md
+    title: Seminario de Literatura Infantil
+    status: excluir
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-sistema-info-geo-wdlby8.md
+    title: Sistema-info-geo
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
+  - file: corpus/web/www.frrq.utn.edu.ar-cursos-extension-sistema-info-geo2-dlbziv.md
+    title: Sistema-info-geo2
+    status: excluir
