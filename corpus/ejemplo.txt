@@ -1,0 +1,33 @@
+CALENDARIO ACADÉMICO 2027 — EJEMPLO
+(Texto de prueba. Reemplazalo por el calendario real.)
+
+INSCRIPCIÓN A MATERIAS
+
+La inscripción al primer cuatrimestre abre el 10 de febrero de 2027 y cierra
+el 28 de febrero de 2027. Es obligatoria para todos los estudiantes regulares.
+
+La inscripción al segundo cuatrimestre abre el 15 de julio de 2027 y cierra
+el 31 de julio de 2027.
+
+Quienes no se inscriban en plazo deben hacerlo en la inscripción tardía, que
+tiene un recargo administrativo y se realiza únicamente en la secretaría
+académica, de lunes a viernes de 9 a 17 h.
+
+EXÁMENES FINALES
+
+Los turnos de exámenes finales de febrero se rinden entre el 1 y el 20 de
+febrero de 2027. La inscripción a esos turnos cierra el 25 de enero de 2027.
+
+Los turnos de julio se rinden entre el 5 y el 25 de julio de 2027, y la
+inscripción cierra el 30 de junio de 2027.
+
+CONDICIÓN DE ALUMNO REGULAR
+
+Para conservar la regularidad se requiere aprobar al menos dos materias por
+año académico. La condición de regular habilita a rendir exámenes finales en
+los turnos ordinarios.
+
+CONTACTO
+
+Secretaría Académica: académica@universidad.edu — interno 1234.
+Horario de atención: lunes a viernes de 9 a 17 h.
