@@ -4,6 +4,11 @@
 // Uso:
 //   node src/ingest/crawl.js --seed https://www.frrq.utn.edu.ar/ --max 40 --delay 400
 //   node src/ingest/crawl.js --sitemap https://www.frrq.utn.edu.ar/wp-sitemap.xml --max 300
+//   node src/ingest/crawl.js --seed https://sitio/ --exclude "noticias/,/blog/"
+//
+// --exclude acepta una lista separada por comas de expresiones regulares
+// (case-insensitive) que se aplican a la URL completa. Sirve para dejar
+// fuera secciones enteras que no querés en el corpus.
 //
 // Reglas de buena ciudadanía (no las saltes):
 //   - Respeta robots.txt (lo lee y aplica Disallow).
@@ -31,6 +36,13 @@ const SKIP_PATTERNS = [
   /\/(tag|author)\//i, /\/wp-json\//i, /\/xmlrpc\.php/i, /\/comments\//i,
   /\/search\//i, /\/page\/\d+/i, /\.(jpg|jpeg|png|gif|webp|svg|zip|rar|docx?|xlsx?|pptx?)$/i,
 ];
+
+// Exclusiones explícitas por --exclude (regex sobre la URL completa).
+const EXCLUDE = String(args.exclude ?? "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean)
+  .map((s) => new RegExp(s, "i"));
 
 // ---------------------------------------------------------------- utilidades
 
@@ -73,6 +85,7 @@ function shouldSkip(url, host) {
     return true;
   }
   if (u.host !== host) return true;
+  if (EXCLUDE.some((re) => re.test(url))) return true;
   return SKIP_PATTERNS.some((re) => re.test(u.pathname + u.search));
 }
 
@@ -156,6 +169,7 @@ async function main() {
   const host = new URL(seed).host;
   const disallow = await loadRobots(host);
   console.log(`Host: ${host} | robots: ${disallow.length ? disallow.join(", ") : "sin restricciones"}`);
+  if (EXCLUDE.length) console.log(`Excluyendo ${EXCLUDE.length} patrón(es): ${EXCLUDE.join(" , ")}`);
 
   // Semillas: sitemap (mejor) o la propia URL.
   let queue = args.sitemap
