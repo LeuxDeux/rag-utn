@@ -1,0 +1,50 @@
+# Inventario de todo lo que sabe el asistente.
+# Guía §6.1. Cada entrada necesita: id único, type, mode, tenant, title.
+
+embedding_model: embeddinggemma
+chunk_size: 800
+chunk_overlap: 120
+
+sources:
+  # ---------- Tipo A: se indexa ----------
+  - id: ejemplo-calendario
+    type: file
+    path: corpus/ejemplo.txt
+    title: Calendario académico (EJEMPLO)
+    tenant: universidad
+    vigencia: 2027-01-01
+    mode: index
+
+  # Sitio institucional cosechado con `npm run crawl`.
+  # Los .md tienen frontmatter (url, title, fetched_at) para poder citar.
+  - id: frrq-web
+    type: dir
+    path: corpus/web
+    title: Sitio web FRRQ UTN
+    tenant: universidad
+    mode: index
+
+  # - id: reglamento-general
+  #   type: file
+  #   path: corpus/reglamento-general-2026.pdf
+  #   title: Reglamento General 2026
+  #   tenant: universidad
+  #   vigencia: 2026-01-01
+  #   mode: index
+
+  # - id: carreras
+  #   type: url
+  #   url: https://universidad.edu/carreras
+  #   title: Oferta académica
+  #   tenant: universidad
+  #   mode: index
+  #   refresh: daily
+
+  # ---------- Tipo B: se consulta en vivo ----------
+  # - id: aranceles
+  #   type: api
+  #   url: https://universidad.edu/api/aranceles
+  #   title: Aranceles y cuotas
+  #   tenant: universidad
+  #   mode: live
+  #   ttl: 300
