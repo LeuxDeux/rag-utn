@@ -1,0 +1,44 @@
+---
+source: web
+url: https://www.frrq.utn.edu.ar/pagina-de-inicio/consejo-directivo/
+title: "Consejo Directivo"
+site: www.frrq.utn.edu.ar
+fetched_at: 2026-11-14T09:49:34.980Z
+---
+
+# Consejo Directivo
+
+CONSEJO DIRECTIVO
+
+Nómina de Consejeros Directivos 2025-2027
+
+POR PADRÓN GENERAL
+- CASELLA, ALDO PEDRO (titular)
+- MORZAN, ANIBAL (titular)
+- SANCHEZ, MARIA BELEN (suplente)
+- LESCHIUTTA, GERMAN (suplente)
+POR DPTO. DE MATERIAS BÁSICAS
+- ROSATTI, EZEQUIEL (titular)
+- PERALTA, MARCOS (suplente)
+POR DPTO. DE INGENIERÍA ELECTROMECÁNICA
+- ALARCON, MARTIN (titular)
+- PREZ, MARCELO (suplente)
+POR DPTO. DE LICENCIATURA EN ADMINISTRACIÓN RURAL
+- MAGGIO, RENZO (titular)
+- MAGNAGO, GUSTAVO (suplente)
+TITULARES
+- CORGNALI, MATIAS
+- MORALES, FLORENCIA
+SUPLENTES
+- GARCIA, FABIO
+- MUCHIUT, ARIEL
+TITULARES
+- GONNET, JUAN PABLO
+- LEBUS, GUSTAVO
+SUPLENTES
+- MARTINEZ, FERNANDO
+- STUDER, FRANCO
+TITULAR
+- MELGAREJO, IVANA
+SUPLENTE
+- CAPELETTI, JULIETA
