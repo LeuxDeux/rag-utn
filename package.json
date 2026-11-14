@@ -1,0 +1,23 @@
+{
+  "name": "rag-asistente",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Asistente virtual con RAG para consultas universitarias",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "ingest": "node src/ingest/index.js",
+    "crawl": "node src/ingest/crawl.js",
+    "eval": "node eval/run.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.21.2",
+    "unpdf": "^0.12.1",
+    "yaml": "^2.6.1"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}
