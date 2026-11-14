@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-oficios-instalaciones-electricas-en-hogares-y-edificios
+title: AO – Oficios – Instalaciones Eléctricas en Hogares y Edificios
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-oficios-instalaciones-electricas-en-hogares-y-edificios/
-title: "AO – Oficios – Instalaciones Eléctricas en Hogares y Edificios"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:09.331Z
 ---
 

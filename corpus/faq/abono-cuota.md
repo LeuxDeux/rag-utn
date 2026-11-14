@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 3_DF_AbonoCuota
+doc_id: faq-abono-cuota
 title: Abono Cuota
+aliases: []
 imported_at: 2026-11-14
 ---
 

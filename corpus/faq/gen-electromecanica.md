@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: GEN_Electromecánica
+doc_id: faq-gen-electromecanica
 title: GEN Electromecánica
+aliases: []
 imported_at: 2026-11-14
 ---
 

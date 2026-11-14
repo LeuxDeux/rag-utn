@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 1_DF_regularidad
+doc_id: faq-regularidad
 title: Regularidad
+aliases: []
 imported_at: 2026-11-14
 ---
 

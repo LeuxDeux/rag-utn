@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-vinculacion-tecnologica
+title: Vinculación Tecnológica
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/vinculacion-tecnologica/
-title: "Vinculación Tecnológica"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:44.452Z
 ---
 

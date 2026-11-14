@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-extracurricular
+title: Más allá del aula
 url: https://sac.frrq.utn.edu.ar/utn-frrq-extracurricular.html
-title: "Más allá del aula"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:48.310Z
 ---
 

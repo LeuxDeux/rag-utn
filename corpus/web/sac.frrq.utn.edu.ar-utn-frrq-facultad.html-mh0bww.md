@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-facultad
+title: La Facultad
 url: https://sac.frrq.utn.edu.ar/utn-frrq-facultad.html
-title: "La Facultad"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:46.320Z
 ---
 

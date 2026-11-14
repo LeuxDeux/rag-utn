@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-temario-diplomatura-en-auxiliar-de-bancos-y-financieras
+title: AO – Temario – Diplomatura en Auxiliar de Bancos y Financieras
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-temario-diplomatura-en-auxiliar-de-bancos-y-financieras/
-title: "AO – Temario – Diplomatura en Auxiliar de Bancos y Financieras"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:48.230Z
 ---
 

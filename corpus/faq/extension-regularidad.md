@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 6_DF_ExtensionRegularidad
+doc_id: faq-extension-regularidad
 title: Extensión Regularidad
+aliases: []
 imported_at: 2026-11-14
 ---
 

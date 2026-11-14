@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: 2026-curso-fotografia-digital-nivel-1
+title: CURSO | FOTOGRAFÍA DIGITAL
 url: https://www.frrq.utn.edu.ar/2026/curso-fotografia-digital-nivel-1/
-title: "CURSO | FOTOGRAFÍA DIGITAL"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:16.858Z
 ---
 

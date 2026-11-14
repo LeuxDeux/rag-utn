@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-inicio-extension
+title: inicio_extension
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/inicio_extension/
-title: "inicio_extension"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:43.447Z
 ---
 

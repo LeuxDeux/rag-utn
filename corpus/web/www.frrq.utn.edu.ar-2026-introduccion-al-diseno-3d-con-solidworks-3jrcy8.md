@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: 2026-introduccion-al-diseno-3d-con-solidworks
+title: INTRODUCCIÓN AL DISEÑO 3D CON SOLIDWORKS
 url: https://www.frrq.utn.edu.ar/2026/introduccion-al-diseno-3d-con-solidworks/
-title: "INTRODUCCIÓN AL DISEÑO 3D CON SOLIDWORKS"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:28.618Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: 13_DF_CursosOnline
+doc_id: faq-cursos-online
 title: Cursos Online
 url: https://aprenderonline.frrq.utn.edu.ar
+aliases: []
 imported_at: 2026-11-14
 ---
 

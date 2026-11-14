@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-ea-san-javier-tuhst
+title: EA San Javier TUHST
 url: https://www.frrq.utn.edu.ar/carreras/ea-san-javier-tuhst/
-title: "EA San Javier TUHST"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:44.828Z
 ---
 

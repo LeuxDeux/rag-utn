@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-temario-diplomatura-en-asistencia-de-estudio-juridico
+title: AO – Temario – Diplomatura en Asistencia de Estudio Jurídico
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-temario-diplomatura-en-asistencia-de-estudio-juridico/
-title: "AO – Temario – Diplomatura en Asistencia de Estudio Jurídico"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:49.178Z
 ---
 

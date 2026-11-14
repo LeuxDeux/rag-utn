@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-inmobilturist-asistente-hotelero-y-turistico
+title: AO – InmobilTurist – Asistente Hotelero y Turístico
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-inmobilturist-asistente-hotelero-y-turistico/
-title: "AO – InmobilTurist – Asistente Hotelero y Turístico"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:07.474Z
 ---
 

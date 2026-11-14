@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-posgrado-maestria-en-redes-de-datos
+title: Posgrado Maestría en Redes de Datos
 url: https://www.frrq.utn.edu.ar/carreras/posgrado-maestria-en-redes-de-datos/
-title: "Posgrado Maestría en Redes de Datos"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:02.169Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: laboratorios
+title: Laboratorios
 url: https://www.frrq.utn.edu.ar/laboratorios/
-title: "Laboratorios"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:23.544Z
 ---
 

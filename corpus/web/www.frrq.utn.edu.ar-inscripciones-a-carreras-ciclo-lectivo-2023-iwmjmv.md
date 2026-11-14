@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: inscripciones-a-carreras-ciclo-lectivo-2023
+title: Inscripciones a Carreras – Ciclo Lectivo 2023
 url: https://www.frrq.utn.edu.ar/inscripciones-a-carreras-ciclo-lectivo-2023/
-title: "Inscripciones a Carreras – Ciclo Lectivo 2023"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:20.210Z
 ---
 

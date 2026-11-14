@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: Respuesta_RedesSociales
+doc_id: faq-respuesta-redes-sociales
 title: Respuesta Redes Sociales
 url: https://www.facebook.com/utnreconquista
+aliases: []
 imported_at: 2026-11-14
 ---
 

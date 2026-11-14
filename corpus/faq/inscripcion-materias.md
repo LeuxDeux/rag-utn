@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: 10_DF_InscripcionMaterias
+doc_id: faq-inscripcion-materias
 title: Inscripción Materias
 url: http://www3.frrq.utn.edu.ar/sysacadweb/loginalumno.asp
+aliases: []
 imported_at: 2026-11-14
 ---
 

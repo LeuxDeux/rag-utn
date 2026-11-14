@@ -1,8 +1,10 @@
 ---
 source: web
-url: https://www.frrq.utn.edu.ar/carreras/ii/
+doc_id: carreras-ii
 title: "2025"
+url: https://www.frrq.utn.edu.ar/carreras/ii/
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:04.585Z
 ---
 

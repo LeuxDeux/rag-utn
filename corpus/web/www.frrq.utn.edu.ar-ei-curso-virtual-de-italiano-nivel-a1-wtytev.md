@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ei-curso-virtual-de-italiano-nivel-a1
+title: EI – Curso Virtual de Italiano – Nivel A1
 url: https://www.frrq.utn.edu.ar/ei-curso-virtual-de-italiano-nivel-a1/
-title: "EI – Curso Virtual de Italiano – Nivel A1"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:36.529Z
 ---
 

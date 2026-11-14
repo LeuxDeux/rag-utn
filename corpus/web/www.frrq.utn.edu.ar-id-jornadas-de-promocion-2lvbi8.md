@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: id-jornadas-de-promocion
+title: Jornadas de Promoción
 url: https://www.frrq.utn.edu.ar/id/jornadas-de-promocion/
-title: "Jornadas de Promoción"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:32.491Z
 ---
 

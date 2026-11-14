@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: 8_DF_Moodle
+doc_id: faq-moodle
 title: Moodle
 url: https://frrq.cvg.utn.edu.ar
+aliases: []
 imported_at: 2026-11-14
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-temario-diplomatura-en-administracion-de-empresas-express
+title: AO – Temario – Diplomatura en Administración de Empresas Express
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-temario-diplomatura-en-administracion-de-empresas-express/
-title: "AO – Temario – Diplomatura en Administración de Empresas Express"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:51.162Z
 ---
 

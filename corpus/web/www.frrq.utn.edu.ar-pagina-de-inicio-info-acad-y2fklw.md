@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: pagina-de-inicio-info-acad
+title: Información Académica
 url: https://www.frrq.utn.edu.ar/pagina-de-inicio/info-acad/
-title: "Información Académica"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:29.237Z
 ---
 

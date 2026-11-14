@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-academica-office365
+title: Office365
 url: https://www.frrq.utn.edu.ar/secretarias/sec_academica/office365/
-title: "Office365"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:54.950Z
 ---
 

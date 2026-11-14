@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ei-curso-online-de-portugues-nivel-basico
+title: EI – CURSO ONLINE DE PORTUGUÉS – NIVEL BÁSICO
 url: https://www.frrq.utn.edu.ar/ei-curso-online-de-portugues-nivel-basico/
-title: "EI – CURSO ONLINE DE PORTUGUÉS – NIVEL BÁSICO"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:37.472Z
 ---
 

@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 15_DF_IngresoRegional
+doc_id: faq-ingreso-regional
 title: Ingreso Regional
+aliases: []
 imported_at: 2026-11-14
 ---
 

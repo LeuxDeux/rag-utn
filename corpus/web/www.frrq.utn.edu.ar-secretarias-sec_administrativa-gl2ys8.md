@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-administrativa
+title: Secretaría Administrativa
 url: https://www.frrq.utn.edu.ar/secretarias/sec_administrativa/
-title: "Secretaría Administrativa"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:04.642Z
 ---
 

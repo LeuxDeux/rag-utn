@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-diplomatura-en-operador-administrativo-avanzado-de-pymes
+title: ao-diplomatura-en-operador-administrativo-avanzado-de-PyMEs
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-diplomatura-en-operador-administrativo-avanzado-de-pymes/
-title: "ao-diplomatura-en-operador-administrativo-avanzado-de-PyMEs"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:38.400Z
 ---
 

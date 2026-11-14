@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ctensf-objetivo
+title: 1° Congreso de Transición Energética del Norte Santafesino – Objetivos
 url: https://www.frrq.utn.edu.ar/ctensf/objetivo/
-title: "1° Congreso de Transición Energética del Norte Santafesino – Objetivos"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:31.554Z
 ---
 

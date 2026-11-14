@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-rrhh-liderazgo-y-coaching-mod-ontologico
+title: AO – RRHH – Liderazgo y Coaching Mod Ontológico
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-rrhh-liderazgo-y-coaching-mod-ontologico/
-title: "AO – RRHH – Liderazgo y Coaching Mod Ontológico"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:11.418Z
 ---
 

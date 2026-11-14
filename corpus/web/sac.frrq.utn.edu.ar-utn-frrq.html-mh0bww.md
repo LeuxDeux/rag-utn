@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq
+title: Educación que impulsa el desarrollo
 url: https://sac.frrq.utn.edu.ar/utn-frrq.html
-title: "Educación que impulsa el desarrollo"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:44.919Z
 ---
 

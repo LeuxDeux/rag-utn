@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-tup
+title: Tecnicatura Universitaria en Programación
 url: https://www.frrq.utn.edu.ar/carreras/tup/
-title: "Tecnicatura Universitaria en Programación"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:53.730Z
 ---
 

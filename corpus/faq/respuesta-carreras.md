@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: Respuesta_carreras
+doc_id: faq-respuesta-carreras
 title: Respuesta Carreras
+aliases: []
 imported_at: 2026-11-14
 ---
 

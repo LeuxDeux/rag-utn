@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-diplomatura-en-literatura-lusofona
+title: Diplomatura en Literatura Lusófona
 url: https://www.frrq.utn.edu.ar/cursos-extension/diplomatura-en-literatura-lusofona/
-title: "Diplomatura en Literatura Lusófona"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:09.921Z
 ---
 

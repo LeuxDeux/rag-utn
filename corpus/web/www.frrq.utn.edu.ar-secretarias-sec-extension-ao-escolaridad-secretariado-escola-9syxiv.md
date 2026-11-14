@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-escolaridad-secretariado-escolar
+title: AO – Escolaridad – Diplomatura Secretariado Escolar
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-escolaridad-secretariado-escolar/
-title: "AO – Escolaridad – Diplomatura Secretariado Escolar"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:04.606Z
 ---
 

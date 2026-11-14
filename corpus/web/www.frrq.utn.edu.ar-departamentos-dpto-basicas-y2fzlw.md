@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: departamentos-dpto-basicas
+title: Departamento Básicas
 url: https://www.frrq.utn.edu.ar/departamentos/dpto-basicas/
-title: "Departamento Básicas"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:09.599Z
 ---
 

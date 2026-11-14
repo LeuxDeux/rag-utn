@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension
+title: Cursos de Extensión
 url: https://www.frrq.utn.edu.ar/cursos-extension/
-title: "Cursos de Extensión"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:21.816Z
 ---
 

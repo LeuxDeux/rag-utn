@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: beca-ayuda-social-economica-2026
+title: Beca Ayuda Social Económica 2026
 url: https://www.frrq.utn.edu.ar/beca-ayuda-social-economica-2026/
-title: "Beca Ayuda Social Económica 2026"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:22.130Z
 ---
 

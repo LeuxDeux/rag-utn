@@ -1,8 +1,10 @@
 ---
 source: web
-url: https://www.frrq.utn.edu.ar/carreras/tum/
+doc_id: carreras-tum
 title: "2025"
+url: https://www.frrq.utn.edu.ar/carreras/tum/
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:47:59.423Z
 ---
 

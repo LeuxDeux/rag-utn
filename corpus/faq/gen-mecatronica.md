@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: GEN_Mecatronica
+doc_id: faq-gen-mecatronica
 title: GEN Mecatrónica
+aliases: []
 imported_at: 2026-11-14
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: category-cursos
+title: Cursos
 url: https://www.frrq.utn.edu.ar/category/cursos/
-title: "Cursos"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:26.247Z
 ---
 

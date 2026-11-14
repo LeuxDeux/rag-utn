@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ctensf-participa
+title: 1° Congreso de Transición Energética del Norte Santafesino – Como participar
 url: https://www.frrq.utn.edu.ar/ctensf/participa/
-title: "1° Congreso de Transición Energética del Norte Santafesino – Como participar"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:33.910Z
 ---
 

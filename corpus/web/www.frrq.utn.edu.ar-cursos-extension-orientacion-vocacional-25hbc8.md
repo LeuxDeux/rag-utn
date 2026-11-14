@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-orientacion-vocacional
+title: Orientacion-Vocacional
 url: https://www.frrq.utn.edu.ar/cursos-extension/orientacion-vocacional/
-title: "Orientacion-Vocacional"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:01.327Z
 ---
 

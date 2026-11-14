@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: calendario-de-reuniones-ordinarias-de-consejo-directivo
+title: Calendario de Reuniones Ordinarias de Consejo Directivo
 url: https://www.frrq.utn.edu.ar/calendario-de-reuniones-ordinarias-de-consejo-directivo/
-title: "Calendario de Reuniones Ordinarias de Consejo Directivo"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:39.934Z
 ---
 

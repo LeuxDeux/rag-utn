@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ctensf-disertantes
+title: 1° Congreso de Transición Energética del Norte Santafesino – Disertantes
 url: https://www.frrq.utn.edu.ar/ctensf/disertantes/
-title: "1° Congreso de Transición Energética del Norte Santafesino – Disertantes"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:50.892Z
 ---
 

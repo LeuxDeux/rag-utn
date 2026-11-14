@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 19_DF_CriteriosEvaluacion
+doc_id: faq-criterios-evaluacion
 title: Criterios Evaluación
+aliases: []
 imported_at: 2026-11-14
 ---
 

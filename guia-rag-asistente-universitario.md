@@ -2,7 +2,8 @@
 
 **Para:** alguien que ya sabe hacer aplicaciones web (Node + MySQL + React) pero nunca hizo nada de IA.
 **Objetivo del producto:** un asistente que responda dudas reales de una universidad, por web y por WhatsApp, usando **material que nosotros le damos** — no la memoria del modelo.
-**Ubicación:** este documento está en la raíz del proyecto `rag/`, junto al código que describe. Ver [§17](#17-bitácora-de-implementación) para el estado real de la implementación.
+**Ubicación:** este documento está en la raíz del proyecto `rag/`, junto al código que describe. Ver [§17](#17-bitácora-de-implementación) para el estado real de la implementación y [§18](#18-operación-del-corpus) para el día a día.
+**Para agentes:** [`AGENTS.md`](./AGENTS.md) tiene el mapa técnico, los contratos de datos y las trampas conocidas.
 
 > Esta guía está escrita para una persona, pero también está estructurada para que un agente (LLM con acceso al repo) pueda ejecutarla paso a paso. Las secciones marcadas con 🤖 son contratos que el agente debe respetar.
 
@@ -27,6 +28,7 @@
 15. [Glosario](#15-glosario)
 16. [Recursos (y no más que estos)](#16-recursos-y-no-más-que-estos)
 17. [Bitácora de implementación](#17-bitácora-de-implementación)
+18. [Operación del corpus](#18-operación-del-corpus)
 
 ---
 
@@ -998,6 +1000,122 @@ NO-DOC-MODIFICACION-HORARIO.pdf · JTENSF-Plano.pdf · CTE2025_PlantillaTrabajo.
 3. **`src/ingest/loaders/file.js`**: PDF con `unpdf`, empezando por los 28 de alto valor.
 4. **`eval/run.js`** con las 5 preguntas ya cargadas, antes de tocar prompts o modelos.
 5. Recién después: caché, canales, VPS.
+
+---
+
+## 18. Operación del corpus
+
+Esta sección es la parte que se usa **todos los días**, una vez que la fábrica de conocimiento existe. La §17 cuenta cómo se construyó; esta cuenta cómo se mantiene.
+
+### 18.1 De dónde sale el conocimiento
+
+Hay tres fuentes, y conviene tratarlas distinto:
+
+| Fuente | Qué aporta | Herramienta |
+|---|---|---|
+| **Sitio institucional** | Procedimientos, carreras, secretarías, calendario, reglamentos | `npm run crawl` |
+| **Bot de Dialogflow** | 189 formulaciones reales de alumnos + respuestas curadas | `npm run import:df` |
+| **Documentos sueltos** | PDFs de reglamentos y planes, material de cátedra | manual, en `corpus/` |
+
+Las dos primeras son automáticas y reproducibles. La tercera es la que va a crecer con el material bibliográfico de la etapa 2.
+
+**La regla que ordena todo:** el texto es el activo, la URL es lo frágil. Un `.md` en git sigue siendo legible aunque el sitio que lo originó desaparezca. Lo que se rompe cuando el sitio cambia no es la información: son las **citas** y la **identidad** de los documentos.
+
+### 18.2 Curar: tres estados, una decisión por documento
+
+Corrés `npm run curation` y obtenés `docs/REPORTE-CURACION.md`: todos los documentos, agrupados por problema, con tres casillas.
+
+| Estado | Cuándo usarlo |
+|---|---|
+| **Queda** | Información vigente y correcta |
+| **Queda — vigente** | Es el canal oficial hoy, pero el sitio conserva un año viejo en la URL o en el texto |
+| **Excluir** | Evento pasado, listado de navegación, duplicado, contenido vacío |
+
+El estado intermedio es el que salva el proyecto de las respuestas vergonzosas. Ejemplo real: la página *Calendario de Mesas de Exámenes* es el link que secretaría manda hoy, pero su contenido dice «Ciclo Lectivo 2022/2023» y las fechas viven en PDFs de 2022. Marcada como **vigente**, el asistente puede decir «el calendario está en *esta URL*» sin afirmar «las mesas son en mayo de 2022».
+
+Después de marcar:
+
+```bash
+npm run decisions              # muestra qué haría
+npm run decisions -- --apply   # escribe decisions.yaml y mueve los excluidos
+```
+
+Nada se borra: los excluidos van a `corpus-excluded/`, aparecen en un bloque colapsado del reporte y se restauran marcando **Queda**.
+
+**Lo importante del diseño:** una exclusión es una **decisión registrada** con motivo y fecha, no un archivo faltante. Se revierte borrando una línea, y un clon limpio reproduce el mismo índice.
+
+### 18.3 Identidad: por qué cada documento tiene un `doc_id`
+
+Acá está el problema que hay que resolver **antes** de que el sitio cambie de dominio, no después.
+
+Hoy cada documento se llama así:
+
+```
+www.frrq.utn.edu.ar-secretarias-sec_academica-1py2ev.md
+└─ host ────────┘ └─ path ──────┘ └ hash ┘
+```
+
+El nombre contiene el host y la URL. Eso significa que **el día que `sac` tome el dominio, los 180 documentos pasan a ser "otros"**: nombres distintos, URLs distintas, y las 124 decisiones de curación quedan apuntando a archivos que ya no existen.
+
+La solución es separar tres cosas que estaban mezcladas:
+
+```yaml
+doc_id: secretarias-sec-academica      # identidad: NUNCA cambia
+url: https://www.frrq.utn.edu.ar/...   # dónde vive hoy
+aliases:                               # dónde vivió antes
+  - url: https://www.frrq.utn.edu.ar/secretarias/sec_academica/
+    valid_until: 2026-12-01
+```
+
+`doc_id` sale del **path**, no del host: `/secretarias/sec_academica/` → `secretarias-sec-academica`. Y las decisiones se guardan por `doc_id`, así que «esta página es el canal oficial vigente» **viaja con el documento**.
+
+### 18.4 El día de la migración
+
+No es «re-crawlear y listo». Es un diff:
+
+```bash
+# 1. Cosechar el sitio nuevo en OTRA carpeta (nunca sobre corpus/web)
+npm run crawl -- --seed https://www.frrq.utn.edu.ar/ --max 300 --out corpus/web-new
+
+# 2. Comparar
+npm run migrate:site -- --old corpus/web --new corpus/web-new
+```
+
+`docs/MIGRACION.md` clasifica cada documento:
+
+| Situación | Qué significa | Qué hacer |
+|---|---|---|
+| **Igual** | Mismo `doc_id`, mismo contenido | Nada |
+| **URL nueva** | Mismo contenido, otra dirección | Actualizar cita; generar 301 |
+| **Contenido cambió** | Misma página, texto distinto | Revisar a mano |
+| **Desaparecido** | Existía y ya no está | Decidir: archivar o excluir |
+| **Nuevo** | No existía antes | Entra al reporte de curación |
+
+Después: `--apply` para que los nuevos hereden `doc_id` y `aliases`, y `docs/redirects.csv` para que el equipo web configure los 301. Ese archivo es un regalo: sin él, el SEO de la facultad se cae con la mudanza.
+
+### 18.5 El riesgo que hay que decir en voz alta
+
+Cuando hice la comparación, el sitio nuevo tenía **12 páginas indexadas** y el actual **168**. Si `sac` reemplaza a `www` sin migrar contenido, el asistente pasa de 180 documentos a ~12: **se pierde el 93% de la base de conocimiento**, incluidos secretarías, departamentos, biblioteca, becas, planes de estudio y cursos.
+
+Eso no lo arregla ninguna herramienta. Es una conversación con el equipo web **antes** de la mudanza: ¿cuáles de esas páginas van a existir en el sitio nuevo? Las que no, se archivan o se excluyen, pero se decide.
+
+### 18.6 Herramientas de mantenimiento
+
+| Comando | Para qué |
+|---|---|
+| `npm run crawl` | Traer el sitio |
+| `npm run import:df` | Traer el bot anterior |
+| `npm run curation` | Regenerar el reporte (conserva marcas) |
+| `npm run decisions` | Revisar y aplicar decisiones |
+| `npm run doc-ids` | Asignar identidad estable |
+| `npm run migrate:site` | Diff de migración + redirects |
+
+### 18.7 Cuando algo no funciona
+
+- **El reporte perdió marcas** → corré `npm run curation`: las relee de `decisions.yaml`. Si igual faltan, revisá el formato de los links (el parser aborta si detecta menos del 80% de lo esperado).
+- **Un documento quedó en la carpeta equivocada** → el reporte es la fuente de verdad: cambiá la casilla y volvé a aplicar.
+- **Una respuesta cita un documento que ya no debería estar** → mirá `decisions.yaml` y regenerá el índice cuando exista la ingesta.
+- **El asistente afirma un año viejo** → falta marcar ese documento como **vigente**.
 
 ---
 

@@ -45,15 +45,16 @@ const norm = (s) =>
 function readDoc(dir, f) {
   const raw = fs.readFileSync(path.join(dir, f), "utf8");
   const parts = raw.split("---");
-  const fm = parts[1] ?? "";
+  const fmText = parts[1] ?? "";
+  const fm = parseYaml(fmText) ?? {};
   const body = parts.slice(2).join("---").trim();
-  const field = (k) => ((fm.match(new RegExp(`^${k}:\\s*(.+)$`, "m")) ?? [])[1] ?? "").trim();
+  const asText = (v) => (v === undefined || v === null ? "" : String(v).trim());
   return {
     file: f,
     dir,
-    source: field("source") || "web",
-    title: (field("title") || "(sin título)").replace(/^"|"$/g, ""),
-    url: field("url"),
+    source: asText(fm.source) || "web",
+    title: asText(fm.title) || "(sin título)",
+    url: asText(fm.url),
     body,
     chars: body.length,
     listItems: (body.match(/^\s*[-*]\s+\S/gm) ?? []).length,

@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: Respuesta_Legajo
+doc_id: faq-respuesta-legajo
 title: Respuesta Legajo
+aliases: []
 imported_at: 2026-11-14
 ---
 

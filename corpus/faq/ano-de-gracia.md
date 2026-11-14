@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 25_DF_AñoDeGracia
+doc_id: faq-ano-de-gracia
 title: Año De Gracia
+aliases: []
 imported_at: 2026-11-14
 ---
 

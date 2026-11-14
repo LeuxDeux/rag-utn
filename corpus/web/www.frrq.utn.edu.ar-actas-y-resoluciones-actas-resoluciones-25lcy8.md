@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: actas-y-resoluciones-actas-resoluciones
+title: Actas / Resoluciones
 url: https://www.frrq.utn.edu.ar/actas-y-resoluciones/actas-resoluciones/
-title: "Actas / Resoluciones"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:41.940Z
 ---
 

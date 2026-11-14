@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-inmobilturist-asistente-de-inmobiliaria
+title: AO – InmobilTurist – Asistente de Inmobiliaria
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-inmobilturist-asistente-de-inmobiliaria/
-title: "AO – InmobilTurist – Asistente de Inmobiliaria"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:06.541Z
 ---
 

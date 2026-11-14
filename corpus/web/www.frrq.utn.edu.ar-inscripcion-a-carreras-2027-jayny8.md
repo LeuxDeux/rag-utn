@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: inscripcion-a-carreras-2027
+title: Inscripción a Carreras 2027
 url: https://www.frrq.utn.edu.ar/inscripcion-a-carreras-2027/
-title: "Inscripción a Carreras 2027"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:03.462Z
 ---
 

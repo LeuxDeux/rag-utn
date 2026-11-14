@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-solicitar-servicio
+title: Solicitar un servicio
 url: https://sac.frrq.utn.edu.ar/utn-frrq-solicitar-servicio.html
-title: "Solicitar un servicio"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:48.991Z
 ---
 

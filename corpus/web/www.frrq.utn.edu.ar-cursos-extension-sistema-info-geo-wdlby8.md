@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-sistema-info-geo
+title: Sistema-info-geo
 url: https://www.frrq.utn.edu.ar/cursos-extension/sistema-info-geo/
-title: "Sistema-info-geo"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:27.701Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: planificar-santafe
+title: PLANIFICAR SANTA FE
 url: https://www.frrq.utn.edu.ar/planificar-santafe/
-title: "PLANIFICAR SANTA FE"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:49.420Z
 ---
 

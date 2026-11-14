@@ -1,8 +1,10 @@
 ---
 source: web
-url: https://www.frrq.utn.edu.ar/carreras/tup-avda/
+doc_id: carreras-tup-avda
 title: "2024"
+url: https://www.frrq.utn.edu.ar/carreras/tup-avda/
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:22.266Z
 ---
 

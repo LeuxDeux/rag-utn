@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-escuela-de-idiomas
+title: Cursos Escuela de Idiomas
 url: https://www.frrq.utn.edu.ar/cursos-escuela-de-idiomas/
-title: "Cursos Escuela de Idiomas"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:02.222Z
 ---
 

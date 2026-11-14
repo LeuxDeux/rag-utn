@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-diseno-auxiliar-de-bibliotecas-express
+title: AO – Escolaridad – Auxiliar de Bibliotecas Express
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-diseno-auxiliar-de-bibliotecas-express/
-title: "AO – Escolaridad – Auxiliar de Bibliotecas Express"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:02.788Z
 ---
 

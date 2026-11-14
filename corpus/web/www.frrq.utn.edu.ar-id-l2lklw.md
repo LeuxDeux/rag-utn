@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: id
+title: Investigación y Desarrollo
 url: https://www.frrq.utn.edu.ar/id/
-title: "Investigación y Desarrollo"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:27.127Z
 ---
 

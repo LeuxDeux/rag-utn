@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-de-idiomas
+title: Cursos de idiomas
 url: https://www.frrq.utn.edu.ar/cursos-de-idiomas/
-title: "Cursos de idiomas"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:28.272Z
 ---
 

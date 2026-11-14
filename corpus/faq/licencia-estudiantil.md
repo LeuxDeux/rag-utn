@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 18_DF_LicenciaEstudiantil
+doc_id: faq-licencia-estudiantil
 title: Licencia Estudiantil
+aliases: []
 imported_at: 2026-11-14
 ---
 

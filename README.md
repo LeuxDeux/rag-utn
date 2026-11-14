@@ -191,7 +191,7 @@ Reglas que no se rompen sin medir el impacto:
 
 ## Documentación
 
-[`guia-rag-asistente-universitario.md`](./guia-rag-asistente-universitario.md) — 17 secciones con el detalle completo:
+[`guia-rag-asistente-universitario.md`](./guia-rag-asistente-universitario.md) — 18 secciones con el detalle completo:
 
 - Conceptos, arquitectura y estructura de archivos.
 - Las cinco fases de implementación, con criterios de aceptación.
@@ -199,6 +199,9 @@ Reglas que no se rompen sin medir el impacto:
 - Elección de modelos según hardware, deploy en VPS y costos.
 - Errores comunes, checklist de aceptación e invariantes para agentes.
 - §17: **bitácora** con las decisiones, los bugs y el estado real del desarrollo.
+- §18: **operación del corpus**: curación, identidad de documentos y migración de sitio.
+
+[`AGENTS.md`](./AGENTS.md) — mapa técnico para agentes: invariantes, contratos de datos, comandos, flujos y trampas conocidas.
 
 ---
 

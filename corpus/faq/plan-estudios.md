@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 20_DF_PlanEstudios
+doc_id: faq-plan-estudios
 title: Plan Estudios
+aliases: []
 imported_at: 2026-11-14
 ---
 

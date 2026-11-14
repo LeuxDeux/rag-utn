@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-seguridad-dip-accidentologia-vial
+title: AO – Seguridad – Dip Accidentología Vial
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-seguridad-dip-accidentologia-vial/
-title: "AO – Seguridad – Dip Accidentología Vial"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:15.207Z
 ---
 

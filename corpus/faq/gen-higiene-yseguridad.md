@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: GEN_HigieneYSeguridad
+doc_id: faq-gen-higiene-yseguridad
 title: GEN Higiene YSeguridad
+aliases: []
 imported_at: 2026-11-14
 ---
 

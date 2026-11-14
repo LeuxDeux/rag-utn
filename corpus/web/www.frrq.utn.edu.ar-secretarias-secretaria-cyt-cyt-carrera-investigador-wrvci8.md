@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-secretaria-cyt-cyt-carrera-investigador
+title: Ciencia y Tecnología – Carrera del Investigador
 url: https://www.frrq.utn.edu.ar/secretarias/secretaria-cyt/cyt-carrera-investigador/
-title: "Ciencia y Tecnología – Carrera del Investigador"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:56.576Z
 ---
 

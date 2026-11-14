@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-secretaria-cyt-cyt-proyectos-idi
+title: Ciencia y Tecnología – Proyectos I+D+i
 url: https://www.frrq.utn.edu.ar/secretarias/secretaria-cyt/cyt-proyectos-idi/
-title: "Ciencia y Tecnología – Proyectos I+D+i"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:55.547Z
 ---
 

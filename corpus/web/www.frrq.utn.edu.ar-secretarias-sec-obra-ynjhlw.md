@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-obra
+title: Secretaría Obra, Mantenimiento y Servicios Generales
 url: https://www.frrq.utn.edu.ar/secretarias/sec-obra/
-title: "Secretaría Obra, Mantenimiento y Servicios Generales"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:07.716Z
 ---
 

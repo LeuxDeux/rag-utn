@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-ea-san-javier-tumi
+title: EA San Javier TUMI
 url: https://www.frrq.utn.edu.ar/carreras/ea-san-javier-tumi/
-title: "EA San Javier TUMI"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:48.124Z
 ---
 

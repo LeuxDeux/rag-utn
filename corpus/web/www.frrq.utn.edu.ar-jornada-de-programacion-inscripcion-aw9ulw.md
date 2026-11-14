@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: jornada-de-programacion-inscripcion
+title: jornada-de-programación – inscripción
 url: https://www.frrq.utn.edu.ar/jornada-de-programacion/inscripcion/
-title: "jornada-de-programación – inscripción"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:41.563Z
 ---
 

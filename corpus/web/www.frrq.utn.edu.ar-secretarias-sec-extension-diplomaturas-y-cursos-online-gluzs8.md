@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-diplomaturas-y-cursos-online
+title: DIPLOMATURAS Y CURSOS ONLINE
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/diplomaturas-y-cursos-online/
-title: "DIPLOMATURAS Y CURSOS ONLINE"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:18.890Z
 ---
 

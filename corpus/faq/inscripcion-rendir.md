@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: 9_DF_InscripcionRendir
+doc_id: faq-inscripcion-rendir
 title: Inscripción Rendir
 url: http://www3.frrq.utn.edu.ar/sysacadweb/loginalumno.asp
+aliases: []
 imported_at: 2026-11-14
 ---
 

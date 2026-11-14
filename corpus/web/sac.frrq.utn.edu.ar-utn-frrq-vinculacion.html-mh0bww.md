@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-vinculacion
+title: Vinculación tecnológica
 url: https://sac.frrq.utn.edu.ar/utn-frrq-vinculacion.html
-title: "Vinculación tecnológica"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:48.642Z
 ---
 

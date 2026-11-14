@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: biblioteca-repositorio
+title: Biblioteca repositorio
 url: https://www.frrq.utn.edu.ar/biblioteca-repositorio/
-title: "Biblioteca repositorio"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:48.325Z
 ---
 

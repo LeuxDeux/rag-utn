@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: nodocentes-formularios-de-licencias-y-franquicias
+title: Formularios de Licencias y Franquicias
 url: https://www.frrq.utn.edu.ar/nodocentes/formularios-de-licencias-y-franquicias/
-title: "Formularios de Licencias y Franquicias"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:18.263Z
 ---
 

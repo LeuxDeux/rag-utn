@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: internos-correos
+title: Internos-correos
 url: https://www.frrq.utn.edu.ar/internos-correos/
-title: "Internos-correos"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:45.365Z
 ---
 

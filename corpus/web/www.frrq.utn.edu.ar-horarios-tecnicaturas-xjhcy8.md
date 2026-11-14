@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: horarios-tecnicaturas
+title: Horarios Tecnicaturas
 url: https://www.frrq.utn.edu.ar/horarios-tecnicaturas/
-title: "Horarios Tecnicaturas"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:36.459Z
 ---
 

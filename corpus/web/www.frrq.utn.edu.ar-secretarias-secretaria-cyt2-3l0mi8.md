@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-secretaria-cyt2
+title: Secretaría Ciencia y Tecnología (demo)
 url: https://www.frrq.utn.edu.ar/secretarias/secretaria-cyt2/
-title: "Secretaría Ciencia y Tecnología (demo)"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:05.662Z
 ---
 

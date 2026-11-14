@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: Carreras_Grado
+doc_id: faq-carreras-grado
 title: Carreras Grado
 url: https://www.frrq.utn.edu.ar/carreras/ie/
+aliases: []
 imported_at: 2026-11-14
 ---
 

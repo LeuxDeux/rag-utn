@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-pdgea
+title: Posgrado Dirección y Gestión de Empresas Agroindustriales
 url: https://www.frrq.utn.edu.ar/carreras/pdgea/
-title: "Posgrado Dirección y Gestión de Empresas Agroindustriales"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:31.558Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-academica-office365-solicitud-de-licencia-office-365-para-estudiantes
+title: Solicitud de licencia Office 365 para estudiantes
 url: https://www.frrq.utn.edu.ar/secretarias/sec_academica/office365/solicitud-de-licencia-office-365-para-estudiantes/
-title: "Solicitud de licencia Office 365 para estudiantes"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:04.249Z
 ---
 

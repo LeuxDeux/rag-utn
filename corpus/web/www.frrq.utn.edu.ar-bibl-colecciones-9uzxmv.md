@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: bibl-colecciones
+title: Biblioteca Colecciones
 url: https://www.frrq.utn.edu.ar/bibl-colecciones/
-title: "Biblioteca Colecciones"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:24.195Z
 ---
 

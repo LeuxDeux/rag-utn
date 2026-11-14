@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-fotografia
+title: Fotografia
 url: https://www.frrq.utn.edu.ar/cursos-extension/fotografia/
-title: "Fotografia"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:02.206Z
 ---
 

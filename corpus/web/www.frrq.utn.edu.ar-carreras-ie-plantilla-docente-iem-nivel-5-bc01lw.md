@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-ie-plantilla-docente-iem-nivel-5
+title: PLANTILLA DOCENTE IEM – NIVEL 5
 url: https://www.frrq.utn.edu.ar/carreras/ie/plantilla-docente-iem-nivel-5/
-title: "PLANTILLA DOCENTE IEM – NIVEL 5"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:08.785Z
 ---
 

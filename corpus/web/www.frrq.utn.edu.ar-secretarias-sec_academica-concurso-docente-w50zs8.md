@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-academica-concurso-docente
+title: Concurso Docente
 url: https://www.frrq.utn.edu.ar/secretarias/sec_academica/concurso-docente/
-title: "Concurso Docente"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:34.079Z
 ---
 

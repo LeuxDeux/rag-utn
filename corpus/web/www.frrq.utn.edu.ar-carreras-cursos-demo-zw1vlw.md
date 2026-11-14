@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-cursos-demo
+title: Cursos demo
 url: https://www.frrq.utn.edu.ar/carreras/cursos-demo/
-title: "Cursos demo"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:59.667Z
 ---
 

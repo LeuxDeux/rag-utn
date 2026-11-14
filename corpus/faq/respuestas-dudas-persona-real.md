@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: Respuestas_Dudas_PersonaReal
+doc_id: faq-respuestas-dudas-persona-real
 title: Respuestas Dudas Persona Real
+aliases: []
 imported_at: 2026-11-14
 ---
 

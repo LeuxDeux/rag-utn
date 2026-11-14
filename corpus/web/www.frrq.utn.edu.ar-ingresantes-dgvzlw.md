@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ingresantes
+title: Ingresantes
 url: https://www.frrq.utn.edu.ar/ingresantes/
-title: "Ingresantes"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:47:54.352Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-oratoria
+title: Oratoria
 url: https://www.frrq.utn.edu.ar/cursos-extension/oratoria/
-title: "Oratoria"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:00.410Z
 ---
 

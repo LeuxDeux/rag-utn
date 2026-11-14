@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-secretaria-cyt-cyt-adscripciones
+title: Ciencia y Tecnología – Adscripciones a proyectos I+D+i
 url: https://www.frrq.utn.edu.ar/secretarias/secretaria-cyt/cyt-adscripciones/
-title: "Ciencia y Tecnología – Adscripciones a proyectos I+D+i"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:54.611Z
 ---
 

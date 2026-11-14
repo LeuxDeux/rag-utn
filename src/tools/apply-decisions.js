@@ -33,6 +33,16 @@ const locate = (name) => {
   return null;
 };
 
+// doc_id es la identidad estable del documento (sobrevive a cambios de URL).
+const docIdOf = (filePath) => {
+  try {
+    const fm = fs.readFileSync(filePath, "utf8").split("---")[1] ?? "";
+    return (fm.match(/^doc_id:\s*(.+)$/m) ?? [])[1]?.trim().replace(/^"|"$/g, "");
+  } catch {
+    return undefined;
+  }
+};
+
 // ---------------------------------------------------------------- parseo
 const text = fs.readFileSync(REPORT, "utf8");
 const entries = [];
@@ -76,11 +86,13 @@ if (fs.existsSync(DECISIONS)) {
     const f = block.match(/file:\s*"?([^"\n]+)"?/);
     const s = block.match(/status:\s*"?([^"\n]+)"?/);
     const d = block.match(/corpus_dir:\s*"?([^"\n]+)"?/);
+    const id = block.match(/doc_id:\s*"?([^"\n]+)"?/);
     if (f && s) {
       previous.set(f[1].trim(), {
         file: f[1].trim(),
         status: s[1].trim(),
         corpus_dir: d ? d[1].trim() : undefined,
+        doc_id: id ? id[1].trim() : undefined,
       });
     }
   }
@@ -154,15 +166,20 @@ const dirFor = (d) => {
   return found?.corpus_dir ? `corpus/${found.corpus_dir}` : "corpus/web";
 };
 
-const newDecisions = decided.map((d) => ({
-  file: `${dirFor(d)}/${d.file}`,
-  title: d.title,
-  status: d.status,
-  corpus_dir: dirFor(d).split("/")[1],
-  ...(d.status === "vigente"
-    ? { note: "el sitio conserva un año viejo pero es el canal oficial vigente: no afirmar fechas" }
-    : {}),
-}));
+const newDecisions = decided.map((d) => {
+  const filePath = locate(d.file) ?? path.join(EXCLUDED_DIR, d.file);
+  const docId = docIdOf(filePath) ?? previous.get(`${dirFor(d)}/${d.file}`)?.doc_id;
+  return {
+    file: `${dirFor(d)}/${d.file}`,
+    ...(docId ? { doc_id: docId } : {}),
+    title: d.title,
+    status: d.status,
+    corpus_dir: dirFor(d).split("/")[1],
+    ...(d.status === "vigente"
+      ? { note: "el sitio conserva un año viejo pero es el canal oficial vigente: no afirmar fechas" }
+      : {}),
+  };
+});
 
 const merged = new Map([...previous.values()].map((p) => [p.file, p]));
 for (const d of newDecisions) merged.set(d.file, d);

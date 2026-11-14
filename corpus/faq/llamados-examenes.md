@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 5_DF_LlamadosExamenes
+doc_id: faq-llamados-examenes
 title: Llamados Exámenes
+aliases: []
 imported_at: 2026-11-14
 ---
 

@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: Respuesta_MaterialEstudio
+doc_id: faq-respuesta-material-estudio
 title: Respuesta Material Estudio
+aliases: []
 imported_at: 2026-11-14
 ---
 

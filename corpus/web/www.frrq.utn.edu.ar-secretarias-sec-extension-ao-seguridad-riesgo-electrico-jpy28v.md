@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-seguridad-riesgo-electrico
+title: AO – Seguridad – Riesgo Eléctrico
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-seguridad-riesgo-electrico/
-title: "AO – Seguridad – Riesgo Eléctrico"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:17.063Z
 ---
 

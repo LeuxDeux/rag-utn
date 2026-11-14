@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-contacto
+title: Contacto
 url: https://sac.frrq.utn.edu.ar/utn-frrq-contacto.html
-title: "Contacto"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:45.974Z
 ---
 

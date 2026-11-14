@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: retiro-de-licencias-microsoft-a1-plus-para-estudiantes
+title: Retiro de licencias Microsoft A1 Plus para estudiantes
 url: https://www.frrq.utn.edu.ar/retiro-de-licencias-microsoft-a1-plus-para-estudiantes/
-title: "Retiro de licencias Microsoft A1 Plus para estudiantes"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:46.071Z
 ---
 

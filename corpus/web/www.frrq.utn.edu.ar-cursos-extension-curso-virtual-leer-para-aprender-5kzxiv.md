@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-curso-virtual-leer-para-aprender
+title: Curso virtual – Leer para aprender
 url: https://www.frrq.utn.edu.ar/cursos-extension/curso-virtual-leer-para-aprender/
-title: "Curso virtual – Leer para aprender"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:11.790Z
 ---
 

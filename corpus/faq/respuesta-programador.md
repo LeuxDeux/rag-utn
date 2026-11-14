@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: Respuesta_Programador
+doc_id: faq-respuesta-programador
 title: Respuesta Programador
+aliases: []
 imported_at: 2026-11-14
 ---
 

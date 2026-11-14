@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension
+title: Secretaría Extensión Universitaria
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/
-title: "Secretaría Extensión Universitaria"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:06.653Z
 ---
 

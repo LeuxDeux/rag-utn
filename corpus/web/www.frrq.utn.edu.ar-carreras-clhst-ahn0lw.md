@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-clhst
+title: Ciclo de Licenciatura en Higiene y Seguridad en el Trabajo
 url: https://www.frrq.utn.edu.ar/carreras/clhst/
-title: "Ciclo de Licenciatura en Higiene y Seguridad en el Trabajo"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:47:51.649Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-ms-project-2016
+title: MS PROJECT 2016
 url: https://www.frrq.utn.edu.ar/cursos-extension/ms-project-2016/
-title: "MS PROJECT 2016"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:29.998Z
 ---
 

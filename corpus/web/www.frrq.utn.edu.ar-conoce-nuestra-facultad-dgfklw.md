@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: conoce-nuestra-facultad
+title: Conocé nuestra Facultad
 url: https://www.frrq.utn.edu.ar/conoce-nuestra-facultad/
-title: "Conocé nuestra Facultad"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:13.807Z
 ---
 

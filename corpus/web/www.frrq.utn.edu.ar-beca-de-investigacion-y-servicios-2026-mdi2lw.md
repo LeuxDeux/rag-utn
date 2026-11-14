@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: beca-de-investigacion-y-servicios-2026
+title: Beca de Investigación y Servicios 2026
 url: https://www.frrq.utn.edu.ar/beca-de-investigacion-y-servicios-2026/
-title: "Beca de Investigación y Servicios 2026"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:19.500Z
 ---
 

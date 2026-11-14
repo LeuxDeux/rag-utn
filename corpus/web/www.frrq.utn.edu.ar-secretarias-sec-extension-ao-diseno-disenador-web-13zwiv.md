@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-diseno-disenador-web
+title: AO – Diseño – Diseñador Web
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-diseno-disenador-web/
-title: "AO – Diseño – Diseñador Web"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:00.880Z
 ---
 

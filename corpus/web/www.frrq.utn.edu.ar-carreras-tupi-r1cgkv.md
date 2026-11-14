@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-tupi
+title: Tecnicatura Universitaria en Procesos Industriales
 url: https://www.frrq.utn.edu.ar/carreras/tupi/
-title: "Tecnicatura Universitaria en Procesos Industriales"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:47:57.188Z
 ---
 

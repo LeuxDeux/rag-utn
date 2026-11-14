@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: cursos-extension-diplomatura-en-literatura-brasilena
+title: Diplomatura en Literatura Brasileña
 url: https://www.frrq.utn.edu.ar/cursos-extension/diplomatura-en-literatura-brasilena/
-title: "Diplomatura en Literatura Brasileña"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:10.896Z
 ---
 

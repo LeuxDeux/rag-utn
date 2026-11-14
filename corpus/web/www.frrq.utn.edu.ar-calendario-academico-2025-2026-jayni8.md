@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: calendario-academico-2025-2026
+title: Calendario Académico 2025/2026
 url: https://www.frrq.utn.edu.ar/calendario-academico-2025-2026/
-title: "Calendario Académico 2025/2026"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:17.283Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: 2026-curso-diplomatura-en-habilidades-gerenciales-management-administration
+title: CURSO | DIPLOMATURA EN HABILIDADES GERENCIALES
 url: https://www.frrq.utn.edu.ar/2026/curso-diplomatura-en-habilidades-gerenciales-management-administration/
-title: "CURSO | DIPLOMATURA EN HABILIDADES GERENCIALES"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:17.840Z
 ---
 

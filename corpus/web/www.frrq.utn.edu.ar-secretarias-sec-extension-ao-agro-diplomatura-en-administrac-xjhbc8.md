@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-agro-diplomatura-en-administracion-rural
+title: AO – Agro – Diplomatura en Administración Rural
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-agro-diplomatura-en-administracion-rural/
-title: "AO – Agro – Diplomatura en Administración Rural"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:53.055Z
 ---
 

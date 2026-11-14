@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: horarios-carreras-grado
+title: Horarios Carreras Grado
 url: https://www.frrq.utn.edu.ar/horarios-carreras-grado/
-title: "Horarios Carreras Grado"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:34.420Z
 ---
 

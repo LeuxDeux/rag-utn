@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ctensf-inscripcion
+title: 1° Congreso de Transición Energética del Norte Santafesino – Inscripción
 url: https://www.frrq.utn.edu.ar/ctensf/inscripcion/
-title: "1° Congreso de Transición Energética del Norte Santafesino – Inscripción"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:32.825Z
 ---
 

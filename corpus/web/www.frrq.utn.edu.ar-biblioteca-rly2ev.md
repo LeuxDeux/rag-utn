@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: biblioteca
+title: Biblioteca
 url: https://www.frrq.utn.edu.ar/biblioteca/
-title: "Biblioteca"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:47:53.402Z
 ---
 

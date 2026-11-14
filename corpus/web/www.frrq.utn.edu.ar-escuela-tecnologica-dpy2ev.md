@@ -1,8 +1,10 @@
 ---
 source: web
-url: https://www.frrq.utn.edu.ar/escuela-tecnologica/
+doc_id: escuela-tecnologica
 title: "2025"
+url: https://www.frrq.utn.edu.ar/escuela-tecnologica/
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:49.276Z
 ---
 

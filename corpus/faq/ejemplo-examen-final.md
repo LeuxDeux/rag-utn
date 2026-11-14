@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 11_DF_EjemploExamenFinal
+doc_id: faq-ejemplo-examen-final
 title: Ejemplo Examen Final
+aliases: []
 imported_at: 2026-11-14
 ---
 

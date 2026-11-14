@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ei-curso-online-de-aleman-nivel-a-1-1
+title: EI – CURSO ONLINE DE ALEMÁN NIVEL A 1.1
 url: https://www.frrq.utn.edu.ar/ei-curso-online-de-aleman-nivel-a-1-1/
-title: "EI – CURSO ONLINE DE ALEMÁN NIVEL A 1.1"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:35.738Z
 ---
 

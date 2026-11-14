@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: 21_DF_ReglamentoEstudio
+doc_id: faq-reglamento-estudio
 title: Reglamento Estudio
 url: http://csu.rec.utn.edu.ar/docs/php/salida.php3?tipo=ORD&numero=1549&anio=0&facultad=CSU
+aliases: []
 imported_at: 2026-11-14
 ---
 

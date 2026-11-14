@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-tuci
+title: Tecnicatura Universitaria en Ciudades Inteligentes
 url: https://www.frrq.utn.edu.ar/carreras/tuci/
-title: "Tecnicatura Universitaria en Ciudades Inteligentes"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:09.019Z
 ---
 

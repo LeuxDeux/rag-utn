@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: bibl-historia
+title: Bibliotea_Historia
 url: https://www.frrq.utn.edu.ar/bibl_historia/
-title: "Bibliotea_Historia"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:19.068Z
 ---
 

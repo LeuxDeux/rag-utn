@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: 23_DF_CalendarioAcadémico
+doc_id: faq-calendario-academico
 title: Calendario Académico
 url: https://www.frrq.utn.edu.ar/calendario-academico-2023-2024/
+aliases: []
 imported_at: 2026-11-14
 ---
 

@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: Respuesta_CostoCarrera
+doc_id: faq-respuesta-costo-carrera
 title: Respuesta Costo Carrera
+aliases: []
 imported_at: 2026-11-14
 ---
 

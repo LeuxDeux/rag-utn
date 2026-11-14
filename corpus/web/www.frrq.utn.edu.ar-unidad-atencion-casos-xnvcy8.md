@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: unidad-atencion-casos
+title: Unidad de Atención de Casos
 url: https://www.frrq.utn.edu.ar/unidad-atencion-casos/
-title: "Unidad de Atención de Casos"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:26.037Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-rrhh-operador-en-violencia-familiar
+title: AO – RRHH – Operador en Violencia Familiar
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-rrhh-operador-en-violencia-familiar/
-title: "AO – RRHH – Operador en Violencia Familiar"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:12.317Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-rrhh-asistente-de-rrhh-express
+title: AO – RRHH – Asistente de RRHH Express
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-rrhh-asistente-de-rrhh-express/
-title: "AO – RRHH – Asistente de RRHH Express"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:10.487Z
 ---
 

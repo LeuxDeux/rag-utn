@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: ctensf-comitecientifico
+title: 1° Congreso de Transición Energética del Norte Santafesino – Comité científico
 url: https://www.frrq.utn.edu.ar/ctensf/comitecientifico/
-title: "1° Congreso de Transición Energética del Norte Santafesino – Comité científico"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:47.382Z
 ---
 

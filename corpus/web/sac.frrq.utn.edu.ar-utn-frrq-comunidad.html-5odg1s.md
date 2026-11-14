@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-comunidad
+title: Comunidad
 url: https://sac.frrq.utn.edu.ar/utn-frrq-comunidad.html
-title: "Comunidad"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:46.669Z
 ---
 

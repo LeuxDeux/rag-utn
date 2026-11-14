@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: carreras-carreras-a-distancia-tuti-online
+title: Tecnicatura Universitaria en Tecnologías de la Información – Cursado 100% a distancia
 url: https://www.frrq.utn.edu.ar/carreras/carreras-a-distancia/tuti-online/
-title: "Tecnicatura Universitaria en Tecnologías de la Información – Cursado 100% a distancia"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:42.542Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: contactos-utn-reconquista
+title: Contactos UTN Reconquista
 url: https://www.frrq.utn.edu.ar/contactos-utn-reconquista/
-title: "Contactos UTN Reconquista"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:12.943Z
 ---
 

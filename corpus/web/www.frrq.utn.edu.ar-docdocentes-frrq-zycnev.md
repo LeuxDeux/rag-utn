@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: docdocentes-frrq
+title: DocDocentes FRRq
 url: https://www.frrq.utn.edu.ar/docdocentes-frrq/
-title: "DocDocentes FRRq"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:58.383Z
 ---
 

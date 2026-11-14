@@ -1,8 +1,10 @@
 ---
 source: web
-url: https://www.frrq.utn.edu.ar/2026/curso-protect-elect/
+doc_id: 2026-curso-protect-elect
 title: "CURSO: PROTECCIONES ELÉCTRICAS"
+url: https://www.frrq.utn.edu.ar/2026/curso-protect-elect/
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:20.776Z
 ---
 

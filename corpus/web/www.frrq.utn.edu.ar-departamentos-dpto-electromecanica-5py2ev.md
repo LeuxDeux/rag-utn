@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: departamentos-dpto-electromecanica
+title: Departamento Electromecánica
 url: https://www.frrq.utn.edu.ar/departamentos/dpto-electromecanica/
-title: "Departamento Electromecánica"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:10.505Z
 ---
 

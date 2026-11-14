@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: 7_DF_HorariosFechas
+doc_id: faq-horarios-fechas
 title: Horarios Fechas
 url: https://bit.ly/3OxZQh9
+aliases: []
 imported_at: 2026-11-14
 ---
 

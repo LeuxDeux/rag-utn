@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: solicitud-autodesk-educativo
+title: Solicitud Autodesk Educativo
 url: https://www.frrq.utn.edu.ar/solicitud-autodesk-educativo/
-title: "Solicitud Autodesk Educativo"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:18.143Z
 ---
 

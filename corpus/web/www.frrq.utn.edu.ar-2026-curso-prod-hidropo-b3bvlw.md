@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: 2026-curso-prod-hidropo
+title: CURSO
 url: https://www.frrq.utn.edu.ar/2026/curso-prod-hidropo/
-title: "CURSO"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:19.825Z
 ---
 

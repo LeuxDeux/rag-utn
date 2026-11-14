@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-escolaridad-programa-de-formacion-de-preceptores
+title: AO – Escolaridad – Programa de Formación de Preceptores
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-escolaridad-programa-de-formacion-de-preceptores/
-title: "AO – Escolaridad – Programa de Formación de Preceptores"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:50:03.696Z
 ---
 

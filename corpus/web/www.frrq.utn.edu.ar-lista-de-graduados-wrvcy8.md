@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: lista-de-graduados
+title: Lista de Graduados
 url: https://www.frrq.utn.edu.ar/lista-de-graduados/
-title: "Lista de Graduados"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:48:15.525Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-sistemas
+title: Sistemas de Gestión
 url: https://sac.frrq.utn.edu.ar/utn-frrq-sistemas.html
-title: "Sistemas de Gestión"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:45.633Z
 ---
 

@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-diseno-diplomatura-en-diseno-y-decoracion-de-interiores
+title: AO – Diseño – Diplomatura en Diseño y Decoración de Interiores
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-diseno-diplomatura-en-diseno-y-decoracion-de-interiores/
-title: "AO – Diseño – Diplomatura en Diseño y Decoración de Interiores"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:56.039Z
 ---
 

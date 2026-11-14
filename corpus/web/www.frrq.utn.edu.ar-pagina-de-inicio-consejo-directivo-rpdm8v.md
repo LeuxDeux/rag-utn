@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: pagina-de-inicio-consejo-directivo
+title: Consejo Directivo
 url: https://www.frrq.utn.edu.ar/pagina-de-inicio/consejo-directivo/
-title: "Consejo Directivo"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:34.980Z
 ---
 

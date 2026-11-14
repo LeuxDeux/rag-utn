@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: bibl-mision-vision
+title: Biblioteca Misión y Visión
 url: https://www.frrq.utn.edu.ar/bibl-mision-vision/
-title: "Biblioteca Misión y Visión"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:20.936Z
 ---
 

@@ -1,7 +1,9 @@
 ---
 source: dialogflow
 intent: 4_DF_CursadoCondicional
+doc_id: faq-cursado-condicional
 title: Cursado Condicional
+aliases: []
 imported_at: 2026-11-14
 ---
 

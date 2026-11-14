@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-extension-ao-agro-produccion-agropecuaria-express
+title: AO – Agro – Producción Agropecuaria Express
 url: https://www.frrq.utn.edu.ar/secretarias/sec-extension/ao-agro-produccion-agropecuaria-express/
-title: "AO – Agro – Producción Agropecuaria Express"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:53.997Z
 ---
 

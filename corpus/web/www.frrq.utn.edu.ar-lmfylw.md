@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: home
+title: UTN RECONQUISTA
 url: https://www.frrq.utn.edu.ar/
-title: "UTN RECONQUISTA"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:47:46.277Z
 ---
 

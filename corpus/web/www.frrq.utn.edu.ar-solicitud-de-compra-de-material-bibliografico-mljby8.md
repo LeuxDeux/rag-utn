@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: solicitud-de-compra-de-material-bibliografico
+title: SOLICITUD DE COMPRA DE MATERIAL BIBLIOGRÁFICO
 url: https://www.frrq.utn.edu.ar/solicitud-de-compra-de-material-bibliografico/
-title: "SOLICITUD DE COMPRA DE MATERIAL BIBLIOGRÁFICO"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:25.794Z
 ---
 

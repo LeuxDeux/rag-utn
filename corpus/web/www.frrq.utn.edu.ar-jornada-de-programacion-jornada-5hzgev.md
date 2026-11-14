@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: jornada-de-programacion-jornada
+title: jornada-de-programación – jornada
 url: https://www.frrq.utn.edu.ar/jornada-de-programacion/jornada/
-title: "jornada-de-programación – jornada"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:42.617Z
 ---
 

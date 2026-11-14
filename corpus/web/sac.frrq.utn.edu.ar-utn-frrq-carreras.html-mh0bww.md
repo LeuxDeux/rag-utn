@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: utn-frrq-carreras
+title: Carreras
 url: https://sac.frrq.utn.edu.ar/utn-frrq-carreras.html
-title: "Carreras"
 site: sac.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:52:45.291Z
 ---
 

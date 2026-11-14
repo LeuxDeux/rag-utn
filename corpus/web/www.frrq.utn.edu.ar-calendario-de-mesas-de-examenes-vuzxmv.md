@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: calendario-de-mesas-de-examenes
+title: Calendario de Mesas de Exámenes
 url: https://www.frrq.utn.edu.ar/calendario-de-mesas-de-examenes/
-title: "Calendario de Mesas de Exámenes"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:49:16.880Z
 ---
 

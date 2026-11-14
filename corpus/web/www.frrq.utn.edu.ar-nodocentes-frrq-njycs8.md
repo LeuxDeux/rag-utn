@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: nodocentes-frrq
+title: Nodocentes FRRq
 url: https://www.frrq.utn.edu.ar/nodocentes-frrq/
-title: "Nodocentes FRRq"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:51:43.719Z
 ---
 

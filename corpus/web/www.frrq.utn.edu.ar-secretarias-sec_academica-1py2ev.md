@@ -1,8 +1,10 @@
 ---
 source: web
+doc_id: secretarias-sec-academica
+title: Secretaría Académica
 url: https://www.frrq.utn.edu.ar/secretarias/sec_academica/
-title: "Secretaría Académica"
 site: www.frrq.utn.edu.ar
+aliases: []
 fetched_at: 2026-11-14T09:47:55.280Z
 ---
 

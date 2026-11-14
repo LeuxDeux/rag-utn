@@ -1,8 +1,10 @@
 ---
 source: dialogflow
 intent: Carreras_Tecnicaturas
+doc_id: faq-carreras-tecnicaturas
 title: Carreras Tecnicaturas
 url: https://www.frrq.utn.edu.ar/carreras/tuhst/
+aliases: []
 imported_at: 2026-11-14
 ---
 
