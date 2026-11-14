@@ -277,7 +277,9 @@ decisions:
       afirmar fechas"
   - file: corpus/web/www.frrq.utn.edu.ar-calendario-de-mesas-de-examenes-vuzxmv.md
     title: Calendario de Mesas de Exámenes
-    status: excluir
+    status: vigente
+    note: "el sitio conserva un año viejo pero es el canal oficial vigente: no
+      afirmar fechas"
   - file: corpus/web/sac.frrq.utn.edu.ar-utn-frrq-carreras.html-mh0bww.md
     title: Carreras
     status: keep

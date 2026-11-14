@@ -30,7 +30,7 @@ const entries = [];
 let cur = null;
 
 for (const line of text.split(/\r?\n/)) {
-  const doc = line.match(/^- \[`(.+?)`\]\(\.\.\/corpus\/(?:web|excluded)\/(.+?)\)\s*$/);
+  const doc = line.match(/^- \[`(.+?)`\]\(\.\.\/(?:corpus\/web|corpus-excluded)\/(.+?)\)\s*$/);
   if (doc) {
     cur = { file: decodeURIComponent(doc[2]), title: "", reason: "", options: {} };
     entries.push(cur);
@@ -65,6 +65,22 @@ const counts = results.reduce((acc, r) => ({ ...acc, [r.status]: (acc[r.status] 
 const conflicts = results.filter((r) => r.status === "conflicto");
 const decided = results.filter((r) => ["keep", "vigente", "excluir"].includes(r.status));
 
+// Guarda contra desincronización del parser: si de golpe se parsean muchos menos
+// documentos que los ya decididos, algo se rompió (links mal formados, formato
+// cambiado a mano) y seguir escribiría decisiones sobre los documentos equivocados.
+let prevCount = 0;
+try {
+  prevCount = (fs.readFileSync(DECISIONS, "utf8").match(/^\s*- file:/gm) ?? []).length;
+} catch {}
+if (prevCount && entries.length < prevCount * 0.8) {
+  console.error(
+    `\n✖ Parseo sospechoso: ${entries.length} documentos leídos contra ${prevCount} decisiones ya registradas.`,
+  );
+  console.error("  Abortado sin tocar nada. Revisá que los links del reporte sigan el formato");
+  console.error("  [`archivo.md`](../corpus/web/archivo.md) o (../corpus-excluded/archivo.md).");
+  process.exit(1);
+}
+
 console.log(`Reporte: ${entries.length} documentos · marcados: ${decided.length}`);
 console.log(
   `  conservar: ${counts.keep ?? 0} | vigente: ${counts.vigente ?? 0} | excluir: ${counts.excluir ?? 0} | sin decisión: ${counts["sin-decision"] ?? 0}`,
@@ -81,14 +97,24 @@ if (!decided.length) {
 }
 
 // ---------------------------------------------------------------- validación
-const missing = decided.filter((d) => !fs.existsSync(path.join(WEB_DIR, d.file)));
+const missing = decided.filter(
+  (d) =>
+    !fs.existsSync(path.join(WEB_DIR, d.file)) && !fs.existsSync(path.join(EXCLUDED_DIR, d.file)),
+);
 if (missing.length) {
   console.log(`\n⚠ ${missing.length} archivo(s) marcados que ya no están en corpus/web (¿excluidos antes?):`);
   for (const m of missing) console.log(`  - ${m.file}`);
 }
 
 // ---------------------------------------------------------------- escritura
-const toExclude = decided.filter((d) => d.status === "excluir" && fs.existsSync(path.join(WEB_DIR, d.file)));
+// El reporte es la fuente de verdad: aplicar reconcilia el filesystem con él,
+// en las dos direcciones. Cambiar una marca de Excluir a Queda devuelve el archivo.
+const wantExcluded = decided.filter((d) => d.status === "excluir");
+const wantPresent = decided.filter((d) => d.status !== "excluir");
+const toMoveOut = wantExcluded.filter((d) => fs.existsSync(path.join(WEB_DIR, d.file)));
+const toRestore = wantPresent.filter(
+  (d) => !fs.existsSync(path.join(WEB_DIR, d.file)) && fs.existsSync(path.join(EXCLUDED_DIR, d.file)),
+);
 
 console.log(`\n${APPLY ? "APLICANDO" : "DRY-RUN (usá --apply para ejecutar)"}`);
 for (const d of decided) {
@@ -97,7 +123,10 @@ for (const d of decided) {
 }
 
 if (!APPLY) {
-  console.log(`\nSe escribiría corpus/decisions.yaml y se moverían ${toExclude.length} archivo(s) a corpus-excluded/.`);
+  console.log(
+    `\nSe escribiría corpus/decisions.yaml, se moverían ${toMoveOut.length} a corpus-excluded/` +
+      ` y se restaurarían ${toRestore.length}.`,
+  );
   process.exit(0);
 }
 
@@ -149,42 +178,69 @@ fs.writeFileSync(
 );
 console.log(`\n✓ corpus/decisions.yaml (${doc.decisions.length} entradas)`);
 
-// ---------------------------------------------------------------- mover
-if (toExclude.length) {
-  fs.mkdirSync(EXCLUDED_DIR, { recursive: true });
-  for (const d of toExclude) {
-    const from = path.join(WEB_DIR, d.file);
-    const to = path.join(EXCLUDED_DIR, d.file);
-    fs.renameSync(from, to);
-  }
+// ---------------------------------------------------------------- mover y restaurar
+fs.mkdirSync(EXCLUDED_DIR, { recursive: true });
 
-  // Los links del reporte tienen que seguir funcionando: apuntan a la ubicación real.
+for (const d of toMoveOut) {
+  fs.renameSync(path.join(WEB_DIR, d.file), path.join(EXCLUDED_DIR, d.file));
+}
+for (const d of toRestore) {
+  fs.renameSync(path.join(EXCLUDED_DIR, d.file), path.join(WEB_DIR, d.file));
+}
+
+if (toMoveOut.length || toRestore.length) {
+  // Los links del reporte apuntan a la ubicación real del archivo.
   let report = fs.readFileSync(REPORT, "utf8");
-  for (const d of toExclude) {
+  for (const d of decided) {
     const enc = encodeURI(d.file);
-    report = report.split(`../corpus/web/${enc}`).join(`../corpus-excluded/${enc}`);
+    const [from, to] =
+      d.status === "excluir"
+        ? [`../corpus/web/${enc}`, `../corpus-excluded/${enc}`]
+        : [`../corpus-excluded/${enc}`, `../corpus/web/${enc}`];
+    report = report.split(from).join(to);
   }
   fs.writeFileSync(REPORT, report);
-
-  console.log(`✓ ${toExclude.length} archivo(s) movidos a corpus-excluded/`);
-  console.log(`✓ links del reporte actualizados a corpus-excluded/`);
 }
+
+if (toMoveOut.length) console.log(`✓ ${toMoveOut.length} archivo(s) movidos a corpus-excluded/`);
+if (toRestore.length) console.log(`✓ ${toRestore.length} archivo(s) restaurados a corpus/web/`);
+if (toMoveOut.length || toRestore.length) console.log(`✓ links del reporte actualizados`);
 
 // ---------------------------------------------------------------- manifest
 if (fs.existsSync(MANIFEST)) {
   const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8"));
-  const gone = new Set(toExclude.map((d) => `${d.file.replace(/\.md$/, "")}`));
   const before = manifest.pages.length;
-  manifest.pages = manifest.pages.filter((p) => !gone.has(p.slug));
-  manifest.excluded = manifest.excluded ?? [];
-  for (const d of toExclude) {
-    manifest.excluded.push({
+
+  const entryFromFile = (slug) => {
+    const raw = fs.readFileSync(path.join(WEB_DIR, `${slug}.md`), "utf8");
+    const fm = raw.split("---")[1] ?? "";
+    const field = (k) => ((fm.match(new RegExp(`^${k}:\\s*(.+)$`, "m")) ?? [])[1] ?? "").trim();
+    const body = raw.split("---").slice(2).join("---").trim();
+    return {
+      slug,
+      url: field("url"),
+      title: field("title").replace(/^"|"$/g, ""),
+      chars: body.length,
+    };
+  };
+
+  const present = fs
+    .readdirSync(WEB_DIR)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => f.replace(/\.md$/, ""));
+  const bySlug = new Map(manifest.pages.map((p) => [p.slug, p]));
+
+  manifest.pages = present.sort().map((slug) => bySlug.get(slug) ?? entryFromFile(slug));
+  manifest.excluded = wantExcluded
+    .filter((d) => fs.existsSync(path.join(EXCLUDED_DIR, d.file)))
+    .map((d) => ({
       slug: d.file.replace(/\.md$/, ""),
       reason: `excluido por decisión (${decidedAt}): ${d.reason}`,
-    });
-  }
+      decided_at: decidedAt,
+    }));
+
   fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2));
-  console.log(`✓ manifest: ${before} → ${manifest.pages.length} páginas`);
+  console.log(`✓ manifest: ${before} → ${manifest.pages.length} páginas, ${manifest.excluded.length} excluidas`);
 }
 
 console.log(`\nDocumentos en corpus/web: ${fs.readdirSync(WEB_DIR).filter((f) => f.endsWith(".md")).length}`);

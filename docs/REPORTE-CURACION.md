@@ -446,11 +446,11 @@ Menos de 600 caracteres de cuerpo. Revisar de a uno: una página de contacto con
   - [ ] Queda
   - [X] Queda — vigente (año desactualizado en el sitio)
   - [ ] Excluir
-- [`www.frrq.utn.edu.ar-calendario-de-mesas-de-examenes-vuzxmv.md`](../corpus-excluded/www.frrq.utn.edu.ar-calendario-de-mesas-de-examenes-vuzxmv.md)
+- [`www.frrq.utn.edu.ar-calendario-de-mesas-de-examenes-vuzxmv.md`](../corpus/web/www.frrq.utn.edu.ar-calendario-de-mesas-de-examenes-vuzxmv.md)
   - *Calendario de Mesas de Exámenes* · 266 caracteres · [original](<https://www.frrq.utn.edu.ar/calendario-de-mesas-de-examenes/>)
   - [ ] Queda
-  - [ ] Queda — vigente (año desactualizado en el sitio)
-  - [X] Excluir
+  - [X] Queda — vigente (año desactualizado en el sitio)
+  - [ ] Excluir
 - [`sac.frrq.utn.edu.ar-utn-frrq-carreras.html-mh0bww.md`](../corpus/web/sac.frrq.utn.edu.ar-utn-frrq-carreras.html-mh0bww.md)
   - *Carreras* · 579 caracteres · [original](<https://sac.frrq.utn.edu.ar/utn-frrq-carreras.html>)
   - [X] Queda
