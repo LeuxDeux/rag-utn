@@ -1,0 +1,19 @@
+---
+source: dialogflow
+intent: 11_DF_EjemploExamenFinal
+title: Ejemplo Examen Final
+imported_at: 2026-11-14
+---
+
+# Ejemplo Examen Final
+
+## Respuesta
+
+No los damos, pero podes comunicarte con Asuntos Estudiantiles que podrá acercarte al equipo de tutores!
+
+## Preguntas que responde
+
+- ejemplo final
+- final ejemplos
+- Me puedes dar un ejemplo de como es el examen final?
+- ¿Hay alguna página, o plataforma donde pueda ver ejemplo de exámenes finales?

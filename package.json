@@ -9,6 +9,7 @@
     "dev": "node --watch src/server.js",
     "ingest": "node src/ingest/index.js",
     "crawl": "node src/ingest/crawl.js",
+    "import:df": "node src/tools/import-dialogflow.js",
     "decisions": "node src/tools/apply-decisions.js",
     "eval": "node eval/run.js"
   },

@@ -1,0 +1,576 @@
+# Set de evaluación derivado de las frases de entrenamiento de Dialogflow.
+# Son formulaciones reales de usuarios: sirven como baseline de hit@5.
+# Ojo: fueron escritas para matchear intents, así que son más fáciles que
+# una pregunta espontánea. Valen para detectar regresiones, no para presumir.
+
+- question: materia inscripcion
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: inscripcion materia
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: inscripción materia
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: inscripsion materia
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: materia inscricpción
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: inscripción materias
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: inscribirme a materias
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: como inscribirse a cursados
+  expected_doc: corpus/faq/inscripcion-materias.md
+  intent: 10_DF_InscripcionMaterias
+- question: ejemplo final
+  expected_doc: corpus/faq/ejemplo-examen-final.md
+  intent: 11_DF_EjemploExamenFinal
+- question: final ejemplos
+  expected_doc: corpus/faq/ejemplo-examen-final.md
+  intent: 11_DF_EjemploExamenFinal
+- question: Me puedes dar un ejemplo de como es el examen final?
+  expected_doc: corpus/faq/ejemplo-examen-final.md
+  intent: 11_DF_EjemploExamenFinal
+- question: ¿Hay alguna página, o plataforma donde pueda ver ejemplo de exámenes finales?
+  expected_doc: corpus/faq/ejemplo-examen-final.md
+  intent: 11_DF_EjemploExamenFinal
+- question: curso de ingreso
+  expected_doc: corpus/faq/cursillo-ingreso.md
+  intent: 12_DF_CursilloIngreso
+- question: cursillo de ingreso
+  expected_doc: corpus/faq/cursillo-ingreso.md
+  intent: 12_DF_CursilloIngreso
+- question: ¿Cuándo es el cursillo de ingreso?
+  expected_doc: corpus/faq/cursillo-ingreso.md
+  intent: 12_DF_CursilloIngreso
+- question: curso online
+  expected_doc: corpus/faq/cursos-online.md
+  intent: 13_DF_CursosOnline
+- question: cursos online
+  expected_doc: corpus/faq/cursos-online.md
+  intent: 13_DF_CursosOnline
+- question: ¿Qué cursos online ofrece la facultad? ¿tienen algún costo?
+  expected_doc: corpus/faq/cursos-online.md
+  intent: 13_DF_CursosOnline
+- question: inscripcion carreras
+  expected_doc: corpus/faq/inscripcion-carreras.md
+  intent: 14_DF_InscripcionCarreras
+- question: carreras inscripcion
+  expected_doc: corpus/faq/inscripcion-carreras.md
+  intent: 14_DF_InscripcionCarreras
+- question: inscripciones carreras
+  expected_doc: corpus/faq/inscripcion-carreras.md
+  intent: 14_DF_InscripcionCarreras
+- question: fecha de inscripciones carreras
+  expected_doc: corpus/faq/inscripcion-carreras.md
+  intent: 14_DF_InscripcionCarreras
+- question: como me puedo inscribir a una carrera
+  expected_doc: corpus/faq/inscripcion-carreras.md
+  intent: 14_DF_InscripcionCarreras
+- question: donde me puedo inscribir a una carrera?
+  expected_doc: corpus/faq/inscripcion-carreras.md
+  intent: 14_DF_InscripcionCarreras
+- question: ¿En que fechas son las inscripciones a las carreras? (ingresantes y
+    estudiantes)
+  expected_doc: corpus/faq/inscripcion-carreras.md
+  intent: 14_DF_InscripcionCarreras
+- question: ingreso regional
+  expected_doc: corpus/faq/ingreso-regional.md
+  intent: 15_DF_IngresoRegional
+- question: como funciona el ingreso regional?
+  expected_doc: corpus/faq/ingreso-regional.md
+  intent: 15_DF_IngresoRegional
+- question: que requisitos necesito para el ingreso regional?
+  expected_doc: corpus/faq/ingreso-regional.md
+  intent: 15_DF_IngresoRegional
+- question: puedo ingresar en reconquista y despues cursar en otro lado?
+  expected_doc: corpus/faq/ingreso-regional.md
+  intent: 15_DF_IngresoRegional
+- question: ¿Puedo hacer el ingreso en esta regional para cursar en otra?
+  expected_doc: corpus/faq/ingreso-regional.md
+  intent: 15_DF_IngresoRegional
+- question: como hacer beca
+  expected_doc: corpus/faq/becas.md
+  intent: 16_DF_Becas
+- question: como aplicar para beca
+  expected_doc: corpus/faq/becas.md
+  intent: 16_DF_Becas
+- question: tienen becas disponibles?
+  expected_doc: corpus/faq/becas.md
+  intent: 16_DF_Becas
+- question: Quien puede tener acceso a una beca
+  expected_doc: corpus/faq/becas.md
+  intent: 16_DF_Becas
+- question: ¿Qué tipos de becas brinda la facultad y como puedo hacer para aplicar
+    a ellas?
+  expected_doc: corpus/faq/becas.md
+  intent: 16_DF_Becas
+- question: boleto educativo
+  expected_doc: corpus/faq/boleto-educativo.md
+  intent: 17_DF_BoletoEducativo
+- question: como hacer boleto educativo
+  expected_doc: corpus/faq/boleto-educativo.md
+  intent: 17_DF_BoletoEducativo
+- question: como hago un boleto educativo gratuito
+  expected_doc: corpus/faq/boleto-educativo.md
+  intent: 17_DF_BoletoEducativo
+- question: Donde puedo tramitar mi boleto educativo
+  expected_doc: corpus/faq/boleto-educativo.md
+  intent: 17_DF_BoletoEducativo
+- question: ¿Cómo tramito el boleto educativo gratuito?
+  expected_doc: corpus/faq/boleto-educativo.md
+  intent: 17_DF_BoletoEducativo
+- question: licencia estudiantil
+  expected_doc: corpus/faq/licencia-estudiantil.md
+  intent: 18_DF_LicenciaEstudiantil
+- question: que es la licencia estudiantil
+  expected_doc: corpus/faq/licencia-estudiantil.md
+  intent: 18_DF_LicenciaEstudiantil
+- question: Que es un licencia estudiantil?
+  expected_doc: corpus/faq/licencia-estudiantil.md
+  intent: 18_DF_LicenciaEstudiantil
+- question: Cuanto dura una licencia estudiantil?
+  expected_doc: corpus/faq/licencia-estudiantil.md
+  intent: 18_DF_LicenciaEstudiantil
+- question: ¿Qué es la licencia estudiantil y en que casos puedo usarla?
+  expected_doc: corpus/faq/licencia-estudiantil.md
+  intent: 18_DF_LicenciaEstudiantil
+- question: Debo seguir pagando las cuotas si estoy en licencia estudiantil?
+  expected_doc: corpus/faq/licencia-estudiantil.md
+  intent: 18_DF_LicenciaEstudiantil
+- question: evaluacion criterios
+  expected_doc: corpus/faq/criterios-evaluacion.md
+  intent: 19_DF_CriteriosEvaluacion
+- question: criterios de evaluacion
+  expected_doc: corpus/faq/criterios-evaluacion.md
+  intent: 19_DF_CriteriosEvaluacion
+- question: Quien impone los criterios de evaluación
+  expected_doc: corpus/faq/criterios-evaluacion.md
+  intent: 19_DF_CriteriosEvaluacion
+- question: por que cambian los criterios de evaluacion
+  expected_doc: corpus/faq/criterios-evaluacion.md
+  intent: 19_DF_CriteriosEvaluacion
+- question: ¿Por qué cambian tanto los criterios de evaluación?
+  expected_doc: corpus/faq/criterios-evaluacion.md
+  intent: 19_DF_CriteriosEvaluacion
+- question: regularidad q es
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: q es la regularidad
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: que es la regularidad
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: ¿Qué es la regularidad?
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: cuanto dura la regularidad
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: contame sobre la regularidad
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: quiero saber sobre la regularidad
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: Se pueden regularizar las materias?
+  expected_doc: corpus/faq/regularidad.md
+  intent: 1_DF_regularidad
+- question: plan de estudios
+  expected_doc: corpus/faq/plan-estudios.md
+  intent: 20_DF_PlanEstudios
+- question: explicación plan de estudios
+  expected_doc: corpus/faq/plan-estudios.md
+  intent: 20_DF_PlanEstudios
+- question: ¿Alguien explica el plan de estudios para entender las cátedras correlativas?
+  expected_doc: corpus/faq/plan-estudios.md
+  intent: 20_DF_PlanEstudios
+- question: Reglamento de estudio
+  expected_doc: corpus/faq/reglamento-estudio.md
+  intent: 21_DF_ReglamentoEstudio
+- question: ¿Existe algún reglamento de estudio?
+  expected_doc: corpus/faq/reglamento-estudio.md
+  intent: 21_DF_ReglamentoEstudio
+- question: office 365
+  expected_doc: corpus/faq/correo-institucional.md
+  intent: 22_DF_CorreoInstitucional
+- question: correo facultad
+  expected_doc: corpus/faq/correo-institucional.md
+  intent: 22_DF_CorreoInstitucional
+- question: correo institucional
+  expected_doc: corpus/faq/correo-institucional.md
+  intent: 22_DF_CorreoInstitucional
+- question: como me hago correo institucional
+  expected_doc: corpus/faq/correo-institucional.md
+  intent: 22_DF_CorreoInstitucional
+- question: ¿Cómo tengo que hacerme el correo institucional? ¿Para que sirve? ¿En
+    cuantos dispositivos…
+  expected_doc: corpus/faq/correo-institucional.md
+  intent: 22_DF_CorreoInstitucional
+- question: calendario académico
+  expected_doc: corpus/faq/calendario-academico.md
+  intent: 23_DF_CalendarioAcadémico
+- question: Calendario academico
+  expected_doc: corpus/faq/calendario-academico.md
+  intent: 23_DF_CalendarioAcadémico
+- question: ¿existe un calendario académico?
+  expected_doc: corpus/faq/calendario-academico.md
+  intent: 23_DF_CalendarioAcadémico
+- question: que son las pps?
+  expected_doc: corpus/faq/pps.md
+  intent: 24_DF_PPS
+- question: practicas profesionales
+  expected_doc: corpus/faq/pps.md
+  intent: 24_DF_PPS
+- question: como me inscribo a las pps
+  expected_doc: corpus/faq/pps.md
+  intent: 24_DF_PPS
+- question: como hago mis practicas profesionales
+  expected_doc: corpus/faq/pps.md
+  intent: 24_DF_PPS
+- question: año de gracia
+  expected_doc: corpus/faq/ano-de-gracia.md
+  intent: 25_DF_AñoDeGracia
+- question: que es el año de gracia?
+  expected_doc: corpus/faq/ano-de-gracia.md
+  intent: 25_DF_AñoDeGracia
+- question: cómo sé si tengo mi año de gracia?
+  expected_doc: corpus/faq/ano-de-gracia.md
+  intent: 25_DF_AñoDeGracia
+- question: recuperar materias
+  expected_doc: corpus/faq/recuperacion.md
+  intent: 26_DF_Recuperación
+- question: cuanto tiempo tengo para recuperar?
+  expected_doc: corpus/faq/recuperacion.md
+  intent: 26_DF_Recuperación
+- question: aprobación directa
+  expected_doc: corpus/faq/aprobracion-directa.md
+  intent: 2_DF_Aprobracion_Directa
+- question: Qué significa promocionar?
+  expected_doc: corpus/faq/aprobracion-directa.md
+  intent: 2_DF_Aprobracion_Directa
+- question: ¿Qué es aprobación directa?
+  expected_doc: corpus/faq/aprobracion-directa.md
+  intent: 2_DF_Aprobracion_Directa
+- question: La aprobación directa es aplicable a cualquier materia?
+  expected_doc: corpus/faq/aprobracion-directa.md
+  intent: 2_DF_Aprobracion_Directa
+- question: pagar cuota
+  expected_doc: corpus/faq/abono-cuota.md
+  intent: 3_DF_AbonoCuota
+- question: aboné cuota
+  expected_doc: corpus/faq/abono-cuota.md
+  intent: 3_DF_AbonoCuota
+- question: abono cuota
+  expected_doc: corpus/faq/abono-cuota.md
+  intent: 3_DF_AbonoCuota
+- question: donde voy pagar
+  expected_doc: corpus/faq/abono-cuota.md
+  intent: 3_DF_AbonoCuota
+- question: Donde puedo ver el monto de las cuotas?
+  expected_doc: corpus/faq/abono-cuota.md
+  intent: 3_DF_AbonoCuota
+- question: Si no aboné una cuota, ¿puedo rendir igual?
+  expected_doc: corpus/faq/abono-cuota.md
+  intent: 3_DF_AbonoCuota
+- question: Debo tener todas las cuotas abonadas para poder rendir mi examen final?
+  expected_doc: corpus/faq/abono-cuota.md
+  intent: 3_DF_AbonoCuota
+- question: cursado condicional
+  expected_doc: corpus/faq/cursado-condicional.md
+  intent: 4_DF_CursadoCondicional
+- question: puedo cursar una materia sin su correlativa
+  expected_doc: corpus/faq/cursado-condicional.md
+  intent: 4_DF_CursadoCondicional
+- question: Puedo cursar libre materias de administración rural?
+  expected_doc: corpus/faq/cursado-condicional.md
+  intent: 4_DF_CursadoCondicional
+- question: ¿Puedo cursar condicional una materia sin su correlativa?
+  expected_doc: corpus/faq/cursado-condicional.md
+  intent: 4_DF_CursadoCondicional
+- question: puedo ir a todos los llamados para examen
+  expected_doc: corpus/faq/llamados-examenes.md
+  intent: 5_DF_LlamadosExamenes
+- question: ¿Me puedo presentar a todos los llamados para exámenes?
+  expected_doc: corpus/faq/llamados-examenes.md
+  intent: 5_DF_LlamadosExamenes
+- question: extender regularidad
+  expected_doc: corpus/faq/extension-regularidad.md
+  intent: 6_DF_ExtensionRegularidad
+- question: extension de regularidad
+  expected_doc: corpus/faq/extension-regularidad.md
+  intent: 6_DF_ExtensionRegularidad
+- question: ¿Cuándo puedo pedir una extensión de regularidad?
+  expected_doc: corpus/faq/extension-regularidad.md
+  intent: 6_DF_ExtensionRegularidad
+- question: fecha examenes
+  expected_doc: corpus/faq/horarios-fechas.md
+  intent: 7_DF_HorariosFechas
+- question: mesa de examenes
+  expected_doc: corpus/faq/horarios-fechas.md
+  intent: 7_DF_HorariosFechas
+- question: horario catedras
+  expected_doc: corpus/faq/horarios-fechas.md
+  intent: 7_DF_HorariosFechas
+- question: fecha de mesa de examenes
+  expected_doc: corpus/faq/horarios-fechas.md
+  intent: 7_DF_HorariosFechas
+- question: Fecha de inscripción a exámenes
+  expected_doc: corpus/faq/horarios-fechas.md
+  intent: 7_DF_HorariosFechas
+- question: ¿Dónde puedo ver los horarios de las cátedras y/o las fechas de
+    exámenes? ¿hay una platafo…
+  expected_doc: corpus/faq/horarios-fechas.md
+  intent: 7_DF_HorariosFechas
+- question: campus virtual
+  expected_doc: corpus/faq/moodle.md
+  intent: 8_DF_Moodle
+- question: plataforma virtual
+  expected_doc: corpus/faq/moodle.md
+  intent: 8_DF_Moodle
+- question: ¿Cómo se usa Moodle?
+  expected_doc: corpus/faq/moodle.md
+  intent: 8_DF_Moodle
+- question: como ingresar a moodle
+  expected_doc: corpus/faq/moodle.md
+  intent: 8_DF_Moodle
+- question: inscripción a rendir
+  expected_doc: corpus/faq/inscripcion-rendir.md
+  intent: 9_DF_InscripcionRendir
+- question: como hago para rendir
+  expected_doc: corpus/faq/inscripcion-rendir.md
+  intent: 9_DF_InscripcionRendir
+- question: Puedo anular una inscripción?
+  expected_doc: corpus/faq/inscripcion-rendir.md
+  intent: 9_DF_InscripcionRendir
+- question: ¿Cómo tengo que inscribirme a rendir?
+  expected_doc: corpus/faq/inscripcion-rendir.md
+  intent: 9_DF_InscripcionRendir
+- question: Cuántos días antes del examen debo inscribirme?
+  expected_doc: corpus/faq/inscripcion-rendir.md
+  intent: 9_DF_InscripcionRendir
+- question: Carreras distancia
+  expected_doc: corpus/faq/carreras-distancia.md
+  intent: Carreras_Distancia
+- question: Carreras a Distancia
+  expected_doc: corpus/faq/carreras-distancia.md
+  intent: Carreras_Distancia
+- question: Puedo cursar a distancia?
+  expected_doc: corpus/faq/carreras-distancia.md
+  intent: Carreras_Distancia
+- question: carreras grado
+  expected_doc: corpus/faq/carreras-grado.md
+  intent: Carreras_Grado
+- question: Carreras grado.
+  expected_doc: corpus/faq/carreras-grado.md
+  intent: Carreras_Grado
+- question: Carrera de grado
+  expected_doc: corpus/faq/carreras-grado.md
+  intent: Carreras_Grado
+- question: Carreras de grado
+  expected_doc: corpus/faq/carreras-grado.md
+  intent: Carreras_Grado
+- question: carreras de grados
+  expected_doc: corpus/faq/carreras-grado.md
+  intent: Carreras_Grado
+- question: Carreras Posgrado
+  expected_doc: corpus/faq/carreras-posgrado.md
+  intent: Carreras_posgrado
+- question: Administración rural
+  expected_doc: corpus/faq/carreras-posgrado.md
+  intent: Carreras_posgrado
+- question: carreras de posgrado.
+  expected_doc: corpus/faq/carreras-posgrado.md
+  intent: Carreras_posgrado
+- question: Licenciatura en administración rural
+  expected_doc: corpus/faq/carreras-posgrado.md
+  intent: Carreras_posgrado
+- question: Que tecnicaturas tienen?
+  expected_doc: corpus/faq/carreras-tecnicaturas.md
+  intent: Carreras_Tecnicaturas
+- question: ingeniería electromecánica
+  expected_doc: corpus/faq/gen-electromecanica.md
+  intent: GEN_Electromecánica
+- question: ingenieria electromecanica
+  expected_doc: corpus/faq/gen-electromecanica.md
+  intent: GEN_Electromecánica
+- question: higiene y seguridad
+  expected_doc: corpus/faq/gen-higiene-yseguridad.md
+  intent: GEN_HigieneYSeguridad
+- question: higiene en el trabajo
+  expected_doc: corpus/faq/gen-higiene-yseguridad.md
+  intent: GEN_HigieneYSeguridad
+- question: HIGIENE Y SEGURIDAD EN EL TRABAJO
+  expected_doc: corpus/faq/gen-higiene-yseguridad.md
+  intent: GEN_HigieneYSeguridad
+- question: tecnicatura en higiene y seguridad en el trabajo
+  expected_doc: corpus/faq/gen-higiene-yseguridad.md
+  intent: GEN_HigieneYSeguridad
+- question: Que es LAR?
+  expected_doc: corpus/faq/gen-lar.md
+  intent: GEN_LAR
+- question: Que es el LAR?
+  expected_doc: corpus/faq/gen-lar.md
+  intent: GEN_LAR
+- question: administración rural
+  expected_doc: corpus/faq/gen-lar.md
+  intent: GEN_LAR
+- question: direccion y gestion de empresas agroindustriales
+  expected_doc: corpus/faq/gen-pdgea.md
+  intent: GEN_pdgea
+- question: Dirección y gestión de empresas agroindustriales
+  expected_doc: corpus/faq/gen-pdgea.md
+  intent: GEN_pdgea
+- question: quiero hablar con una persona
+  expected_doc: corpus/faq/respuestas-dudas-persona-real.md
+  intent: Respuestas_Dudas_PersonaReal
+- question: quiero comunicarme con una persona de verdad
+  expected_doc: corpus/faq/respuestas-dudas-persona-real.md
+  intent: Respuestas_Dudas_PersonaReal
+- question: Qué notas tengo?
+  expected_doc: corpus/faq/respuesta-autogestion.md
+  intent: Respuesta_Autogestion
+- question: como veo mis notas
+  expected_doc: corpus/faq/respuesta-autogestion.md
+  intent: Respuesta_Autogestion
+- question: donde veo mis notas
+  expected_doc: corpus/faq/respuesta-autogestion.md
+  intent: Respuesta_Autogestion
+- question: como entro a sysacad?
+  expected_doc: corpus/faq/respuesta-autogestion.md
+  intent: Respuesta_Autogestion
+- question: quiero saber mis notas
+  expected_doc: corpus/faq/respuesta-autogestion.md
+  intent: Respuesta_Autogestion
+- question: como puedo ver mis notas
+  expected_doc: corpus/faq/respuesta-autogestion.md
+  intent: Respuesta_Autogestion
+- question: donde puedo consultar donde se encuentra mi libreta?
+  expected_doc: corpus/faq/respuesta-autogestion.md
+  intent: Respuesta_Autogestion
+- question: info carreras
+  expected_doc: corpus/faq/respuesta-carreras.md
+  intent: Respuesta_carreras
+- question: Que carreras hay?
+  expected_doc: corpus/faq/respuesta-carreras.md
+  intent: Respuesta_carreras
+- question: que se puede estudiar
+  expected_doc: corpus/faq/respuesta-carreras.md
+  intent: Respuesta_carreras
+- question: Que carrera dura 2 años
+  expected_doc: corpus/faq/respuesta-carreras.md
+  intent: Respuesta_carreras
+- question: Qué carreras hay disponibles?
+  expected_doc: corpus/faq/respuesta-carreras.md
+  intent: Respuesta_carreras
+- question: cuantas carreras tiene la facultad?
+  expected_doc: corpus/faq/respuesta-carreras.md
+  intent: Respuesta_carreras
+- question: costo de carreras
+  expected_doc: corpus/faq/respuesta-costo-carrera.md
+  intent: Respuesta_CostoCarrera
+- question: costo de las carerras
+  expected_doc: corpus/faq/respuesta-costo-carrera.md
+  intent: Respuesta_CostoCarrera
+- question: Cual es costo de las tecnicaturas?
+  expected_doc: corpus/faq/respuesta-costo-carrera.md
+  intent: Respuesta_CostoCarrera
+- question: Cuál es el costo actual de las tecnicaturas?
+  expected_doc: corpus/faq/respuesta-costo-carrera.md
+  intent: Respuesta_CostoCarrera
+- question: inasistencias anuales
+  expected_doc: corpus/faq/respuesta-faltas-inasistencias.md
+  intent: Respuesta_Faltas/inasistencias
+- question: cuantas faltas son por año
+  expected_doc: corpus/faq/respuesta-faltas-inasistencias.md
+  intent: Respuesta_Faltas/inasistencias
+- question: cuantas faltas puedo tener
+  expected_doc: corpus/faq/respuesta-faltas-inasistencias.md
+  intent: Respuesta_Faltas/inasistencias
+- question: faltas cuantas puedo tener
+  expected_doc: corpus/faq/respuesta-faltas-inasistencias.md
+  intent: Respuesta_Faltas/inasistencias
+- question: Faltas anuales administración rural
+  expected_doc: corpus/faq/respuesta-faltas-inasistencias.md
+  intent: Respuesta_Faltas/inasistencias
+- question: CUANTAS FALTAS PUEDO TENER EN EL AÑO?
+  expected_doc: corpus/faq/respuesta-faltas-inasistencias.md
+  intent: Respuesta_Faltas/inasistencias
+- question: Cuántas faltas se pueden tener en el año en caso de trabajar?
+  expected_doc: corpus/faq/respuesta-faltas-inasistencias.md
+  intent: Respuesta_Faltas/inasistencias
+- question: no tengo legajo
+  expected_doc: corpus/faq/respuesta-legajo.md
+  intent: Respuesta_Legajo
+- question: como veo mi legajo
+  expected_doc: corpus/faq/respuesta-legajo.md
+  intent: Respuesta_Legajo
+- question: material de estudio
+  expected_doc: corpus/faq/respuesta-material-estudio.md
+  intent: Respuesta_MaterialEstudio
+- question: quiero material de estudio
+  expected_doc: corpus/faq/respuesta-material-estudio.md
+  intent: Respuesta_MaterialEstudio
+- question: donde puedo ver el material de estudio
+  expected_doc: corpus/faq/respuesta-material-estudio.md
+  intent: Respuesta_MaterialEstudio
+- question: Material de estudio de administración rural
+  expected_doc: corpus/faq/respuesta-material-estudio.md
+  intent: Respuesta_MaterialEstudio
+- question: Quien te hizo?
+  expected_doc: corpus/faq/respuesta-programador.md
+  intent: Respuesta_Programador
+- question: quien te creo?
+  expected_doc: corpus/faq/respuesta-programador.md
+  intent: Respuesta_Programador
+- question: Quien te ha creado?
+  expected_doc: corpus/faq/respuesta-programador.md
+  intent: Respuesta_Programador
+- question: quien es tu creador?
+  expected_doc: corpus/faq/respuesta-programador.md
+  intent: Respuesta_Programador
+- question: Quien te ha programado?
+  expected_doc: corpus/faq/respuesta-programador.md
+  intent: Respuesta_Programador
+- question: página web
+  expected_doc: corpus/faq/respuesta-redes-sociales.md
+  intent: Respuesta_RedesSociales
+- question: redes sociales
+  expected_doc: corpus/faq/respuesta-redes-sociales.md
+  intent: Respuesta_RedesSociales
+- question: titulo como lo hago
+  expected_doc: corpus/faq/respuesta-titulo.md
+  intent: Respuesta_Titulo
+- question: titulo universitario
+  expected_doc: corpus/faq/respuesta-titulo.md
+  intent: Respuesta_Titulo
+- question: como sacar el titulo
+  expected_doc: corpus/faq/respuesta-titulo.md
+  intent: Respuesta_Titulo
+- question: como hago para tramitar mi titulo
+  expected_doc: corpus/faq/respuesta-titulo.md
+  intent: Respuesta_Titulo
+- question: Que documentación necesito para tramitar el título?
+  expected_doc: corpus/faq/respuesta-titulo.md
+  intent: Respuesta_Titulo
+- question: Que documentación necesito para inscribirme a la UTN?
+  expected_doc: corpus/faq/respuesta-titulo.md
+  intent: Respuesta_Titulo
+- question: donde queda
+  expected_doc: corpus/faq/respuesta-ubicacion.md
+  intent: Respuesta_Ubicacion
+- question: donde se ubica
+  expected_doc: corpus/faq/respuesta-ubicacion.md
+  intent: Respuesta_Ubicacion
+- question: dirección de facultad
+  expected_doc: corpus/faq/respuesta-ubicacion.md
+  intent: Respuesta_Ubicacion
+- question: donde es la universidad
+  expected_doc: corpus/faq/respuesta-ubicacion.md
+  intent: Respuesta_Ubicacion

@@ -1,0 +1,21 @@
+---
+source: dialogflow
+intent: GEN_HigieneYSeguridad
+title: GEN Higiene YSeguridad
+imported_at: 2026-11-14
+---
+
+# GEN Higiene YSeguridad
+
+## Respuesta
+
+Para más info. sobre tecnicatura en Higiene y Seguridad, haga click en el siguiente enlace:
+
+https://www.frrq.utn.edu.ar/carreras/tuhst/
+
+## Preguntas que responde
+
+- higiene y seguridad
+- higiene en el trabajo
+- HIGIENE Y SEGURIDAD EN EL TRABAJO
+- tecnicatura en higiene y seguridad en el trabajo

@@ -24,6 +24,15 @@ sources:
     tenant: universidad
     mode: index
 
+  # FAQ importada del bot de Dialogflow (`npm run import:df`).
+  # Cada documento es una unidad pregunta -> respuesta autocontenida.
+  - id: faq-dialogflow
+    type: dir
+    path: corpus/faq
+    title: Preguntas frecuentes del bot
+    tenant: universidad
+    mode: index
+
   # - id: reglamento-general
   #   type: file
   #   path: corpus/reglamento-general-2026.pdf

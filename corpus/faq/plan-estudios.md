@@ -1,0 +1,18 @@
+---
+source: dialogflow
+intent: 20_DF_PlanEstudios
+title: Plan Estudios
+imported_at: 2026-11-14
+---
+
+# Plan Estudios
+
+## Respuesta
+
+Si no pudiste escuchar alguna explicación sobre el plan de estudios acércate a Alumnado, SAE o Coordinación de Carreras Cortas.
+
+## Preguntas que responde
+
+- plan de estudios
+- explicación plan de estudios
+- ¿Alguien explica el plan de estudios para entender las cátedras correlativas?

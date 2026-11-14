@@ -1,0 +1,439 @@
+{
+  "source": "C:/Users/lauti/Downloads/Bot_UTN/intents",
+  "imported_at": "2026-11-14T23:41:44.039Z",
+  "intents": [
+    {
+      "intent": "10_DF_InscripcionMaterias",
+      "slug": "inscripcion-materias",
+      "title": "Inscripción Materias",
+      "chars": 988,
+      "phrases": 8,
+      "responses": 2,
+      "links": 1
+    },
+    {
+      "intent": "11_DF_EjemploExamenFinal",
+      "slug": "ejemplo-examen-final",
+      "title": "Ejemplo Examen Final",
+      "chars": 338,
+      "phrases": 4,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "12_DF_CursilloIngreso",
+      "slug": "cursillo-ingreso",
+      "title": "Cursillo Ingreso",
+      "chars": 265,
+      "phrases": 3,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "13_DF_CursosOnline",
+      "slug": "cursos-online",
+      "title": "Cursos Online",
+      "chars": 512,
+      "phrases": 3,
+      "responses": 1,
+      "links": 2
+    },
+    {
+      "intent": "14_DF_InscripcionCarreras",
+      "slug": "inscripcion-carreras",
+      "title": "Inscripción Carreras",
+      "chars": 570,
+      "phrases": 7,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "15_DF_IngresoRegional",
+      "slug": "ingreso-regional",
+      "title": "Ingreso Regional",
+      "chars": 442,
+      "phrases": 5,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "16_DF_Becas",
+      "slug": "becas",
+      "title": "Becas",
+      "chars": 699,
+      "phrases": 5,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "17_DF_BoletoEducativo",
+      "slug": "boleto-educativo",
+      "title": "Boleto Educativo",
+      "chars": 344,
+      "phrases": 5,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "18_DF_LicenciaEstudiantil",
+      "slug": "licencia-estudiantil",
+      "title": "Licencia Estudiantil",
+      "chars": 827,
+      "phrases": 6,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "19_DF_CriteriosEvaluacion",
+      "slug": "criterios-evaluacion",
+      "title": "Criterios Evaluación",
+      "chars": 540,
+      "phrases": 5,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "1_DF_regularidad",
+      "slug": "regularidad",
+      "title": "Regularidad",
+      "chars": 842,
+      "phrases": 8,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "20_DF_PlanEstudios",
+      "slug": "plan-estudios",
+      "title": "Plan Estudios",
+      "chars": 316,
+      "phrases": 3,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "21_DF_ReglamentoEstudio",
+      "slug": "reglamento-estudio",
+      "title": "Reglamento Estudio",
+      "chars": 333,
+      "phrases": 2,
+      "responses": 1,
+      "links": 1
+    },
+    {
+      "intent": "22_DF_CorreoInstitucional",
+      "slug": "correo-institucional",
+      "title": "Correo Institucional",
+      "chars": 660,
+      "phrases": 5,
+      "responses": 2,
+      "links": 1
+    },
+    {
+      "intent": "23_DF_CalendarioAcadémico",
+      "slug": "calendario-academico",
+      "title": "Calendario Académico",
+      "chars": 309,
+      "phrases": 3,
+      "responses": 1,
+      "links": 1
+    },
+    {
+      "intent": "24_DF_PPS",
+      "slug": "pps",
+      "title": "PPS",
+      "chars": 425,
+      "phrases": 4,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "25_DF_AñoDeGracia",
+      "slug": "ano-de-gracia",
+      "title": "Año De Gracia",
+      "chars": 453,
+      "phrases": 3,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "26_DF_Recuperación",
+      "slug": "recuperacion",
+      "title": "Recuperación",
+      "chars": 419,
+      "phrases": 2,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "2_DF_Aprobracion_Directa",
+      "slug": "aprobracion-directa",
+      "title": "Aprobracion Directa",
+      "chars": 445,
+      "phrases": 4,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "3_DF_AbonoCuota",
+      "slug": "abono-cuota",
+      "title": "Abono Cuota",
+      "chars": 788,
+      "phrases": 7,
+      "responses": 3,
+      "links": 0
+    },
+    {
+      "intent": "4_DF_CursadoCondicional",
+      "slug": "cursado-condicional",
+      "title": "Cursado Condicional",
+      "chars": 590,
+      "phrases": 4,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "5_DF_LlamadosExamenes",
+      "slug": "llamados-examenes",
+      "title": "Llamados Exámenes",
+      "chars": 385,
+      "phrases": 2,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "6_DF_ExtensionRegularidad",
+      "slug": "extension-regularidad",
+      "title": "Extensión Regularidad",
+      "chars": 616,
+      "phrases": 3,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "7_DF_HorariosFechas",
+      "slug": "horarios-fechas",
+      "title": "Horarios Fechas",
+      "chars": 418,
+      "phrases": 6,
+      "responses": 1,
+      "links": 1
+    },
+    {
+      "intent": "8_DF_Moodle",
+      "slug": "moodle",
+      "title": "Moodle",
+      "chars": 395,
+      "phrases": 4,
+      "responses": 1,
+      "links": 1
+    },
+    {
+      "intent": "9_DF_InscripcionRendir",
+      "slug": "inscripcion-rendir",
+      "title": "Inscripción Rendir",
+      "chars": 635,
+      "phrases": 5,
+      "responses": 2,
+      "links": 1
+    },
+    {
+      "intent": "Carreras_Distancia",
+      "slug": "carreras-distancia",
+      "title": "Carreras Distancia",
+      "chars": 1302,
+      "phrases": 3,
+      "responses": 1,
+      "links": 8
+    },
+    {
+      "intent": "Carreras_Grado",
+      "slug": "carreras-grado",
+      "title": "Carreras Grado",
+      "chars": 344,
+      "phrases": 5,
+      "responses": 1,
+      "links": 2
+    },
+    {
+      "intent": "Carreras_posgrado",
+      "slug": "carreras-posgrado",
+      "title": "Carreras Posgrado",
+      "chars": 312,
+      "phrases": 4,
+      "responses": 1,
+      "links": 1
+    },
+    {
+      "intent": "Carreras_Tecnicaturas",
+      "slug": "carreras-tecnicaturas",
+      "title": "Carreras Tecnicaturas",
+      "chars": 333,
+      "phrases": 1,
+      "responses": 1,
+      "links": 3
+    },
+    {
+      "intent": "GEN_Electromecánica",
+      "slug": "gen-electromecanica",
+      "title": "GEN Electromecánica",
+      "chars": 248,
+      "phrases": 2,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "GEN_HigieneYSeguridad",
+      "slug": "gen-higiene-yseguridad",
+      "title": "GEN Higiene YSeguridad",
+      "chars": 337,
+      "phrases": 4,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "GEN_LAR",
+      "slug": "gen-lar",
+      "title": "GEN LAR",
+      "chars": 227,
+      "phrases": 3,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "GEN_Mecatronica",
+      "slug": "gen-mecatronica",
+      "title": "GEN Mecatrónica",
+      "chars": 144,
+      "phrases": 0,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "GEN_pdgea",
+      "slug": "gen-pdgea",
+      "title": "GEN Pdgea",
+      "chars": 307,
+      "phrases": 2,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "GEN_Programación",
+      "slug": "gen-programacion",
+      "title": "GEN Programación",
+      "chars": 269,
+      "phrases": 0,
+      "responses": 1,
+      "links": 2
+    },
+    {
+      "intent": "Respuestas_Dudas_PersonaReal",
+      "slug": "respuestas-dudas-persona-real",
+      "title": "Respuestas Dudas Persona Real",
+      "chars": 295,
+      "phrases": 2,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_Autogestion",
+      "slug": "respuesta-autogestion",
+      "title": "Respuesta Autogestión",
+      "chars": 881,
+      "phrases": 7,
+      "responses": 2,
+      "links": 2
+    },
+    {
+      "intent": "Respuesta_carreras",
+      "slug": "respuesta-carreras",
+      "title": "Respuesta Carreras",
+      "chars": 366,
+      "phrases": 6,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_CostoCarrera",
+      "slug": "respuesta-costo-carrera",
+      "title": "Respuesta Costo Carrera",
+      "chars": 552,
+      "phrases": 4,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_Faltas/inasistencias",
+      "slug": "respuesta-faltas-inasistencias",
+      "title": "Respuesta Faltas Inasistencias",
+      "chars": 810,
+      "phrases": 7,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_Legajo",
+      "slug": "respuesta-legajo",
+      "title": "Respuesta Legajo",
+      "chars": 981,
+      "phrases": 2,
+      "responses": 4,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_MaterialEstudio",
+      "slug": "respuesta-material-estudio",
+      "title": "Respuesta Material Estudio",
+      "chars": 471,
+      "phrases": 4,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_Programador",
+      "slug": "respuesta-programador",
+      "title": "Respuesta Programador",
+      "chars": 229,
+      "phrases": 5,
+      "responses": 1,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_RedesSociales",
+      "slug": "respuesta-redes-sociales",
+      "title": "Respuesta Redes Sociales",
+      "chars": 334,
+      "phrases": 2,
+      "responses": 1,
+      "links": 4
+    },
+    {
+      "intent": "Respuesta_Titulo",
+      "slug": "respuesta-titulo",
+      "title": "Respuesta Título",
+      "chars": 462,
+      "phrases": 6,
+      "responses": 2,
+      "links": 0
+    },
+    {
+      "intent": "Respuesta_Ubicacion",
+      "slug": "respuesta-ubicacion",
+      "title": "Respuesta Ubicación",
+      "chars": 471,
+      "phrases": 4,
+      "responses": 1,
+      "links": 1
+    }
+  ],
+  "skipped": [
+    {
+      "intent": "Default Fallback Intent",
+      "reason": "intent de sistema"
+    },
+    {
+      "intent": "Default Welcome Intent",
+      "reason": "intent de sistema"
+    }
+  ]
+}

@@ -139,6 +139,9 @@ npm run crawl -- --sitemap https://www.frrq.utn.edu.ar/wp-sitemap-posts-page-1.x
 npm run crawl -- --seed https://sac.frrq.utn.edu.ar/ --max 40 --delay 250 \
                  --exclude "utn-frrq-noticias\.html,/noticias/" --out corpus/web
 
+# Importar las FAQ del bot de Dialogflow (una vez; genera corpus/faq/)
+npm run import:df -- --dir C:/ruta/al/export/intents
+
 # Indexar (pendiente de implementar)
 npm run ingest
 
