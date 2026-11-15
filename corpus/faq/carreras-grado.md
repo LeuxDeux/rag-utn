@@ -5,7 +5,7 @@ doc_id: faq-carreras-grado
 title: Carreras Grado
 url: https://www.frrq.utn.edu.ar/carreras/ie/
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Carreras Grado

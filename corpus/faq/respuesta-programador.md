@@ -4,7 +4,7 @@ intent: Respuesta_Programador
 doc_id: faq-respuesta-programador
 title: Respuesta Programador
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Respuesta Programador

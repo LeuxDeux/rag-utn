@@ -4,7 +4,7 @@ intent: 24_DF_PPS
 doc_id: faq-pps
 title: PPS
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # PPS

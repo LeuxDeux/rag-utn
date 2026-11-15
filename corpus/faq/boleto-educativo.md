@@ -4,7 +4,7 @@ intent: 17_DF_BoletoEducativo
 doc_id: faq-boleto-educativo
 title: Boleto Educativo
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Boleto Educativo

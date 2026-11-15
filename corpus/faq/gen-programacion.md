@@ -5,7 +5,7 @@ doc_id: faq-gen-programacion
 title: GEN Programación
 url: https://www.frrq.utn.edu.ar/carreras/tup/
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # GEN Programación

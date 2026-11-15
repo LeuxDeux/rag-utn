@@ -4,7 +4,7 @@ intent: 16_DF_Becas
 doc_id: faq-becas
 title: Becas
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Becas

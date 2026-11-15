@@ -5,7 +5,7 @@ doc_id: faq-calendario-academico
 title: Calendario Académico
 url: https://www.frrq.utn.edu.ar/calendario-academico-2023-2024/
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Calendario Académico

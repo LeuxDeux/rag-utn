@@ -185,7 +185,8 @@ El crawler respeta `robots.txt`, espera 250–350 ms, prefiere sitemap, filtra l
 
 ## 9. Trampas conocidas
 
-- **Encoding:** la consola de PowerShell manglea UTF-8. Verificá con Node, no con `Get-Content`/`Select-String`.
+- **`npm run import:df` ya emite `doc_id` y `aliases`.** No hace falta correr `doc-ids` después (y si se corre, no cambia nada). Si se regenera el corpus, el índice de `webapp-utn` queda viejo hasta que se reimporte: el import de allá exige `doc_id` o `url`, y sin eso descarta el documento.
+- **Encoding:** la consola de PowerShell manglea UTF-8. Verificá con Node, no con `Get-Content`/`Select-String`. Y no uses `>` para volcar la salida de `git` a un archivo: PowerShell escribe UTF-16. Usá `cmd /c "git ... > archivo"`.
 - **Links del reporte:** el formato es [`archivo.md`](../corpus/web/archivo.md), y también `../corpus/faq/` o `../corpus-excluded/`. Si cambia, el parser de decisiones deja de ver documentos (ya pasó una vez y corrió casillas de documento). El script aborta si parsea menos del 80% de lo registrado.
 - **No re-crawlear sobre `corpus/web` después de una migración.** Usar carpeta nueva + `migrate:site`.
 - **`autocrlf=false`** en este repo: los archivos son LF.

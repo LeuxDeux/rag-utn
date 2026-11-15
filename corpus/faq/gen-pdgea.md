@@ -4,7 +4,7 @@ intent: GEN_pdgea
 doc_id: faq-gen-pdgea
 title: GEN Pdgea
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # GEN Pdgea

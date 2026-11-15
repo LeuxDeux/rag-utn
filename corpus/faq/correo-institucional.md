@@ -5,7 +5,7 @@ doc_id: faq-correo-institucional
 title: Correo Institucional
 url: https://www.frrq.utn.edu.ar/secretarias/sec_academica/office365/
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Correo Institucional

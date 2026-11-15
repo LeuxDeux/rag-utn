@@ -4,7 +4,7 @@ intent: 2_DF_Aprobracion_Directa
 doc_id: faq-aprobracion-directa
 title: Aprobracion Directa
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Aprobracion Directa

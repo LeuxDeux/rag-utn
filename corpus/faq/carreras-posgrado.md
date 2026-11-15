@@ -5,7 +5,7 @@ doc_id: faq-carreras-posgrado
 title: Carreras Posgrado
 url: https://www.frrq.utn.edu.ar/carreras/pdgea/
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Carreras Posgrado

@@ -5,7 +5,7 @@ doc_id: faq-cursos-online
 title: Cursos Online
 url: https://aprenderonline.frrq.utn.edu.ar
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Cursos Online

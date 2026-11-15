@@ -4,7 +4,7 @@ intent: 14_DF_InscripcionCarreras
 doc_id: faq-inscripcion-carreras
 title: Inscripción Carreras
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Inscripción Carreras

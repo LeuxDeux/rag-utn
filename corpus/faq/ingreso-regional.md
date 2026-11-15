@@ -4,7 +4,7 @@ intent: 15_DF_IngresoRegional
 doc_id: faq-ingreso-regional
 title: Ingreso Regional
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Ingreso Regional

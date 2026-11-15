@@ -5,7 +5,7 @@ doc_id: faq-inscripcion-materias
 title: Inscripción Materias
 url: http://www3.frrq.utn.edu.ar/sysacadweb/loginalumno.asp
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Inscripción Materias

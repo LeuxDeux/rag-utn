@@ -202,8 +202,12 @@ for (const f of intentFiles) {
   const frontmatter = stringify({
     source: "dialogflow",
     intent: name,
+    // El doc_id va desde el origen: si se agrega después con doc-ids y alguien
+    // regenera sin correrlo, el corpus queda sin identidad y el import lo rechaza.
+    doc_id: `faq-${slug}`,
     title,
     ...(links[0] ? { url: links[0].url } : {}),
+    aliases: [],
     imported_at: manifest.imported_at.slice(0, 10),
   });
 
@@ -228,7 +232,7 @@ for (const f of intentFiles) {
     links: links.length,
   });
 
-  for (const p of kept) {
+  for (const p of phrases) {
     evalSet.push({ question: p, expected_doc: `corpus/faq/${slug}.md`, intent: name });
   }
 }

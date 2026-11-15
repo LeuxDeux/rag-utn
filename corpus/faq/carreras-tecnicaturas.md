@@ -5,7 +5,7 @@ doc_id: faq-carreras-tecnicaturas
 title: Carreras Tecnicaturas
 url: https://www.frrq.utn.edu.ar/carreras/tuhst/
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Carreras Tecnicaturas

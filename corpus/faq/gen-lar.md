@@ -4,7 +4,7 @@ intent: GEN_LAR
 doc_id: faq-gen-lar
 title: GEN LAR
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # GEN LAR

@@ -4,7 +4,7 @@ intent: GEN_Mecatronica
 doc_id: faq-gen-mecatronica
 title: GEN Mecatrónica
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # GEN Mecatrónica

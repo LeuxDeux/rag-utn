@@ -4,7 +4,7 @@ intent: 12_DF_CursilloIngreso
 doc_id: faq-cursillo-ingreso
 title: Cursillo Ingreso
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Cursillo Ingreso

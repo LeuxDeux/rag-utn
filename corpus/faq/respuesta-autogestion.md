@@ -5,7 +5,7 @@ doc_id: faq-respuesta-autogestion
 title: Respuesta Autogestión
 url: http://www3.frrq.utn.edu.ar/sysacadweb/logindocente.asp
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Respuesta Autogestión

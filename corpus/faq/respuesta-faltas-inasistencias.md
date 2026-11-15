@@ -4,7 +4,7 @@ intent: Respuesta_Faltas/inasistencias
 doc_id: faq-respuesta-faltas-inasistencias
 title: Respuesta Faltas Inasistencias
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Respuesta Faltas Inasistencias

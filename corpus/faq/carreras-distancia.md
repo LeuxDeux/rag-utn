@@ -5,7 +5,7 @@ doc_id: faq-carreras-distancia
 title: Carreras Distancia
 url: https://www.frrq.utn.edu.ar/carreras/carreras-a-distancia/tuti-online/
 aliases: []
-imported_at: 2026-11-14
+imported_at: 2026-11-15
 ---
 
 # Carreras Distancia
