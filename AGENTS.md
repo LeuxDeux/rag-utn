@@ -3,6 +3,7 @@
 Documento operativo del repositorio. Está escrito para que un agente (o una persona nueva) pueda trabajar sin romper nada.
 
 - **Guía humana completa:** [`guia-rag-asistente-universitario.md`](./guia-rag-asistente-universitario.md)
+- **Contrato de runtime (ingesta + `/api/ask`):** [`docs/CONTRATO-RUNTIME.md`](./docs/CONTRATO-RUNTIME.md)
 - **Producto:** [`README.md`](./README.md)
 - **Decisiones de curación:** [`corpus/decisions.yaml`](./corpus/decisions.yaml)
 - **Reporte de curación:** [`docs/REPORTE-CURACION.md`](./docs/REPORTE-CURACION.md)

@@ -203,6 +203,8 @@ Reglas que no se rompen sin medir el impacto:
 
 [`AGENTS.md`](./AGENTS.md) — mapa técnico para agentes: invariantes, contratos de datos, comandos, flujos y trampas conocidas.
 
+[`docs/CONTRATO-RUNTIME.md`](./docs/CONTRATO-RUNTIME.md) — reglas para quien implementa la ingesta y `/api/ask`: decisiones de curación, aranceles, datos volátiles y evaluación.
+
 ---
 
 Proyecto interno de la **UTN Facultad Regional Reconquista**. El corpus se construye a partir de información pública del sitio institucional, respetando `robots.txt` y con límite de velocidad.
