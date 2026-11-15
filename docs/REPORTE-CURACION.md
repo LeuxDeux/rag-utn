@@ -1,7 +1,7 @@
 # Reporte de curación del corpus
 
 **Generado:** 2026-11-15
-**En el corpus:** 227 documentos · **Fuentes:** `corpus/web` (180) y `corpus/faq` (47)
+**En el corpus:** 228 documentos · **Fuentes:** `corpus/web` (180) y `corpus/faq` (48)
 **Excluidos:** 30 (en `corpus-excluded/`, fuera del índice)
 **Decisiones ya marcadas:** 124
 
@@ -41,7 +41,7 @@ Cuando el documento **es el canal oficial hoy** pero el sitio conserva un año v
 | 🔴 Excluir | **1** | Evento con fecha vencida |
 | 🟡 Revisar | **72** | Listados, contenido fino, duplicados o vigencia dudosa |
 | 🔵 Opcional | **21** | Oferta de extensión e idiomas |
-| 🟢 FAQ del bot | **47** | Respuestas del Dialogflow. Revisar si siguen vigentes |
+| 🟢 FAQ del bot | **48** | Respuestas del Dialogflow. Revisar si siguen vigentes |
 | ⚪ Limpio | **86** | Contenido sustantivo y vigente |
 | 🗄️ Ya excluidos | **30** | Fuera del índice. Marcá «Queda» para restaurar |
 
@@ -456,7 +456,7 @@ Menos de 600 caracteres. Revisar de a uno: una página de contacto **sirve**; un
 
 ---
 
-# 🟢 FAQ importada de Dialogflow (47)
+# 🟢 FAQ importada de Dialogflow (48)
 
 Respuestas curadas del bot anterior. Son la mejor fuente de **formulaciones reales** (cada documento incluye las frases de entrenamiento), pero el contenido es de hace años.
 
@@ -740,6 +740,12 @@ Respuestas curadas del bot anterior. Son la mejor fuente de **formulaciones real
 
 - [`respuestas-dudas-persona-real.md`](../corpus/faq/respuestas-dudas-persona-real.md)
   - *Respuestas Dudas Persona Real* · respuesta del bot · 295 chars
+  - [ ] Queda
+  - [ ] Queda — vigente (año desactualizado en el sitio)
+  - [ ] Excluir
+
+- [`ubicacion-facultad.md`](../corpus/faq/ubicacion-facultad.md)
+  - *Ubicación de la Facultad* · respuesta del bot · 960 chars · [original](<https://www.google.com/maps?ll=-29.14637,-59.664332&z=16&t=m&hl=es-419&gl=US&mapclient=embed&cid=3075566264737786639>)
   - [ ] Queda
   - [ ] Queda — vigente (año desactualizado en el sitio)
   - [ ] Excluir

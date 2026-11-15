@@ -64,6 +64,8 @@ No romper sin medir el impacto:
 corpus/
   web/              sitio cosechado (frontmatter: doc_id, url, title, site, aliases, fetched_at)
   faq/              import de Dialogflow (frontmatter: doc_id, intent, title, url?, aliases)
+                    + documentos curados a mano con `source: curado` (el importador
+                    no los genera ni los borra; sobreviven a `npm run import:df`)
   decisions.yaml    registro de curación (lo consume el ingest)
   ejemplo.txt       documento de prueba
 corpus-excluded/    excluidos, gitignored, fuera del corpus
