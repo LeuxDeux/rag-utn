@@ -1,0 +1,64 @@
+COMANDOS PARA LEVANTAR EL ASISTENTE
+====================================
+
+Requisitos: Ollama corriendo (gemma3:4b + embeddinggemma) y PostgreSQL 18.
+Las variables de Ollama ya estan fijadas a nivel usuario:
+  OLLAMA_MAX_LOADED_MODELS=2   (embedder y chat en VRAM a la vez)
+  OLLAMA_CONTEXT_LENGTH=8192
+
+
+TODOS LOS DIAS
+--------------
+cd C:\Users\lauti\Desktop\ragv2\webapp-utn
+
+Get-Content .env.local | Where-Object { $_ -match '^\s*[A-Z_]+=' } |
+  ForEach-Object { $k,$v = $_ -split '=',2; Set-Item "env:$k" $v }
+
+go run ./cmd/webapp-utn servir
+
+--> abrir  http://localhost:5004   (burbuja "Asistente de la Facultad")
+
+
+SI OLLAMA NO ESTA CORRIENDO
+---------------------------
+ollama serve
+
+curl.exe -s http://127.0.0.1:11434/api/version
+ollama ps        # deben figurar embeddinggemma y gemma3:4b
+
+
+CUANDO CAMBIA EL CORPUS (rag)
+-----------------------------
+cd ..\rag
+npm run import:df -- --dir "C:\Users\lauti\Downloads\Bot_UTN\intents"   # solo si cambio el bot
+npm run doc-ids
+npm run curation
+npm run decisions                # dry-run; con  -- --apply  aplica y mueve excluidos
+
+cd ..\webapp-utn
+go run ./cmd/webapp-utn asistente importar ..\rag\corpus
+go run ./cmd/webapp-utn asistente reindexar
+
+
+CUANDO CAMBIA EL PANEL
+----------------------
+npm --prefix web/panel ci
+npm --prefix web/panel run build
+
+
+VERIFICAR QUE NO SE ROMPIO NADA
+-------------------------------
+go run ./cmd/webapp-utn asistente evaluar --dialogflow corpus\eval\questions-dialogflow.yaml
+# esperado: acierto@5 = 187/189
+
+
+DETENER
+-------
+Get-Process -Name dev,go -ErrorAction SilentlyContinue | Stop-Process
+
+
+NOTAS
+-----
+- Arranque en frio: la primera pregunta puede tardar ~5 s (carga del modelo).
+- No exponer Ollama a internet: escucha en 127.0.0.1 y no tiene auth.
+- Las credenciales son locales de desarrollo (rol webapp / base db_portal).
