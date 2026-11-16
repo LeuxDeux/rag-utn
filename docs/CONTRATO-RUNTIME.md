@@ -6,7 +6,7 @@
 > `src/ingest/`, `src/ask/` o `src/server.js`. No es una revisión de código: son las
 > reglas que hacen que el asistente no desinforme.
 
-Mapa técnico general: [`../AGENTS.md`](../AGENTS.md). Guía humana: [`../guia-rag-asistente-universitario.md`](../guia-rag-asistente-universitario.md).
+Mapa técnico general: [`../AGENTS.md`](../AGENTS.md). Guía humana: [`../guia-rag-asistente-universitario.md`](../guia-rag-asistente-universitario.md). Búsqueda y escalado: [`ARQUITECTURA-BUSQUEDA.md`](./ARQUITECTURA-BUSQUEDA.md).
 
 ---
 
