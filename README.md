@@ -205,6 +205,8 @@ Reglas que no se rompen sin medir el impacto:
 
 [`docs/CONTRATO-RUNTIME.md`](./docs/CONTRATO-RUNTIME.md) — reglas para quien implementa la ingesta y `/api/ask`: decisiones de curación, aranceles, datos volátiles y evaluación.
 
+[`docs/HANDOFF.md`](./docs/HANDOFF.md) — cómo retomar el proyecto desde cero: requisitos, puesta en marcha, pruebas y qué esperar de cada número.
+
 ---
 
 Proyecto interno de la **UTN Facultad Regional Reconquista**. El corpus se construye a partir de información pública del sitio institucional, respetando `robots.txt` y con límite de velocidad.
