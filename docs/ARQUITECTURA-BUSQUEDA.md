@@ -148,11 +148,11 @@ Por orden de impacto, con lo que le toca a este lado:
 
 | # | Qué | Detalle |
 |---|---|---|
-| 1 | **Actualizar el ground truth de la evaluación** | El set de 189 espera documentos de la FAQ del bot; ahora el sitio nuevo los supera y 5 casos cuentan como falla aunque la respuesta sea mejor. Aceptar el documento del sitio en `fuentesEsperadas` |
-| 2 | **Datos volátiles (`mode: live`)** | Hoy las fechas de inscripción salen del índice. Cuando cambie el cuatrimestre va a afirmar plazos vencidos con cita. Endpoint/JSON del calendario inyectado como `[VIVO]` con `fetched_at` |
+| 1 | ✅ **Actualizar el ground truth de la evaluación** | Hecho en `webapp-utn` (rama `ragv2`): `internal/asistente/evaluacion/alternativas_dialogflow.json` acepta la página del sitio que responde mejor que la FAQ esperada, sin tocar `eval/questions-dialogflow.yaml`. Da **188/189**; la que falla («¿Quién te ha programado?») no tiene respuesta en el sitio |
+| 2 | ✅ **Datos volátiles (`mode: live`)** | Hecho en `webapp-utn` (`ragv2`): no hay endpoint del calendario, así que la fuente viva es una pantalla del panel (**Asistente → Datos vigentes**, tabla `asistente_datos_vivos`). Cada dato tiene desde/hasta; mientras vale y toca el tema de la pregunta va primero al prompt como `[VIVO] (actualizado el …)` y manda sobre las fechas del índice. No se indexa ni se cachea |
 | 3 | **Loader de PDF** (o conversión previa a `.md`) | 458 PDFs descubiertos, 28 de alto valor (reglamentos, planes, correlatividades). Se pueden convertir a `.md` en `rag` y entrar como `externo` sin tocar el indexador |
-| 4 | **Sincronizar la copia del corpus** | `webapp-utn/corpus` está vendorizado y quedó atrás (47 vs 48 docs: falta `ubicacion-facultad.md`). Mejor importar siempre de `..\rag\corpus` |
-| 5 | **Deploy** | HTTPS, systemd, y decidir si la generación va local o por API. Ollama no arranca solo tras un reinicio |
+| 4 | ✅ **Sincronizar la copia del corpus** | `webapp-utn/corpus` copiado de `aebc040` (incluye `ubicacion-facultad.md`). Los documentos `source: curado` ya no pasan por el filtro de poco texto. Al cambiar el corpus acá, volver a copiarlo (ver `corpus/README.md` allá) |
+| 5 | **Deploy** | `webapp-utn/docs/INSTALACION.md` §12 ya cubre systemd (`enable` para que Ollama arranque solo), `OLLAMA_MAX_LOADED_MODELS=2` y recomienda generación local si el servidor tiene placa. Falta decidir el servidor y hacer el deploy real |
 
 ---
 
