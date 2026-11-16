@@ -56,6 +56,10 @@ npm --prefix web/panel run build
 
 VERIFICAR QUE NO SE ROMPIO NADA
 -------------------------------
+# ¿el conocimiento de la base está al día con rag?
+go run ./cmd/webapp-utn asistente estado
+# esperado: "estado: al día"  (si dice "N commits atrás", reimportá)
+
 # retrieval sobre 189 preguntas reales (no usa el LLM, no gasta cupo)
 go run ./cmd/webapp-utn asistente evaluar --dialogflow corpus\eval\questions-dialogflow.yaml
 

@@ -106,6 +106,7 @@ npm run decisions      # dry-run; con -- --apply aplica y mueve excluidos
 | `importar ..\rag\corpus` | `leídos 228, importados 227 (56 vigentes), descartados 1` · `0 pendientes` |
 | `reindexar` | `sitio 13 documentos, 337 fragmentos` |
 | `psql ... \dt asistente_*` | 7 tablas |
+| `asistente estado` | `conocimiento: rag@<hash> · 240 documentos · 1.632 fragmentos` · `estado: al día` |
 | `evaluar --dialogflow corpus\eval\questions-dialogflow.yaml` | **182/189** con el sitio indexado (187/189 sin él) |
 | `go test ./internal/asistente/...` | 4 paquetes `ok` (necesita `WEBAPP_TEST_DSN`) |
 
@@ -143,6 +144,7 @@ go run ./cmd/webapp-utn asistente evaluar
 
 | Síntoma | Causa | Solución |
 |---|---|---|
+| Importé y responde lo anterior | El conocimiento en la base es una **copia**: un `git pull` en `rag` no la actualiza | `asistente estado` y reimportar |
 | Respuestas vagas en un seguimiento | Ya corregido en `fd9508f`; verificar que la rama lo tenga | — |
 | `/api/embed` da timeout | `OLLAMA_MAX_LOADED_MODELS` sin setear | Reiniciar Ollama con la variable |
 | «No tengo esa información» con datos que existen | Umbral de coseno 0,35 y sin coincidencia de texto | Revisar chunking antes que el modelo |
