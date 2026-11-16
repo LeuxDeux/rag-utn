@@ -1,6 +1,6 @@
 # Reporte de curación del corpus
 
-**Generado:** 2026-11-15
+**Generado:** 2026-11-16
 **En el corpus:** 228 documentos · **Fuentes:** `corpus/web` (180) y `corpus/faq` (48)
 **Excluidos:** 30 (en `corpus-excluded/`, fuera del índice)
 **Decisiones ya marcadas:** 124

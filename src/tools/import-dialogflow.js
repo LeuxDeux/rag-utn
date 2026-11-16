@@ -1,9 +1,10 @@
 // Importa un export de Dialogflow ES (carpeta de intents) al corpus como FAQ.
 //
 // Uso:
-//   npm run import:df -- --dir C:/Users/lauti/Downloads/Bot_UTN/intents
+//   npm run import:df -- --dir <carpeta del export de Dialogflow>
 //
-// Entrada: <NN>_DF_Nombre.json + <NN>_DF_Nombre_usersays_es.json
+// La carpeta es obligatoria: es un dato de tu máquina, no del repo.
+// Estructura esperada: <NN>_DF_Nombre.json + <NN>_DF_Nombre_usersays_es.json
 // Salida:  corpus/faq/<slug>.md   (un documento por intent)
 //          corpus/faq/_import.json (manifiesto del import)
 //          eval/questions-dialogflow.yaml (frases reales como set de evaluación)
@@ -29,7 +30,7 @@ const args = Object.fromEntries(
   }, []),
 );
 
-const SRC = args.dir ?? "C:/Users/lauti/Downloads/Bot_UTN/intents";
+const SRC = args.dir;
 const OUT = args.out ?? "corpus/faq";
 const EVAL_OUT = "eval/questions-dialogflow.yaml";
 
@@ -109,6 +110,14 @@ function collectLinks(node, out = []) {
 }
 
 // ---------------------------------------------------------------- proceso
+if (!SRC) {
+  console.error(
+    "Falta --dir con la carpeta del export de Dialogflow.\n" +
+      '  npm run import:df -- --dir "C:/ruta/a/intents"',
+  );
+  process.exit(1);
+}
+
 if (!fs.existsSync(SRC)) {
   console.error(`No existe la carpeta de intents: ${SRC}`);
   process.exit(1);
@@ -119,7 +128,12 @@ const intentFiles = files.filter((f) => !f.includes("_usersays_"));
 
 fs.mkdirSync(OUT, { recursive: true });
 
-const manifest = { source: SRC, imported_at: new Date().toISOString(), intents: [], skipped: [] };
+const manifest = {
+  source: "export de Dialogflow (carpeta intents)",
+  imported_at: new Date().toISOString(),
+  intents: [],
+  skipped: [],
+};
 const evalSet = [];
 const seenDocs = new Map();
 let totalPhrases = 0;

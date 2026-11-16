@@ -1,16 +1,22 @@
 COMANDOS PARA LEVANTAR EL ASISTENTE
 ====================================
 
-Requisitos: Ollama corriendo (gemma3:4b + embeddinggemma) y PostgreSQL 18.
-Las variables de Ollama ya estan fijadas a nivel usuario:
+Ajustá estas dos rutas a tu máquina. El resto es igual.
+  $proj    = proyecto webapp-utn (el runtime)
+  $intents = export de Dialogflow (solo si regenerás las FAQ)
+
+Requisitos: Ollama con gemma3:4b + embeddinggemma, y PostgreSQL 18.
+Variables de Ollama recomendadas (a nivel usuario, antes de arrancarlo):
   OLLAMA_MAX_LOADED_MODELS=2   (embedder y chat en VRAM a la vez)
   OLLAMA_CONTEXT_LENGTH=8192
 
 
 TODOS LOS DIAS
 --------------
-cd C:\Users\lauti\Desktop\ragv2\webapp-utn
+$proj = "C:\ruta\a\ragv2\webapp-utn"
+cd $proj
 
+# cargar el entorno (.env.local con WEBAPP_DSN y WEBAPP_TEST_DSN propios)
 Get-Content .env.local | Where-Object { $_ -match '^\s*[A-Z_]+=' } |
   ForEach-Object { $k,$v = $_ -split '=',2; Set-Item "env:$k" $v }
 
@@ -22,19 +28,21 @@ go run ./cmd/webapp-utn servir
 SI OLLAMA NO ESTA CORRIENDO
 ---------------------------
 ollama serve
-
 curl.exe -s http://127.0.0.1:11434/api/version
 ollama ps        # deben figurar embeddinggemma y gemma3:4b
 
 
-CUANDO CAMBIA EL CORPUS (rag)
------------------------------
+CUANDO CAMBIA EL CORPUS
+-----------------------
+# en el repo rag (fábrica de datos)
 cd ..\rag
-npm run import:df -- --dir "C:\Users\lauti\Downloads\Bot_UTN\intents"   # solo si cambio el bot
+npm install                                    # una vez
+npm run import:df -- --dir $intents            # solo si cambió el bot de Dialogflow
 npm run doc-ids
 npm run curation
-npm run decisions                # dry-run; con  -- --apply  aplica y mueve excluidos
+npm run decisions                              # dry-run; con  -- --apply  aplica
 
+# en el runtime
 cd ..\webapp-utn
 go run ./cmd/webapp-utn asistente importar ..\rag\corpus
 go run ./cmd/webapp-utn asistente reindexar
@@ -48,8 +56,11 @@ npm --prefix web/panel run build
 
 VERIFICAR QUE NO SE ROMPIO NADA
 -------------------------------
+# retrieval sobre 189 preguntas reales (no usa el LLM, no gasta cupo)
 go run ./cmd/webapp-utn asistente evaluar --dialogflow corpus\eval\questions-dialogflow.yaml
-# esperado: acierto@5 = 187/189
+
+# evaluación completa con LLM (15 preguntas, sí gasta cupo)
+go run ./cmd/webapp-utn asistente evaluar
 
 
 DETENER
@@ -59,6 +70,8 @@ Get-Process -Name dev,go -ErrorAction SilentlyContinue | Stop-Process
 
 NOTAS
 -----
-- Arranque en frio: la primera pregunta puede tardar ~5 s (carga del modelo).
+- El cupo del LLM es por IP y por día (6/min, 40/día por defecto). Si se agota:
+  update asistente_uso_diario set pedidos_llm = 0;   (solo desarrollo)
+- Arranque en frío: la primera pregunta tarda ~5 s (carga del modelo).
 - No exponer Ollama a internet: escucha en 127.0.0.1 y no tiene auth.
-- Las credenciales son locales de desarrollo (rol webapp / base db_portal).
+- Las credenciales son locales de desarrollo. Cada uno usa su propia base.
