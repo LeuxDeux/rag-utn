@@ -22,7 +22,7 @@ import path from "node:path";
 import { parse, stringify } from "yaml";
 
 const APPLY = process.argv.includes("--apply");
-const DIRS = ["corpus/web", "corpus/faq", "corpus-excluded"];
+const DIRS = ["corpus/web", "corpus/faq", "corpus/pdf", "corpus-excluded"];
 
 function docIdFromUrl(url) {
   let u;

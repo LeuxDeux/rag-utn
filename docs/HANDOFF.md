@@ -107,7 +107,7 @@ npm run decisions      # dry-run; con -- --apply aplica y mueve excluidos
 | `reindexar` | `sitio 13 documentos, 337 fragmentos` |
 | `psql ... \dt asistente_*` | 7 tablas |
 | `asistente estado` | `conocimiento: rag@<hash> · 240 documentos · 1.632 fragmentos` · `estado: al día` |
-| `evaluar --dialogflow corpus\eval\questions-dialogflow.yaml` | **188/189** con el sitio indexado (desde `ragv2`, que acepta las páginas del sitio; antes 182/189) |
+| `evaluar --dialogflow corpus\eval\questions-dialogflow.yaml` | **187/189** con sitio y PDF (188 sin PDF; antes 182). La nueva falla, «Administración rural», espera `faq-carreras-posgrado`: la etiqueta está mal y la responde el diseño curricular de la LAR |
 | `go test ./internal/asistente/...` | 4 paquetes `ok` (necesita `WEBAPP_TEST_DSN`) |
 
 Si `pendientes` no es 0, Ollama no estaba disponible durante el import: volvé a correr
@@ -129,7 +129,7 @@ go run ./cmd/webapp-utn asistente evaluar
 
 ### Cómo leer los números
 
-- **188/189** es el valor correcto con el sitio nuevo indexado. Las preguntas cuya respuesta
+- **187/189** es el valor correcto con el sitio nuevo y los PDF indexados (188 sin PDF). Las preguntas cuya respuesta
   ahora sale de una página del sitio en vez de la FAQ del bot se aceptan con
   `webapp-utn/internal/asistente/evaluacion/alternativas_dialogflow.json`. Cada falla se
   imprime con lo que esperaba y lo que encontró.
@@ -158,8 +158,9 @@ Ordenado por impacto, con detalle en [`ARQUITECTURA-BUSQUEDA.md`](./ARQUITECTURA
 1. ✅ **Actualizar el ground truth** del set de 189 (hecho en `webapp-utn`, rama `ragv2`).
 2. ✅ **Datos volátiles (`mode: live`)**: pantalla **Asistente → Datos vigentes** del panel;
    van al prompt como `[VIVO]` mientras valen (hecho en `ragv2`).
-3. **PDFs**: 458 descubiertos, 28 de alto valor (reglamentos, planes, correlatividades).
-   Se pueden convertir a `.md` en `rag` y entrar como `externo`, sin tocar el indexador.
+3. ✅ **PDFs**: 26 de alto valor en `corpus/pdf/` (`npm run import:pdf`; OCR de Windows para
+   los escaneados). Las correlativas no se transcriben (el modelo las mezclaba): el asistente
+   manda al régimen de correlatividades en PDF. Probar `CORRELATIVAS=1` con un modelo más grande.
 4. ✅ **Sincronizar la copia vendorizada** de `corpus/` (copiada de `aebc040`).
 5. **Deploy**: documentado en `webapp-utn/docs/INSTALACION.md` §12 (recomienda generación
    local con placa); falta el servidor y el deploy real.

@@ -10,6 +10,7 @@
     "ingest": "node src/ingest/index.js",
     "crawl": "node src/ingest/crawl.js",
     "import:df": "node src/tools/import-dialogflow.js",
+    "import:pdf": "node src/tools/import-pdf.js",
     "curation": "node src/tools/curation-report.js",
     "doc-ids": "node src/tools/doc-ids.js",
     "migrate:site": "node src/tools/migrate-site.js",

@@ -39,7 +39,8 @@ curaduría      ─┘
 | Servidor con `/health` | ✅ |
 | Ingesta a índice (`store.json`) | ⬜ **próximo paso** |
 | `/api/ask` | ⬜ devuelve 501 |
-| Loaders de PDF / API / OCR | ⬜ |
+| PDF de alto valor → `corpus/pdf` (`import:pdf`, OCR de Windows para escaneados) | ✅ |
+| Loaders de API | ⬜ |
 | Retrieval y caché | ⬜ |
 | Evaluación (`eval/run.js`) | ⬜ |
 | Canales (WhatsApp, widget) | ⬜ |
@@ -68,6 +69,10 @@ corpus/
   faq/              import de Dialogflow (frontmatter: doc_id, intent, title, url?, aliases)
                     + documentos curados a mano con `source: curado` (el importador
                     no los genera ni los borra; sobreviven a `npm run import:df`)
+  pdf/              PDF de alto valor convertidos (frontmatter: source: pdf, doc_id pdf-…,
+                    title, url, pages, ocr?) + _import.json (convertidos y descartados)
+  pdf-ocr/          texto OCR de los PDF escaneados (lo usa import:pdf; páginas separadas por \f)
+  pdf-fuentes.yaml  lista de PDF a convertir (url + title)
   decisions.yaml    registro de curación (lo consume el ingest)
   ejemplo.txt       documento de prueba
 corpus-excluded/    excluidos, gitignored, fuera del corpus
@@ -138,6 +143,8 @@ decisions:
 | `npm start` | servidor Express | — |
 | `npm run crawl -- --seed <url> --max N` | cosecha un sitio | `corpus/web/` |
 | `npm run import:df -- --dir <path>` | importa intents de Dialogflow | `corpus/faq/`, `eval/questions-dialogflow.yaml` |
+| `npm run import:pdf [-- --revisar]` | baja y convierte los PDF de `corpus/pdf-fuentes.yaml` | `corpus/pdf/`, `data/pdf-cache/` |
+| `powershell -File src/tools/ocr-pdf-windows.ps1` | OCR (Windows) de los PDF escaneados; después, `import:pdf` | `corpus/pdf-ocr/` |
 | `npm run doc-ids` | asigna `doc_id` (dry-run) | — |
 | `npm run doc-ids -- --apply` | idem, aplicado | frontmatter |
 | `npm run curation` | regenera el reporte | `docs/REPORTE-CURACION.md` |
@@ -182,7 +189,11 @@ El crawler respeta `robots.txt`, espera 250–350 ms, prefiere sitemap, filtra l
 
 1. `src/ingest/index.js`: `type: dir` (web y faq), aplicar `decisions.yaml` por `doc_id`, guardar `embedding_model` en el store.
 2. `/api/ask` mínimo → criterio: `curl` responde citando `[1]`.
-3. `loaders/file.js` con PDF (`unpdf`), empezando por los 28 de alto valor.
+3. ✅ PDF de alto valor: `npm run import:pdf` convierte los 26 de `corpus/pdf-fuentes.yaml` a
+   `corpus/pdf/*.md` (el runtime de `webapp-utn` los importa como un documento más). De las tablas
+   de correlatividades queda solo la lista de materias y una nota que manda al PDF (con gemma3:4b
+   las correlativas salían mezcladas). Pendiente: probar `CORRELATIVAS=1` con un modelo más grande
+   y revisar las pocas filas de tablas de tres columnas que quedaron crudas.
 4. `eval/run.js` con `hit@5`, fidelidad y escalado.
 5. `retrieve.js` + `cache.js`.
 6. Canales y deploy.
@@ -200,7 +211,7 @@ El crawler respeta `robots.txt`, espera 250–350 ms, prefiere sitemap, filtra l
 ## 10. Cómo verificar que no rompiste nada
 
 ```bash
-npm run doc-ids                                  # 257 doc_id únicos, 0 cambios esperados
+npm run doc-ids                                  # 283 doc_id únicos (257 + 26 PDF), 0 cambios esperados
 npm run curation                                 # marcas preservadas = 124
 npm run decisions                                # 38 keep / 56 vigente / 30 excluir
 node --check src/tools/*.js                      # sintaxis

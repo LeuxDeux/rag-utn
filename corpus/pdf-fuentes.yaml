@@ -1,0 +1,87 @@
+# PDF que se convierten a corpus/pdf/*.md con `npm run import:pdf`.
+#
+# Son los de alto valor de corpus/web/_pdfs.json (guía §17.3): reglamentos, diseños curriculares,
+# planes de estudio y correlatividades. Quedan afuera los formularios en blanco (F-003, F-050,
+# solicitudes de concurso, NO-DOCENTE-*), el plano de JTENSF y la plantilla de CTE2025: no tienen
+# conocimiento que responder, y la página que los enlaza ya explica el trámite. También el plan viejo
+# de la TUP (Ord. 1299), reemplazado por el plan 2024 (Ord. 2018), para que no se contradigan, y el
+# Plan-de-Estudio-TUP-2022.pdf, que el sitio ya no tiene (404). Y PlanEstudioTUHST.pdf: su tabla de
+# tres columnas con filas partidas sale ilegible y el diseño curricular (Ord. 986) tiene lo mismo.
+#
+# Los escaneados (sin capa de texto) se pasan por OCR una vez con src/tools/ocr-pdf-windows.ps1;
+# el texto queda en corpus/pdf-ocr/ y import:pdf lo usa.
+#
+# Para sumar uno: agregar url y title (doc_id se deriva del nombre del archivo: pdf-<nombre>).
+# Para sacarlo: borrar la entrada y volver a correr el import (borra el .md).
+
+pdfs:
+  # Reglamentos de estudio
+  # Las copias del sitio de la Facultad de estas ordenanzas son escaneos sin texto: se usa la del
+  # Consejo Superior (csu.rec.utn.edu.ar), que es la publicación oficial.
+  - url: http://csu.rec.utn.edu.ar/CSU/ORD/1549.pdf
+    doc_id: pdf-ord-1549-reglamento-de-estudio-para-carreras-de-grado
+    title: Reglamento de Estudio para Carreras de Grado (Ord. CSU 1549)
+  - url: http://csu.rec.utn.edu.ar/CSU/ORD/1622.pdf
+    doc_id: pdf-ord-1622-reglamento-de-estudio-de-carreras-cortas
+    title: Reglamento de Estudio de Carreras Cortas (Ord. CSU 1622)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2019/04/ReglamentoEstudio_CLHST.pdf
+    title: Reglamento de Estudio para todos los Ciclos de Licenciatura de la UTN (2018)
+  - url: http://csu.rec.utn.edu.ar/CSU/ORD/1273.pdf
+    doc_id: pdf-ord-1273
+    title: Reglamento de Concursos para la Designación de Profesores (Ord. CSU 1273)
+
+  # Ingeniería Electromecánica
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/08/CSU-ORD-1851-Diseno-Curricular-IEM.pdf
+    title: Diseño Curricular de Ingeniería Electromecánica (Ord. CSU 1851)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/08/CSU-ORD-2170-Regimen-de-Correlatividades-IEM.pdf
+    title: Régimen de Correlatividades de Ingeniería Electromecánica (Ord. CSU 2170)
+
+  # Ingeniería Industrial
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/08/CSU-ORD-1908-Diseno-Curricular-Industrial.pdf
+    title: Diseño Curricular de Ingeniería Industrial (Ord. CSU 1908)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/08/CSU-ORD-1909-Regimen-de-Correlatividades-Industrial.pdf
+    title: Régimen de Correlatividades de Ingeniería Industrial (Ord. CSU 1909)
+
+  # Licenciatura en Administración Rural
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/08/CSU-ORD-2185-Diseno-Curricular-LAR.pdf
+    title: Diseño Curricular de la Licenciatura en Administración Rural (Ord. CSU 2185)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/08/CSU-ORD-2186-Regimen-de-Correlatividades-LAR.pdf
+    title: Régimen de Correlatividades de la Licenciatura en Administración Rural (Ord. CSU 2186)
+
+  # Ciclo de Licenciatura en Higiene y Seguridad en el Trabajo
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2019/09/Plan-de-Estudio-CLHST-2019.pdf
+    title: Plan de Estudio del Ciclo de Licenciatura en Higiene y Seguridad en el Trabajo (2019)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2020/09/DisCurri_Ord-1108-CS-Ciclo-de-licenciatura-en-higiene-y-seguridad-en-el-trabajo.pdf
+    title: Diseño Curricular del Ciclo de Licenciatura en Higiene y Seguridad en el Trabajo (Ord. CSU 1108)
+
+  # Tecnicaturas
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2019/09/Plan-de-Estudio-TUPI-2019.pdf
+    title: Plan de Estudio de la Tecnicatura Universitaria en Procesos Industriales (2019)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2020/09/DisCurri_Ord-1055-CS-Tecnicatura-universitaria-en-procesos-industriales.pdf
+    title: Diseño Curricular de la Tecnicatura Universitaria en Procesos Industriales (Ord. CSU 1055)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2022/02/DisCurri_ORD.-986-Tec.-Univ-en-Higiene-y-Seguridad-en-el-Trabajo.-_-Mod.-1344.pdf
+    title: Diseño Curricular de la Tecnicatura Universitaria en Higiene y Seguridad en el Trabajo (Ord. CSU 986, mod. 1344)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2020/09/DisCurri_Ord-893-CS-Tecnicatura-universitaria-en-mecatronica.pdf
+    title: Diseño Curricular de la Tecnicatura Universitaria en Mecatrónica (Ord. CSU 893)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2024/11/DisCurri_Ord.-2018-diseno-curricular-TUP-plan-2024-.pdf
+    title: Diseño Curricular de la Tecnicatura Universitaria en Programación, plan 2024 (Ord. CSU 2018)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/08/CSU-ORD-2115-Modificacion-Punto-8-Diseno-Curricular-TUP.pdf
+    title: Modificación del punto 8 del Diseño Curricular de la Tecnicatura Universitaria en Programación (Ord. CSU 2115)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2020/08/Plan-de-Estudio-TUCI-.pdf
+    title: Plan de Estudio de la Tecnicatura Universitaria en Ciudades Inteligentes
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2020/09/DisCurri_Ord-1690-CS-Tecnicaura-en-ciudades-inteligentes.pdf
+    title: Diseño Curricular de la Tecnicatura Universitaria en Ciudades Inteligentes (Ord. CSU 1690)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/04/ORD.-CSU-1456-Diseno-Curricular-TUL.pdf
+    title: Diseño Curricular de la Tecnicatura Universitaria en Logística (Ord. CSU 1456)
+
+  # Becas, biblioteca, docencia e investigación
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2024/02/2024_CyT_Ord-1180-Regl.-BECAS-Estudiantes.pdf
+    title: Reglamento de Becas para Estudiantes (Ord. CSU 1180)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2023/02/194-22-Reglamento-de-Biblioteca.pdf
+    title: Reglamento de la Biblioteca «Ing. Alcides R. Martínez» de la Facultad (Res. CD 194/22)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/03/1182-Carrera-Academica.pdf
+    title: Reglamento de Carrera Académica (Ord. CSU 1182)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/03/CSU_ORD_2122-Reglamento-Carrera-Investigadores.pdf
+    title: Reglamento de la Carrera de Investigadores (Ord. CSU 2122)
+  - url: https://www.frrq.utn.edu.ar/wp-content/uploads/2026/03/ORD_964-Concurso-exclusiva.pdf
+    title: Concursos docentes con dedicación exclusiva (Ord. CSU 964)

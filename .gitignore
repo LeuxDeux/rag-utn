@@ -3,6 +3,8 @@ node_modules/
 data/store.json
 data/cache.json
 data/*.json
+# PDF bajados por import:pdf (se vuelven a bajar; el texto queda en corpus/pdf)
+data/pdf-cache/
 *.log
 
 # Documentos excluidos por curaduría. Siguen en el historial de git.
