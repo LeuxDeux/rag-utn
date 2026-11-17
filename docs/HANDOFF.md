@@ -125,7 +125,15 @@ go run ./cmd/webapp-utn asistente evaluar --dialogflow corpus\eval\questions-dia
 
 # completa, 15 preguntas con LLM (sí gasta cupo)
 go run ./cmd/webapp-utn asistente evaluar
+
+# registro histórico de respuestas (sin caché; --sin-cupo para correr muchas)
+go run ./cmd/webapp-utn asistente registrar --preguntas ..\rag\eval\preguntas-internas.txt --sin-cupo
+# → docs/registros/<fecha-hora>.jsonl y .md, con el commit del corpus y las fuentes
 ```
+
+El registro sirve para comparar entre fechas: misma lista de preguntas, mismas
+respuestas esperadas, y el archivo queda en git. Las últimas tres preguntas de
+`preguntas-internas.txt` son controles que deben derivar.
 
 ### Cómo leer los números
 

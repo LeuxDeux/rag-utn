@@ -112,6 +112,10 @@ Mezclar modelos no da error: devuelve resultados malos en silencio.
 
 Si el modelo devuelve texto sin ninguna cita y sin derivación, marcá `confidence: low` y `escalate: true`. No lo muestres como respuesta buena.
 
+**Límite conocido:** `ValidarCitas` comprueba que el número citado exista en el contexto, **no** que ese fragmento sostenga la afirmación. En una prueba real, «¿cuántos llamados a examen según el reglamento?» respondió diez (que es lo que dice la Ord. 1549) citando la FAQ de horarios. El dato era correcto y la cita no lo respaldaba.
+
+Antes de publicar conviene medirlo: por cada respuesta, verificar si el fragmento citado contiene las palabras del dato (años, montos, plazos, nombres). Es una métrica nueva, distinta de `hit@5` y de fidelidad global.
+
 ### R7 — El runtime no edita el corpus
 
 `corpus/`, `sources.yaml`, `decisions.yaml` y `docs/REPORTE-CURACION.md` los mantiene quien cura los datos. **El runtime los consume.**
@@ -205,6 +209,36 @@ Cada pregunta que probás a mano y te sirve para corregir algo, agregala al set.
 4. **Responde algo que fue excluido** → no está leyendo `decisions.yaml`.
 5. **Afirma un año viejo** → el documento no está marcado `vigente`.
 
+## 10. Al desplegar
+
+Cosas que no se notan en desarrollo y sí en un servidor:
+
+1. **Vaciar la caché de respuestas.** La caché dura 24 h y **solo se vacía cuando
+   cambia el índice**, no cuando se despliega código. Después de cambiar el prompt,
+   la lógica de respuesta o el modelo, hay que ejecutar:
+
+   ```sql
+   DELETE FROM asistente_cache;
+   ```
+
+   Si no, el código nuevo está desplegado y los usuarios siguen viendo respuestas
+   viejas, sin ningún error visible.
+
+2. **Ollama con dos modelos cargados.** `OLLAMA_MAX_LOADED_MODELS=2` y
+   `OLLAMA_CONTEXT_LENGTH=8192` antes de arrancarlo. Con el default, cada pregunta
+   alterna embedder y chat, y la búsqueda cae a solo texto sin avisar.
+
+3. **Migraciones.** El binario no las aplica solo: `webapp-utn migrar` antes de
+   arrancar, o el servicio no levanta.
+
+4. **Importar y verificar.** `asistente importar <corpus>` y después
+   `asistente estado`; tiene que decir `al día`.
+
+5. **Registro de respuestas.** `asistente registrar` deja en `docs/registros/` un
+   `.jsonl` y un `.md` con las respuestas, sus fuentes y el commit del corpus.
+   Correrlo antes y después de cada cambio grande es la forma de ver deriva sin
+   depender de la memoria.
+
 ---
 
-*Última actualización: 2026-11-14. Si cambiás una regla de este archivo, avisá: afecta el corpus, no solo el runtime.*
+*Última actualización: 2026-11-17. Si cambiás una regla de este archivo, avisá: afecta el corpus, no solo el runtime.*

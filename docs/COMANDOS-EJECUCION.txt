@@ -66,6 +66,10 @@ go run ./cmd/webapp-utn asistente evaluar --dialogflow corpus\eval\questions-dia
 # evaluación completa con LLM (15 preguntas, sí gasta cupo)
 go run ./cmd/webapp-utn asistente evaluar
 
+# registro histórico de respuestas (no usa caché; --sin-cupo para correr muchas)
+go run ./cmd/webapp-utn asistente registrar --preguntas ..\rag\eval\preguntas-internas.txt --sin-cupo
+# → docs/registros/<fecha-hora>.jsonl y .md
+
 
 DETENER
 -------

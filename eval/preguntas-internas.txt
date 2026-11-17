@@ -1,0 +1,53 @@
+# Preguntas internas para el registro periódico (`asistente registrar`).
+# Una por línea; el signo # inicia un comentario. Las últimas son controles:
+# tienen que derivar, no responder.
+
+# Inscripción e ingreso
+¿Cuándo abre la inscripción a las carreras?
+¿Hasta cuándo me puedo inscribir?
+¿Qué documentación necesito para inscribirme?
+¿Cómo me inscribo a las materias?
+¿Qué es el cursillo de ingreso?
+
+# Carreras
+¿Qué carreras de grado se dictan?
+¿Cuánto dura la Tecnicatura Universitaria en Programación?
+¿Hay carreras a distancia?
+¿Qué posgrados tienen?
+¿Qué carreras de ingeniería se pueden estudiar?
+
+# Costos (debe derivar a Alumnado)
+¿Cuánto sale la carrera?
+¿Cuánto está la cuota mensual?
+
+# Trámites
+¿Cómo saco el correo institucional?
+¿Cómo entro a SysAcad?
+¿Cómo pido una equivalencia?
+¿Cómo pido la licencia estudiantil?
+¿Cómo me inscribo para rendir un final?
+¿Qué es el año de gracia?
+¿Qué es el cursado condicional?
+
+# Académico
+¿Cuáles son las correlativas de Física II?
+¿Qué necesito para cursar Análisis Matemático II?
+¿Cuántos llamados a examen hay según el reglamento de estudio?
+¿Cuándo son las mesas de examen?
+¿Qué dice el reglamento sobre la regularidad?
+
+# Servicios y vida universitaria
+¿Cuántos libros puedo pedir prestados en la biblioteca?
+¿Qué becas ofrece la facultad?
+¿Cómo tramito el boleto educativo?
+¿Hay cursos de idiomas?
+¿Qué servicios de laboratorio ofrece?
+
+# Ubicación y contacto
+¿Dónde queda la facultad?
+¿Cuál es el teléfono de alumnado?
+
+# Controles: no están en el corpus, deben derivar
+¿Quién ganó el mundial 2022?
+¿Cuánto sale estudiar medicina en Córdoba?
+¿Me pueden hacer una excepción con la cuota si me atrasé?
