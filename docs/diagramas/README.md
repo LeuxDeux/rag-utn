@@ -8,6 +8,7 @@ y se puede mandar por correo o publicar.
 |---|---|
 | [`sistema-global.html`](./sistema-global.html) | El sistema completo: corpus curado → ingesta → Postgres → búsqueda híbrida → prompt → Ollama, más los datos vigentes y la caché |
 | [`runtime-go.html`](./runtime-go.html) | Una consulta a través de los paquetes Go: `api_publica` → `Servicio` → `Hibrido` → `ArmarMensajes` → LLM → `ValidarCitas` |
+| [`sistema-global-fuentes.html`](./sistema-global-fuentes.html) | Igual que el global, pero **cada bloque enlaza a su archivo y líneas** en el commit `a87ce7e` de `webapp-utn` |
 
 Cada `.html` tiene su fuente en el `.json` del mismo nombre, que es lo que se edita.
 
@@ -27,7 +28,15 @@ regenerarlos. La skill está instalada en `~/.agents/skills/archify`.
 $archify = "$env:USERPROFILE\.agents\skills\archify\bin\archify.mjs"
 node $archify finalize architecture docs\diagramas\sistema-global.json docs\diagramas\sistema-global.html --quality showcase
 node $archify finalize architecture docs\diagramas\runtime-go.json docs\diagramas\runtime-go.html --quality showcase
+
+# el que enlaza al código necesita el repo del runtime como raíz
+node $archify finalize architecture docs\diagramas\sistema-global-fuentes.json docs\diagramas\sistema-global-fuentes.html --repo-root ..\webapp-utn --quality showcase
 ```
+
+En `sistema-global-fuentes.json`, `meta.repository.revision` fija el commit que se
+cita. Cuando `webapp-utn` avance, actualizá ese hash (y las líneas si se movieron):
+los enlaces apuntan al commit fijo, así que nunca muestran código distinto al
+diagramado.
 
 `finalize` valida el esquema, renderiza el HTML y lo verifica en un navegador
 real antes de dejarlo. Si falla, el mensaje dice qué nodo o etiqueta ajustar.

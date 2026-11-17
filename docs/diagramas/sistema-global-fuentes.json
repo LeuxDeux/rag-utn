@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Asistente UTN FRRQ — mapa con enlaces al código",
+    "subtitle": "Cada bloque apunta a su función en webapp-utn",
+    "output": "docs/diagramas/sistema-global-fuentes.html",
+    "locale": "es",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/brunomick/webapp-utn",
+      "revision": "a87ce7e66c38ddeff06dd864643ea7579c884a51"
+    }
+  },
+  "components": [
+    { "id": "sitio", "type": "frontend", "label": "Sitio + widget", "sublabel": "consulta del estudiante", "pos": [40, 300], "size": [150, 64],
+      "sources": [{ "path": "web/sitio/assets/asistente.js", "line": 1, "end_line": 20 }] },
+    { "id": "api", "type": "backend", "label": "API del asistente", "sublabel": "POST /preguntar", "pos": [230, 300], "size": [150, 64],
+      "sources": [{ "path": "internal/asistente/api_publica.go", "line": 62, "end_line": 70 }] },
+    { "id": "retrieval", "type": "backend", "label": "Búsqueda híbrida", "sublabel": "vectores + GIN · RRF", "pos": [420, 300], "size": [150, 64],
+      "sources": [{ "path": "internal/asistente/indice/buscar.go", "line": 288, "end_line": 330 }] },
+    { "id": "prompt", "type": "backend", "label": "Prompt con citas", "sublabel": "12 reglas + [VIVO]", "pos": [610, 300], "size": [150, 64],
+      "sources": [{ "path": "internal/asistente/respuesta/prompt.go", "line": 115, "end_line": 140 }] },
+    { "id": "llm", "type": "backend", "label": "gemma3:4b", "sublabel": "Ollama · local", "pos": [800, 300], "size": [140, 64],
+      "sources": [{ "path": "internal/asistente/respuesta/llm.go", "line": 62, "end_line": 90 }] },
+
+    { "id": "cache", "type": "database", "label": "Caché", "sublabel": "24 h · no guarda vivo", "pos": [230, 120], "size": [150, 60],
+      "sources": [{ "path": "internal/asistente/respuesta/servicio.go", "line": 150, "end_line": 166 }] },
+    { "id": "vivos", "type": "database", "label": "Datos vigentes", "sublabel": "cargados por el panel", "pos": [610, 120], "size": [150, 60],
+      "sources": [
+        { "path": "internal/asistente/vivos.go", "line": 43, "end_line": 60 },
+        { "path": "migrations/0006_asistente_vivos.sql", "line": 5, "end_line": 20 }
+      ] },
+
+    { "id": "pg", "type": "database", "label": "PostgreSQL 18", "sublabel": "documentos y fragmentos", "pos": [420, 480], "size": [160, 64],
+      "sources": [{ "path": "migrations/0003_asistente.sql", "line": 15, "end_line": 40 }] },
+    { "id": "emb", "type": "backend", "label": "embeddinggemma", "sublabel": "Ollama · 768 dim", "pos": [610, 480], "size": [150, 60],
+      "sources": [{ "path": "internal/asistente/indice/ollama.go", "line": 29, "end_line": 45 }] },
+
+    { "id": "corpus", "type": "database", "label": "Corpus curado", "sublabel": "rag-utn · 253 docs", "pos": [210, 660], "size": [160, 64],
+      "sources": [{ "path": "corpus/README.md", "line": 1, "end_line": 20 }] },
+    { "id": "ingesta", "type": "backend", "label": "Ingesta", "sublabel": "asistente importar", "pos": [480, 660], "size": [160, 64],
+      "sources": [
+        { "path": "cmd/webapp-utn/asistente.go", "line": 124, "end_line": 150 },
+        { "path": "internal/asistente/indice/fuentes.go", "line": 159, "end_line": 180 }
+      ] }
+  ],
+  "connections": [
+    { "id": "s-a", "from": "sitio", "to": "api", "label": "POST" },
+    { "id": "a-c", "from": "api", "to": "cache", "label": "hit", "fromSide": "top", "toSide": "bottom" },
+    { "id": "a-r", "from": "api", "to": "retrieval", "label": "sin caché" },
+    { "id": "r-pg", "from": "retrieval", "to": "pg", "label": "GIN + coseno", "fromSide": "bottom", "toSide": "top" },
+    { "id": "r-pr", "from": "retrieval", "to": "prompt", "label": "top 12" },
+    { "id": "pr-v", "from": "prompt", "to": "vivos", "label": "lee [VIVO]", "fromSide": "top", "toSide": "bottom" },
+    { "id": "pr-l", "from": "prompt", "to": "llm", "label": "chat" },
+    { "id": "cor-i", "from": "corpus", "to": "ingesta", "label": "markdown" },
+    { "id": "i-pg", "from": "ingesta", "to": "pg", "label": "upsert", "fromSide": "top", "toSide": "bottom" },
+    { "id": "i-e", "from": "ingesta", "to": "emb", "label": "embed", "fromSide": "right", "toSide": "bottom" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Cómo se leen los enlaces", "items": ["Cada bloque abre su archivo y rango de líneas en el commit a87ce7e de webapp-utn", "El corpus real vive en LeuxDeux/rag-utn; acá se cita la copia y su README", "Los enlaces son evidencia del comportamiento, no de cada línea"] },
+    { "dot": "emerald", "title": "Runtime (Go)", "items": ["Búsqueda híbrida: vectores en memoria + full-text, fusionados con RRF", "Datos vigentes con vencimiento, cargados desde el panel", "Sin citas válidas la respuesta se convierte en «No tengo esa información»"] },
+    { "dot": "rose", "title": "Límite conocido", "items": ["ValidarCitas comprueba el rango del número, no la fidelidad de la fuente", "Falta WhatsApp y el despliegue fuera de desarrollo"] }
+  ]
+}
