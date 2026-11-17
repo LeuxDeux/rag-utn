@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Asistente UTN FRRQ — sistema completo",
+    "subtitle": "Corpus curado en rag-utn y runtime Go en webapp-utn",
+    "output": "docs/diagramas/sistema-global.html",
+    "locale": "es",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    {
+      "id": "sitio",
+      "type": "frontend",
+      "label": "Sitio + widget",
+      "sublabel": "consulta del estudiante",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "API del asistente",
+      "sublabel": "POST /preguntar",
+      "pos": [
+        230,
+        300
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "retrieval",
+      "type": "backend",
+      "label": "Búsqueda híbrida",
+      "sublabel": "vectores + GIN · RRF",
+      "pos": [
+        420,
+        300
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "prompt",
+      "type": "backend",
+      "label": "Prompt con citas",
+      "sublabel": "12 reglas + [VIVO]",
+      "pos": [
+        610,
+        300
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "llm",
+      "type": "backend",
+      "label": "gemma3:4b",
+      "sublabel": "Ollama · local",
+      "pos": [
+        800,
+        300
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "cache",
+      "type": "database",
+      "label": "Caché",
+      "sublabel": "24 h · no guarda vivo",
+      "pos": [
+        230,
+        120
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "vivos",
+      "type": "database",
+      "label": "Datos vigentes",
+      "sublabel": "cargados por el panel",
+      "pos": [
+        610,
+        120
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "pg",
+      "type": "database",
+      "label": "PostgreSQL 18",
+      "sublabel": "documentos y fragmentos",
+      "pos": [
+        420,
+        480
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "emb",
+      "type": "backend",
+      "label": "embeddinggemma",
+      "sublabel": "Ollama · 768 dim",
+      "pos": [
+        610,
+        480
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "corpus",
+      "type": "database",
+      "label": "Corpus curado",
+      "sublabel": "rag-utn · 253 docs",
+      "pos": [
+        210,
+        660
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "ingesta",
+      "type": "backend",
+      "label": "Ingesta",
+      "sublabel": "asistente importar",
+      "pos": [
+        480,
+        660
+      ],
+      "size": [
+        160,
+        64
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "s-a",
+      "from": "sitio",
+      "to": "api",
+      "label": "POST"
+    },
+    {
+      "id": "a-c",
+      "from": "api",
+      "to": "cache",
+      "label": "hit",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "a-r",
+      "from": "api",
+      "to": "retrieval",
+      "label": "sin caché"
+    },
+    {
+      "id": "r-pg",
+      "from": "retrieval",
+      "to": "pg",
+      "label": "GIN + coseno",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "r-pr",
+      "from": "retrieval",
+      "to": "prompt",
+      "label": "top 12"
+    },
+    {
+      "id": "pr-v",
+      "from": "prompt",
+      "to": "vivos",
+      "label": "lee [VIVO]",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "pr-l",
+      "from": "prompt",
+      "to": "llm",
+      "label": "chat"
+    },
+    {
+      "id": "cor-i",
+      "from": "corpus",
+      "to": "ingesta",
+      "label": "markdown"
+    },
+    {
+      "id": "i-pg",
+      "from": "ingesta",
+      "to": "pg",
+      "label": "upsert",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "i-e",
+      "from": "ingesta",
+      "to": "emb",
+      "label": "embed",
+      "fromSide": "right",
+      "toSide": "bottom"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Datos (rag-utn)",
+      "items": [
+        "Corpus en git: 253 documentos —sitio, FAQ y 26 PDF oficiales—",
+        "decisions.yaml decide qué se indexa, qué va como vigente y qué se excluye",
+        "La base es una copia: si el corpus cambia hay que reimportar"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Runtime (webapp-utn, Go)",
+      "items": [
+        "Búsqueda híbrida: vectores en memoria + full-text de Postgres, fusionados con RRF",
+        "Datos vigentes por fecha, cargados desde el panel con permiso propio",
+        "Sin citas válidas la respuesta se convierte en «No tengo esa información»"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Lo que falta",
+      "items": [
+        "WhatsApp: el canal donde está el problema real",
+        "Hosting fuera de la máquina de desarrollo",
+        "Métrica de fidelidad de citas antes de publicar"
+      ]
+    }
+  ]
+}

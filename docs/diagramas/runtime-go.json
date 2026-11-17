@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Runtime del asistente — una consulta en Go",
+    "subtitle": "webapp-utn · internal/asistente",
+    "output": "docs/diagramas/runtime-go.html",
+    "locale": "es",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    { "id": "api_pub", "type": "backend", "label": "api_publica", "sublabel": "POST /preguntar", "pos": [300, 60], "size": [170, 64] },
+    { "id": "servicio", "type": "backend", "label": "respuesta.Servicio", "sublabel": "orquesta el pedido", "pos": [300, 200], "size": [180, 64] },
+    { "id": "prompt", "type": "backend", "label": "ArmarMensajes", "sublabel": "reglas y citas [n]", "pos": [310, 350], "size": [160, 64] },
+    { "id": "llm", "type": "backend", "label": "Cliente LLM", "sublabel": "Ollama u OpenRouter", "pos": [310, 490], "size": [160, 64] },
+
+    { "id": "buscador", "type": "backend", "label": "indice.Hibrido", "sublabel": "vector RAM + GIN", "pos": [50, 200], "size": [170, 64] },
+    { "id": "pg", "type": "database", "label": "PostgreSQL", "sublabel": "fragmentos · vectores", "pos": [50, 60], "size": [170, 64] },
+
+    { "id": "vivos", "type": "database", "label": "Datos vigentes", "sublabel": "con vencimiento", "pos": [590, 200], "size": [160, 64] },
+    { "id": "citas", "type": "backend", "label": "ValidarCitas", "sublabel": "rango y limpieza", "pos": [590, 350], "size": [160, 64] }
+  ],
+  "connections": [
+    { "id": "api-serv", "from": "api_pub", "to": "servicio", "label": "req" },
+    { "id": "serv-bus", "from": "servicio", "to": "buscador", "label": "Buscar" },
+    { "id": "bus-pg", "from": "buscador", "to": "pg", "label": "SQL", "fromSide": "top", "toSide": "bottom" },
+    { "id": "serv-viv", "from": "servicio", "to": "vivos", "label": "vivos" },
+    { "id": "serv-pr", "from": "servicio", "to": "prompt", "label": "12 frag.", "fromSide": "bottom", "toSide": "top" },
+    { "id": "pr-llm", "from": "prompt", "to": "llm", "label": "chat", "fromSide": "bottom", "toSide": "top" },
+    { "id": "llm-cit", "from": "llm", "to": "citas", "label": "salida", "fromSide": "right", "toSide": "bottom" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Búsqueda", "items": ["Los vectores se cargan en memoria al arrancar y se recargan si cambia el índice", "La mitad léxica la resuelve Postgres con el índice GIN sobre tsv", "Fusión por RRF (k=60); las fuentes externas pesan 0,8"] },
+    { "dot": "emerald", "title": "Decisión y respuesta", "items": ["Si ningún fragmento llega al coseno 0,35 ni coincide en texto, no se llama al modelo", "Sin citas válidas se devuelve «No tengo esa información» y se marca sin_citas", "Las respuestas con datos vigentes no se cachean"] },
+    { "dot": "rose", "title": "Fuera del flujo de una consulta", "items": ["indice.Almacen: importa, fragmenta y calcula embeddings (CLI)", "api_panel: carga datos vigentes y dispara reindexaciones", "evaluacion: 189 frases de Dialogflow + semilla de 15"] }
+  ]
+}

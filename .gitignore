@@ -10,6 +10,13 @@ data/pdf-cache/
 # Documentos excluidos por curaduría. Siguen en el historial de git.
 corpus-excluded/
 
+# Archify: candidatos de trabajo y recibos de verificación (no son el artefacto).
+.archify/
+docs/diagramas/*.finalize.json
+docs/diagramas/*.finalize-summary.json
+docs/diagramas/*.browser-check.json
+docs/diagramas/*.delivery.json
+
 # El corpus puede contener documentos privados. Descomentar si aplica.
 # corpus/*
 # !corpus/README.md
