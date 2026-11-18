@@ -107,6 +107,7 @@ npm run decisions      # dry-run; con -- --apply aplica y mueve excluidos
 | `reindexar` | `sitio 13 documentos, 337 fragmentos` |
 | `psql ... \dt asistente_*` | 7 tablas |
 | `asistente estado` | `conocimiento: rag@<hash> · 240 documentos · 1.632 fragmentos` · `estado: al día` |
+| `Asistente → Probar` en el panel | Responde y muestra la traza: fragmentos recuperados con coseno, umbral, tamaño del prompt, modelo y citas |
 | `evaluar --dialogflow corpus\eval\questions-dialogflow.yaml` | **187/189** con sitio y PDF (188 sin PDF; antes 182). La nueva falla, «Administración rural», espera `faq-carreras-posgrado`: la etiqueta está mal y la responde el diseño curricular de la LAR |
 | `go test ./internal/asistente/...` | 4 paquetes `ok` (necesita `WEBAPP_TEST_DSN`) |
 
